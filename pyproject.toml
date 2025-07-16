@@ -1,0 +1,20 @@
+[project]
+name = "graph"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Park_Jimin",email = "parkjimin788@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib (>=3.10.3,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "graph", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

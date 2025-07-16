@@ -1,0 +1,95 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "files.followSymlinks": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true, // 모든 언어에 기본 포맷 저장 활성화
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "yaml.schemas": {
+    "0_basic/schema/schema_gg_theme.json": [
+      "gg_theme.yaml"
+    ]
+  },
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    }
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    }
+  },
+  "editor.autoIndent": "full",
+  "editor.formatOnType": true,
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.synctex.viewer.sync": true,
+  "latex-workshop.synctex.autoSync.enabled": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": [
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-xelatex",
+        "-quiet",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (xelatex + biber 자동)",
+      "tools": [
+        "latexmk"
+      ]
+    },
+    {
+      "name": "xelatex → biber → xelatex ×2 (수동)",
+      "tools": [
+        "xelatex",
+        "biber",
+        "xelatex",
+        "xelatex"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes.default": "latexmk (xelatex + biber 자동)",
+  "latex-workshop.latex.autoBuild.run": "onSave"
+}

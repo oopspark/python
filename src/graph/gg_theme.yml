@@ -1,0 +1,154 @@
+basic: &basic
+  background: rgba(255, 255, 255, 0.0)   # figure(facecolor='white')
+  grid: False                  # ax.grid(True)
+  grid_color: lightgray      # ax.grid(color='lightgray')
+  font:
+    family: Arial             # matplotlib.rcParams['font.family'] 또는 plt.rc('font', family='Arial')
+    size: 12                 # matplotlib.rcParams['font.size']
+    color: black             # 기본 텍스트 색상 (xlabel, ylabel, title, legend 등 color 인자)
+  color_palette: default      # 색상 팔레트 (seaborn 또는 matplotlib 컬러맵 지정 시 활용)
+  axis:
+    show: true               # 축 표시 여부 (ax.axis('on') / ax.axis('off'))
+    color: black             # 축 선 색 (ax.spines['bottom'].set_color('black') 등)
+    linewidth: 1             # 축 선 굵기 (ax.spines[].set_linewidth(1))
+    ticks: true              # 틱 표시 여부 (ax.tick_params(axis='both', which='both', length=..., color=...))
+  title:
+    show: true               # 제목 표시 여부 (plt.title() 호출 여부)
+    size: 14                 # plt.title(fontsize=14)
+    weight: bold             # plt.title(fontweight='bold')
+    color: black             # plt.title(color='black')
+  legend:
+    show: true               # 범례 표시 여부 (ax.legend() 호출 여부)
+    location: best           # ax.legend(loc='best')
+    font_size: 10            # ax.legend(fontsize=10)
+  marker:
+    size: 6                  # scatter 점 크기 (plt.scatter(s=6), 단위 px^2)
+    color: blue              # scatter 점 색 (plt.scatter(color='blue'))
+    shape: circle            # scatter 점 모양 (plt.scatter(marker='o'))
+  line:
+    width: 2                 # plt.plot(linewidth=2)
+    color: blue              # plt.plot(color='blue')
+    style: solid             # plt.plot(linestyle='solid')
+  bar:
+    color: skyblue           # plt.bar(color='skyblue')
+    edge_color: black       # plt.bar(edgecolor='black')
+    width: 0.8               # plt.bar(width=0.8)
+  scatter:
+    alpha: 0.8               # plt.scatter(alpha=0.8)
+    colormap: viridis        # plt.scatter(c=..., cmap='viridis')
+  pie:
+    autopct: "%1.1f%%"       # plt.pie(autopct='%1.1f%%')
+    startangle: 90           # plt.pie(startangle=90)
+  violin:
+    inner: box               # seaborn.violinplot(inner='box')
+  heatmap:
+    cmap: coolwarm           # seaborn.heatmap(cmap='coolwarm')
+    annot: false             # seaborn.heatmap(annot=False)
+  surface:
+    colorscale: Viridis      # plotly surface colorscale='Viridis', matplotlib 3D surface cmap='viridis' 유사
+  network:
+    node_color: skyblue      # networkx.draw(node_color='skyblue')
+    edge_color: gray         # networkx.draw(edge_color='gray')
+    with_labels: true        # networkx.draw(with_labels=True)
+    node_size: 500           # networkx.draw(node_size=500)
+
+
+dark:
+  <<: *basic
+  background: black
+  font:
+    family: Consolas
+    size: 13
+    color: white
+  axis:
+    color: white
+  grid_color: gray
+  title:
+    color: white
+  legend:
+    font_size: 11
+  line:
+    color: lightblue
+  scatter:
+    colormap: plasma
+
+minimal:
+  <<: *basic
+  grid: false
+  axis:
+    show: false
+  title:
+    show: false
+  legend:
+    show: false
+  font:
+    family: Helvetica
+    size: 11
+    color: black
+  line:
+    style: dashed
+    color: gray
+  marker:
+    color: black
+  bar:
+    edge_color: white
+
+modern:
+  <<: *basic
+  background: "#f7f7f7"
+  font:
+    family: "Segoe UI"
+    size: 13
+    color: "#333333"
+  axis:
+    color: "#666666"
+    linewidth: 1.2
+  grid_color: "#dddddd"
+  title:
+    size: 16
+    weight: bold
+    color: "#222222"
+  bar:
+    color: "#1f77b4"
+  line:
+    color: "#ff7f0e"
+  scatter:
+    colormap: magma
+
+presentation:
+  <<: *basic
+  font:
+    family: "Tahoma"
+    size: 16
+    color: black
+  title:
+    size: 20
+    weight: bold
+    color: darkblue
+  legend:
+    font_size: 14
+  marker:
+    size: 10
+  line:
+    width: 3
+  bar:
+    width: 0.6
+
+psat:
+  <<: *basic
+  font:
+    family: "Tahoma"
+    size: 16
+    color: black
+  title:
+    size: 20
+    weight: bold
+    color: darkblue
+  legend:
+    font_size: 14
+  marker:
+    size: 10
+  line:
+    width: 3
+  bar:
+    width: 0.6

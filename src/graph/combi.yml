@@ -1,0 +1,37 @@
+matplotlib:
+  - bar
+  - point
+  - stacked
+  - histogram
+  - line
+  - scatter
+  - box
+  - pie
+  - heat
+  - area
+  - stream
+  - confuse
+  - duration
+  - bubble
+
+seaborn:
+  - violin
+  - pair
+  - density
+
+console:
+  - decision
+  - decomposition
+  - event
+
+plotly:
+  - spider
+  - treemap
+  - chord
+  - sankey
+  - icicle
+  - parallel
+  - surface
+
+networkx:
+  - network

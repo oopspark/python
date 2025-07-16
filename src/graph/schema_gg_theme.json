@@ -1,0 +1,148 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Graph Theme Schema",
+  "type": "object",
+  "properties": {
+    "background": { "type": "string" },
+    "grid": { "type": "boolean" },
+    "grid_color": { "type": "string" },
+
+    "font": {
+      "type": "object",
+      "properties": {
+        "family": {
+          "type": "string",
+          "enum": ["Arial", "Consolas", "Helvetica", "Segoe UI", "Tahoma"]
+        },
+        "size": { "type": "integer" },
+        "color": { "type": "string" }
+      },
+      "required": ["family", "size", "color"]
+    },
+
+    "color_palette": { "type": "string" },
+
+    "axis": {
+      "type": "object",
+      "properties": {
+        "show": { "type": "boolean" },
+        "color": { "type": "string" },
+        "linewidth": { "type": "number" },
+        "ticks": { "type": "boolean" }
+      }
+    },
+
+    "title": {
+      "type": "object",
+      "properties": {
+        "show": { "type": "boolean" },
+        "size": { "type": "integer" },
+        "weight": {
+          "type": "string",
+          "enum": ["normal", "bold"]
+        },
+        "color": { "type": "string" }
+      }
+    },
+
+    "legend": {
+      "type": "object",
+      "properties": {
+        "show": { "type": "boolean" },
+        "location": {
+          "type": "string",
+          "enum": ["best", "upper right", "upper left", "lower left", "lower right"]
+        },
+        "font_size": { "type": "integer" }
+      }
+    },
+
+    "marker": {
+      "type": "object",
+      "properties": {
+        "size": { "type": "integer" },
+        "color": { "type": "string" },
+        "shape": {
+          "type": "string",
+          "enum": ["circle", "square", "triangle"]
+        }
+      }
+    },
+
+    "line": {
+      "type": "object",
+      "properties": {
+        "width": { "type": "number" },
+        "color": { "type": "string" },
+        "style": {
+          "type": "string",
+          "enum": ["solid", "dashed", "dotted"]
+        }
+      }
+    },
+
+    "bar": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string" },
+        "edge_color": { "type": "string" },
+        "width": { "type": "number" }
+      }
+    },
+
+    "scatter": {
+      "type": "object",
+      "properties": {
+        "alpha": { "type": "number" },
+        "colormap": {
+          "type": "string",
+          "enum": ["viridis", "plasma", "magma", "inferno"]
+        }
+      }
+    },
+
+    "pie": {
+      "type": "object",
+      "properties": {
+        "autopct": { "type": "string" },
+        "startangle": { "type": "integer" }
+      }
+    },
+
+    "violin": {
+      "type": "object",
+      "properties": {
+        "inner": {
+          "type": "string",
+          "enum": ["box", "quartile", "point", "stick"]
+        }
+      }
+    },
+
+    "heatmap": {
+      "type": "object",
+      "properties": {
+        "cmap": { "type": "string" },
+        "annot": { "type": "boolean" }
+      }
+    },
+
+    "surface": {
+      "type": "object",
+      "properties": {
+        "colorscale": { "type": "string" }
+      }
+    },
+
+    "network": {
+      "type": "object",
+      "properties": {
+        "node_color": { "type": "string" },
+        "edge_color": { "type": "string" },
+        "with_labels": { "type": "boolean" },
+        "node_size": { "type": "integer" }
+      }
+    }
+  },
+  "additionalProperties": false
+}
