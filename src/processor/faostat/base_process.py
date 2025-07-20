@@ -3,13 +3,12 @@ import re
 import csv
 import shutil
 import zipfile
-import pymysql
+import pandas as pd
 from charset_normalizer import from_bytes
 
 # ───────────────────────────────────────────────
 # 1. 유틸 함수들
 # ───────────────────────────────────────────────
-
 
 def unzip_and_delete_all_in_dir(target_dir=None):
     if target_dir is None:
@@ -117,149 +116,73 @@ def analyze_csv_folder_column_types(folder, sample_limit=1000):
     return result
 
 
-# ───────────────────────────────────────────────
-# 2. MySQL 관련 함수
-# ───────────────────────────────────────────────
-
-
-def to_mysql_table_name(fname, keyword=None, position=None):
+def to_parquet_filename(fname, keyword=None, position=None):
     base = os.path.splitext(fname)[0]
     if keyword and position:
         if position == "prefix" and base.startswith(keyword):
-            base = base[len(keyword) :]
+            base = base[len(keyword):]
         elif position == "suffix" and base.endswith(keyword):
-            base = base[: -len(keyword)]
-    return re.sub(r"[^\w]+", "_", base).lower()
-
-
-def to_mysql_column_name(colname):
-    return re.sub(r"[^\w]+", "_", colname.strip()).lower()
-
-
-def connect_mysql(user="root", password="1120", host="localhost", port=3306):
-    return pymysql.connect(
-        host=host,
-        port=port,
-        user=user,
-        password=password,
-        charset="utf8mb4",
-        autocommit=False,
-    )
-
-
-def create_schema(cursor, schema_name):
-
-    cursor.execute(f"DROP SCHEMA IF EXISTS `{schema_name}`;")
-    cursor.execute(
-        f"CREATE SCHEMA `{schema_name}` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
-    )
-
-
-def create_table(cursor, schema, table_name, col_types):
-    cols = []
-    for col, typ in col_types.items():
-        sql_col = to_mysql_column_name(col)
-        sql_type = "FLOAT" if typ == "number" else "VARCHAR(255)"
-        cols.append(f"`{sql_col}` {sql_type}")
-    stmt = f"CREATE TABLE `{schema}`.`{table_name}` (\n  " + ",\n  ".join(cols) + "\n);"
-    cursor.execute(stmt)
-
-
-def insert_csv_to_table(
-    cursor, schema, table_name, filepath, col_types, batch_size=500
-):
-    with open(filepath, "r", encoding="utf-8", errors="replace") as f:
-        reader = csv.DictReader(f)
-        if not reader.fieldnames:
-            print(f"⚠️ Skipped: {filepath}")
-            return
-
-        columns = [to_mysql_column_name(col) for col in reader.fieldnames]
-        placeholders = ", ".join(["%s"] * len(columns))
-        insert_stmt = f"INSERT INTO `{schema}`.`{table_name}` ({', '.join('`' + c + '`' for c in columns)}) VALUES ({placeholders})"
-
-        batch = []
-        for row in reader:
-            values = []
-            for col in reader.fieldnames:
-                val = (row.get(col) or "").strip()
-                if val == "":
-                    values.append(None)
-                elif col_types.get(col) == "number":
-                    try:
-                        values.append(float(val))
-                    except:
-                        values.append(None)
-                else:
-                    values.append(val if len(val) <= 255 else None)
-            batch.append(values)
-            if len(batch) >= batch_size:
-                cursor.executemany(insert_stmt, batch)
-                batch.clear()
-
-        if batch:
-            cursor.executemany(insert_stmt, batch)
-
+            base = base[:-len(keyword)]
+    return re.sub(r"[^\w]+", "_", base).lower() + ".parquet"
 
 # ───────────────────────────────────────────────
-# 3. 전체 처리 함수
+# 2. Parquet 저장 함수 (chunk 단위 메모리 절약 버전)
 # ───────────────────────────────────────────────
 
+def process_folder_to_parquet(csv_folder, schema_dict, out_folder, keyword=None, position=None, chunksize=100_000):
+    os.makedirs(out_folder, exist_ok=True)
 
-def process_folder_with_schema(root_dir, schema_dict, keyword=None, position=None):
-    conn = connect_mysql()
-    cursor = conn.cursor()
-
-    base_schema = "faostat"
     for fname, col_types in schema_dict.items():
-
-        table_name = to_mysql_table_name(fname, keyword, position)
-        fpath = os.path.join(root_dir, fname)
-
-        print(f"🧱 Creating table: {base_schema}.{table_name}")
-        create_table(cursor, base_schema, table_name, col_types)
-
-        print(f"📥 Inserting: {fname}")
-        insert_csv_to_table(cursor, base_schema, table_name, fpath, col_types)
+        csv_path = os.path.join(csv_folder, fname)
+        if not os.path.exists(csv_path):
+            continue
 
         try:
-            os.remove(fpath)
-            print(f"🗑️ Deleted: {fname}")
+            parquet_fname = to_parquet_filename(fname, keyword, position)
+            parquet_path = os.path.join(out_folder, parquet_fname)
+            if os.path.exists(parquet_path):
+                os.remove(parquet_path)
+
+            first_chunk = True
+            for chunk in pd.read_csv(csv_path, encoding="utf-8", dtype=str, chunksize=chunksize):
+                for col, typ in col_types.items():
+                    if col in chunk.columns:
+                        if typ == "number":
+                            chunk[col] = pd.to_numeric(chunk[col], errors="coerce")
+                        elif typ == "string":
+                            chunk[col] = chunk[col].astype(str)
+
+                chunk.to_parquet(parquet_path, index=False, engine="fastparquet", append=not first_chunk)
+                first_chunk = False
+
+            print(f"✅ Saved: {parquet_fname}")
+
+            os.remove(csv_path)
+            print(f"🗑️ Deleted CSV: {fname}")
         except Exception as e:
-            print(f"⚠️ Failed to delete {fname}: {e}")
-
-    conn.commit()
-    cursor.close()
-    conn.close()
-    print("✅ All done!")
-
+            print(f"❌ Failed to process {fname}: {e}")
 
 # ───────────────────────────────────────────────
-# 4. 실행 메인
+# 3. 실행 메인
 # ───────────────────────────────────────────────
-
 
 def main():
-    target_dir = "/home/park/workspace/my_projects/temp/faostat"
+    target_dir = "/home/park/workspace/python/data/temp"
     utf8_done_folder = target_dir + "_utf8_done"
+    parquet_out_folder = target_dir + "_parquet"
 
     unzip_and_delete_all_in_dir(target_dir)
     keep_files_with_keyword(target_dir, "_E_All_Data_(Normalized)")
-
     convert_csvs_to_utf8_and_move(target_dir, utf8_done_folder)
-
     types = analyze_csv_folder_column_types(utf8_done_folder, sample_limit=1000)
 
-    base_schema = "faostat"
-    conn = connect_mysql()
-    cursor = conn.cursor()
-    create_schema(cursor, base_schema)
-
-    process_folder_with_schema(
-        utf8_done_folder, types, keyword="_E_All_Data_(Normalized)", position="suffix"
+    process_folder_to_parquet(
+        utf8_done_folder,
+        types,
+        parquet_out_folder,
+        keyword="_E_All_Data_(Normalized)",
+        position="suffix",
     )
-
-    return
 
 
 if __name__ == "__main__":
