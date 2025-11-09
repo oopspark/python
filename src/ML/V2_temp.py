@@ -12,27 +12,27 @@ from sklearn.linear_model import SGDRegressor, SGDClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.metrics import (
-    mean_squared_error, mean_absolute_error, r2_score,
+    mean_squared_error, r2_score,
     accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, log_loss
 )
 
-
 # ============================================================
-# 🧠 ML 파이프라인 클래스 (batch/epoch + loss 기록/시각화)
+# 🧠 ML 파이프라인 클래스 (epoch + loss 기록/시각화)
 # ============================================================
 class MLRunner:
     def __init__(self, X, y, task_type="regression", model_name="sgd",
-                 scaler_type="standard", batch_size=None, epochs=1000, learning_rate=0.01):
+                 scaler_type="standard", epochs=100, learning_rate=0.01):
         self.X = X
         self.y = y
         self.task_type = task_type
         self.model_name = model_name
         self.scaler_type = scaler_type
-        self.batch_size = batch_size
         self.epochs = epochs
         self.learning_rate = learning_rate
+
         self.train_loss_per_epoch = []
         self.valid_loss_per_epoch = []
+        self.lr_per_epoch = []
 
     # ==========================================
     # 데이터 전처리
@@ -60,61 +60,50 @@ class MLRunner:
     # ==========================================
     def init_model(self):
         if self.task_type == "regression":
-            if self.model_name == "sgd":
-                self.model = SGDRegressor(
-                    random_state=42,
-                    max_iter=1,
-                    learning_rate='constant',
-                    eta0=self.learning_rate,
-                    warm_start=True
-                )
-            elif self.model_name in ["tree", "rf"]:
-                self.model = RandomForestRegressor(random_state=42)
-            else:
-                raise ValueError("지원하지 않는 회귀 모델 이름입니다.")
+            model_class = SGDRegressor if self.model_name == "sgd" else RandomForestRegressor
         else:
-            if self.model_name == "sgd":
-                self.model = SGDClassifier(
-                    random_state=42,
-                    max_iter=1,
-                    learning_rate='constant',
-                    eta0=self.learning_rate,
-                    warm_start=True
-                )
-            elif self.model_name == "tree":
+            if self.model_name == "tree":
                 self.model = DecisionTreeClassifier(random_state=42)
+                print(f"🧩 Model initialized: {self.model_name.upper()} ({self.task_type})")
+                return
             elif self.model_name == "rf":
                 self.model = RandomForestClassifier(random_state=42)
-            else:
-                raise ValueError("지원하지 않는 분류 모델 이름입니다.")
+                print(f"🧩 Model initialized: {self.model_name.upper()} ({self.task_type})")
+                return
+            model_class = SGDClassifier
+
+        if self.model_name == "sgd":
+            self.model = model_class(
+                random_state=42,
+                max_iter=1,
+                learning_rate='constant',
+                eta0=self.learning_rate,
+                warm_start=True
+            )
+        else:
+            self.model = model_class(random_state=42)
 
         print(f"🧩 Model initialized: {self.model_name.upper()} ({self.task_type})")
 
     # ==========================================
-    # SGD 배치 학습 + train/valid 손실 기록
+    # SGD 학습 (epoch 단위, 일정 학습률)
     # ==========================================
-    def _fit_sgd_in_batches(self):
-        n_samples = len(self.X_train)
-        batch_size = self.batch_size or n_samples  # full-batch 기본
+    def _fit_sgd_epochs(self):
         self.train_loss_per_epoch = []
         self.valid_loss_per_epoch = []
+        self.lr_per_epoch = []
 
         for epoch in range(self.epochs):
-            indices = np.random.permutation(n_samples)
-            X_shuffled = self.X_train[indices]
-            y_shuffled = self.y_train.iloc[indices] if isinstance(self.y_train, pd.Series) else self.y_train[indices]
+            # 학습률 일정
+            self.model.eta0 = self.learning_rate
 
-            for start in range(0, n_samples, batch_size):
-                end = start + batch_size
-                X_batch = X_shuffled[start:end]
-                y_batch = y_shuffled[start:end]
+            # 학습
+            if self.task_type == "regression":
+                self.model.partial_fit(self.X_train, self.y_train)
+            else:
+                self.model.partial_fit(self.X_train, self.y_train, classes=np.unique(self.y_train))
 
-                if self.task_type == "regression":
-                    self.model.partial_fit(X_batch, y_batch)
-                else:
-                    self.model.partial_fit(X_batch, y_batch, classes=np.unique(self.y_train))
-
-            # epoch 끝날 때 손실 기록
+            # 손실 계산
             y_pred_train = self.model.predict(self.X_train)
             y_pred_valid = self.model.predict(self.X_valid)
 
@@ -127,16 +116,17 @@ class MLRunner:
 
             self.train_loss_per_epoch.append(train_loss)
             self.valid_loss_per_epoch.append(valid_loss)
+            self.lr_per_epoch.append(self.learning_rate)
 
             if (epoch + 1) % max(1, self.epochs // 10) == 0:
-                print(f"Epoch {epoch + 1}/{self.epochs} - Train Loss: {train_loss:.4f}, Valid Loss: {valid_loss:.4f}")
+                print(f"Epoch {epoch + 1}/{self.epochs} - LR: {self.learning_rate:.5f} | Train Loss: {train_loss:.4f}, Valid Loss: {valid_loss:.4f}")
 
     # ==========================================
     # 학습 및 평가
     # ==========================================
     def train_and_evaluate(self):
         if self.model_name == "sgd":
-            self._fit_sgd_in_batches()
+            self._fit_sgd_epochs()
         else:
             self.model.fit(self.X_train, self.y_train)
 
@@ -152,7 +142,6 @@ class MLRunner:
                 "Train R2": r2_score(self.y_train, y_pred_train),
                 "Valid R2": r2_score(self.y_valid, y_pred_valid)
             }
-            # 계수/절편
             self.coef_ = self.model.coef_
             self.intercept_ = self.model.intercept_
         else:
@@ -199,26 +188,39 @@ class MLRunner:
         plt.show()
 
     # ==========================================
-    # 손실 추이 시각화 (train/valid)
+    # 손실 시각화
     # ==========================================
+   # ==========================================
+# 손실 시각화 (SGD 모델만)
+# ==========================================
+# ==========================================
+# 손실 시각화 (SGD 모델만, 로그 스케일)
+# ==========================================
     def visualize_loss(self):
         if self.model_name != "sgd":
             print("Loss per epoch 시각화는 SGD 모델에만 적용됩니다.")
             return
+
         plt.figure(figsize=(8,5))
-        plt.plot(range(1, self.epochs+1), self.train_loss_per_epoch, marker='o', alpha=0.7, label='Train Loss')
-        plt.plot(range(1, self.epochs+1), self.valid_loss_per_epoch, marker='x', alpha=0.7, label='Valid Loss')
+
+        # 학습 손실
+        plt.plot(range(1, self.epochs+1), self.train_loss_per_epoch, marker='o', alpha=0.7, label='Train Loss', color='tab:blue')
+        # 검증 손실
+        plt.plot(range(1, self.epochs+1), self.valid_loss_per_epoch, marker='x', alpha=0.7, label='Valid Loss', color='tab:cyan')
+
         plt.xlabel("Epoch")
         plt.ylabel("Loss")
-        plt.title(f"{self.model_name.upper()} Loss per Epoch")
         plt.legend()
-        plt.grid(True)
+        plt.tight_layout()
         plt.show()
 
 
+
+# ============================================================
+# 🚀 예시 실행
+# ============================================================
 def main():
     from sklearn.datasets import load_diabetes
-
     data = load_diabetes()
     X = pd.DataFrame(data.data, columns=data.feature_names)
     y = pd.Series(data.target)
@@ -228,9 +230,8 @@ def main():
         task_type="regression",
         model_name="sgd",
         scaler_type="standard",
-        batch_size=32,
-        epochs=50,
-        learning_rate=0.01
+        epochs=100,
+        learning_rate=0.001
     )
 
     reg.preprocess()
@@ -240,8 +241,5 @@ def main():
     reg.visualize_loss()
 
 
-# ============================================================
-# 🚀 예시 실행
-# ============================================================
 if __name__ == "__main__":
     main()
