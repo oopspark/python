@@ -1,0 +1,7 @@
+soybean_production_korea:
+  raw_name: 두류생산량_20251126151431.csv
+  parquet_name: soybean_production_korea.parquet
+
+crop_price_korea:
+  raw_name: 농산물_가격_210325_251125.csv
+  parquet_name: crop_price_korea.parquet
