@@ -5,3 +5,7 @@ soybean_production_korea:
 crop_price_korea:
   raw_name: 농산물_가격_210325_251125.csv
   parquet_name: crop_price_korea.parquet
+
+agrifood_elasticity_usa:
+  raw_name: agrifood_elasticity.csv
+  parquet_name: agrifood_elasticity_usa.parquet
