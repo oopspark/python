@@ -11,7 +11,7 @@ packages = [{ include = "graph", from = "src" }]
 [tool.poetry.dependencies]
 python = ">=3.12,<4.0"
 matplotlib = "^3.10.3"
-pandas = "^2.3.1"
+pandas = "2.2.2"
 seaborn = "^0.13.2"
 pyyaml = "^6.0.2"
 charset-normalizer = "^3.4.2"
@@ -24,6 +24,9 @@ ipykernel = "^6.30.1"
 textual = "^6.2.1"
 plotly = "^6.3.1"
 chardet = "^5.2.0"
+sqlalchemy = "2.0.23"
+psycopg2-binary = "2.9.9"
+black = "^25.11.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"

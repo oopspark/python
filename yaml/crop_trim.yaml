@@ -9,3 +9,7 @@ crop_price_korea:
 agrifood_elasticity_usa:
   raw_name: agrifood_elasticity.csv
   parquet_name: agrifood_elasticity_usa.parquet
+
+soybean_production_faostat:
+  raw_name: FAOSTAT_data_en_11-27-2025.csv
+  parquet_name: soybean_production_faostat.parquet

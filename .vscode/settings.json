@@ -1,6 +1,13 @@
 {
-    "python.analysis.extraPaths": ["./", "./src/ML/"],
+    "python.analysis.extraPaths": [
+        "./",
+        "./src/ML/"
+    ],
     "python.venvPath": "/home/user/.cache/pypoetry/virtualenvs",
     "python.defaultInterpreterPath": "/home/user/.cache/pypoetry/virtualenvs/graph-KASAOWVd-py3.12/bin/python",
-    "python.terminal.activateEnvironment": true
+    "python.terminal.activateEnvironment": true,
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
 }
