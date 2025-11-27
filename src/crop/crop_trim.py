@@ -53,7 +53,9 @@ def save_df_to_postgres(df: pd.DataFrame, table_name: str, postgres_uri: str):
 
     print(f"Uploaded to PostgreSQL table: {table_name}")
 
+#############################################################################
 
+###########################################################################
 
 def main_path():
     yaml_path = "/home/user/문서/workspace/python/yaml"
@@ -71,7 +73,7 @@ def main_path():
     raw_file = f"{raw_path}/{yaml_data[focus]['raw_name']}"
     parquet_file = f"{data_gdrive_path}/{yaml_data[focus]['parquet_name']}"
 
-    postgres_uri = "postgresql+psycopg2://psuser:StrongPassword123!@localhost:5432/general"
+    postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/supersetdb"
 
     return focus, raw_file, parquet_file, postgres_uri, yaml_data
 
