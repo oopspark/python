@@ -27,6 +27,8 @@ chardet = "^5.2.0"
 sqlalchemy = "2.0.23"
 psycopg2-binary = "2.9.9"
 black = "^25.11.0"
+streamlit = "^1.51.0"
+pygwalker = "^0.4.9.15"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"

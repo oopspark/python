@@ -1,0 +1,39 @@
+soybean_production_korea:
+  description: "한국의 대두 생산량 데이터"
+
+crop_price_korea:
+  description: "한국의 작물 가격 데이터"
+
+agrifood_elasticity_usa:
+  description: "미국의 농식품 탄력성 데이터"
+
+
+soybean_production_faostat:
+  description: "FAOSTAT의 대두 생산량 데이터"
+
+crop_production_koreaa:
+  description: "한국의 작물 생산량 데이터"
+
+soybean_income_korea:
+  description: "한국의 대두 소득 데이터"
+
+soybean_production_cost_korea:
+  description: "한국의 대두 생산비 데이터"
+
+soybean_operation_kroea:
+  description: "한국의 대두 경영 데이터"
+
+soybean_input_korea:
+  description: "한국의 대두 투입량 데이터"
+
+crop_farm_korea:
+  description: "한국의 작물 농가 데이터"
+
+soybean_procurement_korea:
+  description: "한국의 대두 조달 데이터"
+
+crop_paddy_korea:
+  description: "한국의 작물별 논면적 데이터"
+
+crop_dry_korea:
+  description: "한국의 작물별 밭면적 데이터"

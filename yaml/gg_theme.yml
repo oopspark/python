@@ -1,0 +1,124 @@
+basic: &basic
+  background: white
+  grid: false
+  grid_color: lightgray
+
+  font:
+    family: Arial
+    size: 12
+    color: black
+
+  axis:
+    show: true
+    color: black
+    linewidth: 1
+    ticks: true
+
+  title:
+    show: true
+    size: 14
+    weight: bold
+    color: black
+
+  legend:
+    show: true
+    location: best
+    font_size: 10
+
+  marker:
+    size: 6
+    color: blue
+    shape: "o"
+
+  line:
+    width: 2
+    color: blue
+    style: solid
+
+  bar:
+    color: skyblue
+    edge_color: black
+    width: 0.8
+
+
+dark:
+  <<: *basic
+  background: black
+  font:
+    family: Consolas
+    size: 13
+    color: white
+  axis:
+    color: white
+  grid_color: gray
+  title:
+    color: white
+  legend:
+    font_size: 11
+  line:
+    color: lightblue
+  marker:
+    color: lightblue
+
+
+minimal:
+  <<: *basic
+  grid: false
+  axis:
+    show: false
+  title:
+    show: false
+  legend:
+    show: false
+  font:
+    family: Helvetica
+    size: 11
+    color: black
+  line:
+    style: dashed
+    color: gray
+  marker:
+    color: black
+  bar:
+    edge_color: white
+
+
+modern:
+  <<: *basic
+  background: "#f7f7f7"
+  font:
+    family: "Segoe UI"
+    size: 13
+    color: "#333"
+  axis:
+    color: "#666"
+    linewidth: 1.2
+  grid_color: "#ddd"
+  title:
+    size: 16
+    weight: bold
+    color: "#222"
+  bar:
+    color: "#1f77b4"
+  line:
+    color: "#ff7f0e"
+
+
+presentation:
+  <<: *basic
+  font:
+    family: "Tahoma"
+    size: 16
+    color: black
+  title:
+    size: 20
+    weight: bold
+    color: darkblue
+  legend:
+    font_size: 14
+  marker:
+    size: 10
+  line:
+    width: 3
+  bar:
+    width: 0.6
