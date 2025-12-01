@@ -184,7 +184,7 @@ def main():
     # save_df_to_parquet(df, parquet_file)
 
 
-    parquet_folder = "/home/user/GoogleDrive/data"
+    parquet_folder = "/home/user/gdrive/data"
 
     postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"
     sync_parquet_and_postgres(parquet_folder, postgres_uri)
