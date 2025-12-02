@@ -144,9 +144,16 @@ def draw_bar_stack():
             ha="center", va="top",
             fontsize=7, color="#222",
         )
+    fig.text(
+    0.4, 0.15,
+    "출처: FAOSTAT, 2025 데이터 활용",
+    ha="center", va="top",
+    fontsize=7, color="#555"
+    )
+
 
     # ---- 여백 확보 (legend 잘림 방지: PNG 기준) ----
-    fig.subplots_adjust(right=0.7, bottom=0.15)
+    fig.subplots_adjust(right=0.7, bottom=0.3)
     return fig
 
 
