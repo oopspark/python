@@ -167,6 +167,72 @@ def draw_bar_stack(df: pd.DataFrame, x_col: str, y_cols: list):
 
 
 
+# ===================== MULTI LINE CHART =====================
+def draw_line_multi(df: pd.DataFrame, x_col: str, y_cols: list):
+    x = df[x_col].values
+    idx = np.arange(len(x))
+
+    fig, ax = plt.subplots()
+
+    # y 컬럼마다 선 생성
+    for i, col in enumerate(y_cols):
+        color = default_colors[i % len(default_colors)]
+        y = df[col].values
+
+        ax.plot(
+            idx,
+            y,
+            marker="o",
+            markersize=3,
+            color=color,
+            linewidth=1.2,
+            label=col
+        )
+
+        # 각 점 위에 수치 라벨
+        for j, v in enumerate(y):
+            ax.annotate(
+                f"{v:.0f}",
+                (idx[j], v),
+                xytext=(0, 2),
+                textcoords="offset points",
+                ha="center", va="bottom",
+                fontsize=7, color="#222"
+            )
+
+    # ax.set_title("꺾은선 그래프", pad=12, fontweight="bold")
+    # ax.set_xlabel(x_col)
+    # ax.set_ylabel("값")
+    ax.set_xticks(idx)
+    ax.set_xticklabels(x)
+
+    ax.grid(axis="both", linestyle="--", linewidth=0.6, alpha=0.4)
+
+    for spine in ["top", "right"]:
+        ax.spines[spine].set_visible(False)
+
+    # 레전드는 오른쪽에
+    ax.legend(loc="upper left", bbox_to_anchor=(1.0, 1.0), frameon=False)
+
+    # 출처 텍스트
+    fig.text(
+        0.25, 0.12,
+        "출처: FAOSTAT, 2025 데이터 활용",
+        ha="center", va="top",
+        fontsize=7, color="#555"
+    )
+    fig.text(
+        0.6, 0.93,
+        "(단위: $/bushell)",
+        ha="center", va="top",
+        fontsize=7, color="#555"
+    )
+
+    fig.subplots_adjust(right=0.70, bottom=0.22)
+    return fig
+
+
+
 # ===================== SAVE UTILS =====================
 def save_png(fig, filename="chart.png"):
     mpl.use("Agg")
@@ -180,12 +246,25 @@ def save_pgf(fig, filename):
     plt.close(fig)
 
 
+# df = pd.DataFrame({
+#     "Category": ["A","B","C","D"],
+#     "1단계": [23,17,35,29],
+#     "2단계": [12,9,14,10],
+#     "3단계": [5,4,3,6]
+# })
+# fig = draw_bar_stack(df, "Category", ["1단계", "2단계", "3단계"])
+# save_png(fig, "stack.png")
+# # save_pgf(fig, "stack.pgf")
+
+
+
 df = pd.DataFrame({
-    "Category": ["A","B","C","D"],
-    "1단계": [23,17,35,29],
-    "2단계": [12,9,14,10],
-    "3단계": [5,4,3,6]
+    "Year": [2020, 2021, 2022, 2023],
+    "한국": [23, 28, 31, 37],
+    "미국": [40, 45, 47, 49],
+    "일본": [18, 20, 22, 24],
 })
-fig = draw_bar_stack(df, "Category", ["1단계", "2단계", "3단계"])
-save_png(fig, "stack.png")
-# save_pgf(fig, "stack.pgf")
+
+fig = draw_line_multi(df, "Year", ["한국", "미국", "일본"])
+save_png(fig, "line.png")
+# save_pgf(fig, "line.pgf")
