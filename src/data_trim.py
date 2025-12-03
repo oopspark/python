@@ -45,8 +45,9 @@ lf = expand_field_auto(
 )
 df = lf.collect()
 
-df.write_parquet(f"{parquet_temp_folder}/{focus}_expanded.parquet")
-
 
 focus_expanded = f"{focus}_expanded"
+df.write_parquet(f"{parquet_temp_folder}/{focus_expanded}.parquet")
+
+
 
