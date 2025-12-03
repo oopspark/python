@@ -1,25 +1,52 @@
-import data_load_save as dls
+import polars as pl
 
-def main():
+def expand_field_auto(parquet_path: str, target_col: str, sep: str = ",") -> pl.LazyFrame:
+    # ① 전체를 로드하지 않고 지정 컬럼만 Arrow로 스캔
+    lf_col = pl.scan_parquet(parquet_path, columns=[target_col])
 
-    doc_path = "/home/user/문서"
+    # ② 토큰 자동 수집
+    tokens = (
+        lf_col
+        .select(pl.col(target_col).drop_nulls().str.split(sep))
+        .explode(target_col)
+        .select(pl.col(target_col).str.strip())
+        .unique()
+        .collect()
+        .to_series()
+        .to_list()
+    )
 
-    down_path = f"/home/user/다운로드"
+    # ③ 전체 DF lazy load
+    lf = pl.scan_parquet(parquet_path)
+
+    # ④ 불린 확장 컬럼 생성
+    for tok in tokens:
+        lf = lf.with_columns(
+            pl.col(target_col)
+              .cast(str)
+              .str.contains(tok)
+              .fill_null(False)
+              .alias(f"is_{target_col}_{tok}")
+        )
+
+    return lf
 
 
 
-    parquet_path = "/home/user/GoogleDrive/data"
-    csv_path = f"{doc_path}/csv_data"
+focus = "crop_dry_korea_20250215"   # 날짜 포함된 focus
+csv_file_name = "/home/user/다운로드/Production_Crops_Livestock_E_All_Data_(Normalized)"
+parquet_folder = "/home/user/GoogleDrive"
+parquet_temp_folder = f"{parquet_folder}/data/temp"
+parquet_data_folder = f"{parquet_folder}/data"
 
-    focus = "agrifood_elasticity_usa"  # 필요시 다른 키로 변경
+lf = expand_field_auto(
+    parquet_path=f"{parquet_temp_folder}/{focus}.parquet",
+    target_col="country"
+)
+df = lf.collect()
 
-    raw_csv_file = f"{down_path}/raw_data/aaa.csv"
-
-    csv_file = f"{csv_path}/{focus}.csv"
-    parquet_file = f"{parquet_path}/{focus}.parquet"
-
-    postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"
-
+df.write_parquet(f"{parquet_temp_folder}/{focus}_expanded.parquet")
 
 
-    
+focus_expanded = f"{focus}_expanded"
+

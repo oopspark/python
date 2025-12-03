@@ -223,7 +223,7 @@ def draw_line_multi(df: pd.DataFrame, x_col: str, y_cols: list):
     )
     fig.text(
         0.6, 0.93,
-        "(단위: $/bushell)",
+        "(단위: dollar/bushell)",
         ha="center", va="top",
         fontsize=7, color="#555"
     )
@@ -267,4 +267,4 @@ df = pd.DataFrame({
 
 fig = draw_line_multi(df, "Year", ["한국", "미국", "일본"])
 save_png(fig, "line.png")
-# save_pgf(fig, "line.pgf")
+save_pgf(fig, "/home/user/문서/workspace/latex/project/presentation/machine/asset/line.pgf")
