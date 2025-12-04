@@ -61,7 +61,7 @@ for i, col in enumerate(y_cols):
     vals = df[col].values
     ax.bar(idx, vals, bottom=bottom,
            color=colors[i % len(colors)],
-           edgecolor="#444", linewidth=0.5, width=0.5, label=col, zorder=3)
+           edgecolor="#444", linewidth=0.5, width=0.6, label=col, zorder=3)
     stack_values.append(vals.copy())
     bottom += vals
 
