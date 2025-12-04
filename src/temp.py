@@ -1,6 +1,9 @@
-import pandas as pd
 
-file = "/home/user/GoogleDrive/data/parquet/20251203_soybean_procurement_korea.parquet"
+import pandas as pd
+import sys
+
+# file = f"/home/user/GoogleDrive/data/parquet/251204_crop_self_with_feed_korea.parquet"
+file = f"/home/user/gdrive/data/parquet/251204_crop_self_with_feed_korea.parquet"
 
 # ① Parquet 읽기
 df = pd.read_parquet(file)
@@ -11,9 +14,9 @@ for col in columns_to_float:
     df[col] = pd.to_numeric(df[col], errors="coerce")  # 실수 변환 + 실패값 NaN
 
 
-file_modified = "/home/user/GoogleDrive/data/parquet/20251204_soybean_procurement_korea.parquet"
 # ③ 저장 (덮어쓰기)
-df.to_parquet(file_modified, index=False)
+df.to_parquet(file, index=False)
 
 print("🚀 완료:", file)
 print(df.dtypes)
+

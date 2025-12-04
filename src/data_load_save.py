@@ -104,14 +104,14 @@ def sync_parquet_and_postgres(parquet_folder: str, postgres_uri: str):
 #                    MAIN PIPELINE
 # ======================================================
 def main():
-    focus = "crop_dry_korea_20250215"
-    csv_file_name = "/home/user/다운로드/Production_Crops_Livestock_E_All_Data_(Normalized)"
-    # parquet_folder = "/home/user/gdrive/data/parquet"
-    parquet_folder = "/home/user/GoogleDrive/data/parquet"
+    focus = "251204_crop_self_without_feed_korea"
+    csv_file_name = "/home/user/다운로드/식량자급률(사료용_제외)__서류_건체중_기준_20251204160220.csv"
+    parquet_folder = "/home/user/gdrive/data/parquet"
+    # parquet_folder = "/home/user/GoogleDrive/data/parquet"
     postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"
 
     # 예: 필요 시 CSV → Parquet
-    # parquet_file = csv_to_parquet(csv_file=csv_file_name, parquet_folder=parquet_folder, focus=focus)
+    # csv_to_parquet(csv_file=csv_file_name, parquet_folder=parquet_folder, focus=focus)
 
     sync_parquet_and_postgres(parquet_folder=parquet_folder, postgres_uri=postgres_uri)
 
