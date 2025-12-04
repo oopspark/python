@@ -1,0 +1,11 @@
+World
+Asia
+Africa
+India
+United States of America
+Argentina
+Oceania
+Europe
+Americas
+China
+Brazil

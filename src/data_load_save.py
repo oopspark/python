@@ -11,30 +11,60 @@ def detect_encoding(file_path: str) -> str:
         return chardet.detect(f.read())["encoding"]
 
 
-def csv_to_parquet_temp(csv_file: str, parquet_temp_folder: str, focus: str) -> str:
+# ======================================================
+# 🔹 CSV → Parquet 저장
+# ======================================================
+def csv_to_parquet(csv_file: str, parquet_folder: str, focus: str) -> str:
     """
     CSV → Parquet (temp) 변환
     - Parquet 파일명: {focus}_YYYYMMDD_temp.parquet
     - 처리 후 파일 경로 반환
     """
-    from datetime import datetime
-
-    os.makedirs(parquet_temp_folder, exist_ok=True)
-
+    os.makedirs(parquet_folder, exist_ok=True)
     date_str = datetime.now().strftime("%Y%m%d")
-    parquet_file = os.path.join(parquet_temp_folder, f"{focus}_{date_str}_temp.parquet")
+    parquet_file = os.path.join(parquet_folder, f"{focus}_{date_str}_temp.parquet")
 
     encoding = detect_encoding(csv_file)
-    df = pd.read_csv(csv_file, encoding=encoding, engine="python")
-    df = df.convert_dtypes()
+    df = pd.read_csv(csv_file, encoding=encoding, engine="python").convert_dtypes()
     df.to_parquet(parquet_file, index=False)
 
     print(f"🚀 CSV → Parquet 변환 완료: {parquet_file}")
     print(pd.read_parquet(parquet_file).head(1))
+    return parquet_file
 
 
+# ======================================================
+# 🔹 Parquet → DataFrame 로딩
+# ======================================================
+def load_parquet_as_df(parquet_file: str) -> pd.DataFrame:
+    """
+    Parquet 파일을 DataFrame으로 로딩
+    """
+    if not os.path.exists(parquet_file):
+        raise FileNotFoundError(f"❌ Parquet 파일 없음: {parquet_file}")
+
+    df = pd.read_parquet(parquet_file)
+    df = df.convert_dtypes()
+    print(f"📥 Loaded DF from Parquet → {parquet_file} ({len(df)} rows)")
+    return df
 
 
+# ======================================================
+# 🔹 DataFrame → Parquet 저장
+# ======================================================
+def save_df_to_parquet(df: pd.DataFrame, parquet_file: str):
+    """
+    DataFrame을 Parquet으로 저장
+    """
+    os.makedirs(os.path.dirname(parquet_file), exist_ok=True)
+    df.to_parquet(parquet_file, index=False)
+    print(f"💾 Saved DF → {parquet_file} ({len(df)} rows)")
+    print(df.head(1))
+
+
+# ======================================================
+# 🔹 Parquet ↔ PostgreSQL 동기화 (mirror sync)
+# ======================================================
 def sync_parquet_and_postgres(parquet_folder: str, postgres_uri: str):
     """
     parquet 폴더를 기준으로 PostgreSQL과 동기화 (mirror sync)
@@ -69,52 +99,21 @@ def sync_parquet_and_postgres(parquet_folder: str, postgres_uri: str):
     print(f"🟢 Created: {to_create}")
     print(f"🔴 Dropped: {to_drop}")
 
-def move_temp_to_final(parquet_temp_folder: str, parquet_data_folder: str, focus: str) -> str:
-    """
-    temp 폴더에 있는 parquet 파일 중 focus에 완전히 매칭되는 파일을
-    data 폴더로 이동 (파일명에서 _temp 제거)
-    - 예: focus = "crop_20250112"
-      crop_20250112_temp.parquet → crop_20250112.parquet
-    """
-    os.makedirs(parquet_data_folder, exist_ok=True)
-
-    target_name = f"{focus}_temp.parquet"
-    source_file = os.path.join(parquet_temp_folder, target_name)
-
-    if not os.path.exists(source_file):
-        raise FileNotFoundError(f"⚠ 해당 파일을 찾을 수 없습니다: {source_file}")
-
-    dest_file = os.path.join(parquet_data_folder, f"{focus}.parquet")
-
-    os.rename(source_file, dest_file)
-    print(f"📦 parquet 이동 완료 → {dest_file}")
-
-    return dest_file
-
-
 
 # ======================================================
 #                    MAIN PIPELINE
 # ======================================================
-
 def main():
-    focus = "crop_dry_korea_20250215"   # 날짜 포함된 focus
+    focus = "crop_dry_korea_20250215"
     csv_file_name = "/home/user/다운로드/Production_Crops_Livestock_E_All_Data_(Normalized)"
-    parquet_folder = "/home/user/gdrive"
-    parquet_temp_folder = f"{parquet_folder}/data/temp"
-    parquet_data_folder = f"{parquet_folder}/data/parquet"
-
+    # parquet_folder = "/home/user/gdrive/data/parquet"
+    parquet_folder = "/home/user/GoogleDrive/data/parquet"
     postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"
 
-    # csv_to_parquet_temp(csv_file_name, parquet_temp_folder, focus)
+    # 예: 필요 시 CSV → Parquet
+    # parquet_file = csv_to_parquet(csv_file=csv_file_name, parquet_folder=parquet_folder, focus=focus)
 
-    # final_parquet_file = move_temp_to_final(
-    #     parquet_temp_folder, parquet_data_folder, focus
-    # )
-
-    # print("\n📌 최종 Parquet 저장 위치:", final_parquet_file)
-
-    sync_parquet_and_postgres(parquet_folder = parquet_data_folder, postgres_uri=postgres_uri)
+    sync_parquet_and_postgres(parquet_folder=parquet_folder, postgres_uri=postgres_uri)
 
 
 if __name__ == "__main__":
