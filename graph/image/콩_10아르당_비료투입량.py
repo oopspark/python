@@ -30,7 +30,7 @@ colors = ["#F4A261","#264653", "#2A9D8F", "#E9C46A",  "#E76F51"]
 
 ### 데이터 입력
 
-csv_file = "/home/user/문서/workspace/python/graph/data/콩_10아르당소득.csv"
+csv_file = "/home/user/문서/workspace/python/graph/data/콩_10아르당_비료투입량.csv"
 df = pd.read_csv(csv_file, encoding="utf-8").convert_dtypes()
 
 
@@ -119,9 +119,9 @@ save_path = f"/home/user/문서/workspace/python/graph/image"
 sample_file = f"/home/user/문서/workspace/python/chart.png"
 
 # sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # PNG 저장
@@ -132,6 +132,6 @@ plt.close(fig)
 # ----- OR -----
 
 # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{save_path}/{pic_name}.pgf")
-# plt.close(fig)
+mpl.use("pgf")
+fig.savefig(f"{save_path}/{pic_name}.pgf")
+plt.close(fig)

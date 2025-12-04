@@ -53,6 +53,11 @@ idx = np.arange(len(x))
 
 y_cols = ["직접생산비②", "토지용역비③", "자본용역비⑤"]
 
+legend_labels = {
+    "직접생산비②": "직접 생산비",
+    "토지용역비③": "토지 용역비",
+    "자본용역비⑤": "자본 용역비"
+}
 
 ### 그래프 작성
 
@@ -64,7 +69,7 @@ for i, col in enumerate(y_cols):
     vals = df[col].values
     ax.bar(idx, vals, bottom=bottom,
            color=colors[i % len(colors)],
-           edgecolor="#444", width = 0.7 ,label=col, zorder=3)
+           edgecolor="#444", width = 0.7 ,label=legend_labels[col], zorder=3)
     stack_values.append(vals.copy())
     bottom += vals
 
@@ -149,8 +154,8 @@ ax.legend(loc="upper left", bbox_to_anchor=(0.98, 1.0), frameon=False)
 ### 출처 텍스트
 
 fig.text(
-    0.2, 0,
-    "출처: FAOSTAT, 2025 데이터 활용",
+    0.25, 0,
+    "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
     fontsize=7, color="#555"
 )
@@ -159,7 +164,7 @@ fig.text(
 ### 단위 텍스트
 fig.text(
     0.83, 0.93,
-    "(단위: Dollar/Bushell)",
+    "(단위: 원/10a)",
     ha="center", va="top",
     fontsize=7, color="#555"
 )
@@ -190,20 +195,20 @@ save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/chart.png"
 
-# sample
+# # # sample
 # mpl.use("Agg")
 # fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
 # plt.close(fig)
 
 
-# PNG 저장
-mpl.use("Agg")
-fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# # PNG 저장
+# mpl.use("Agg")
+# fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 # ----- OR -----
 
-# # PGF 저장
+# PGF 저장
 # mpl.use("pgf")
 # fig.savefig(f"{save_path}/{pic_name}.pgf")
 # plt.close(fig)
