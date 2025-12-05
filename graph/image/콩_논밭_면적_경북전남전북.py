@@ -13,10 +13,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 스타일
 pt = 1/72
 mpl.rcParams.update({
-    "figure.figsize": (650 * pt, 260 * pt),
-    "font.size": 9, "axes.titlesize": 11, "axes.labelsize": 9,
-    "xtick.labelsize": 8, "ytick.labelsize": 8,
-    "legend.fontsize": 8, "lines.linewidth": 0.75,
+    "figure.figsize": (400 * pt, 150 * pt),
+    "font.size": 5, "axes.titlesize": 5, "axes.labelsize": 5,
+    "xtick.labelsize": 5, "ytick.labelsize": 5,
+    "legend.fontsize": 5, "lines.linewidth": 0.75,
 })
 
 ### ⬇️ 지역별 대표 색 (논·밭은 같은 계열)
@@ -61,7 +61,7 @@ categories = ["밭", "논"]
 fig, ax = plt.subplots()
 clusters = len(years)
 bars_per_cluster = len(regions)
-bar_width = 0.75 / bars_per_cluster
+bar_width = 0.7 / bars_per_cluster
 cluster_x = np.arange(clusters)
 
 ### 그래프: 지역별 색, 구분은 같은 계열+투명도 차이
@@ -102,7 +102,7 @@ for r_i, region in enumerate(regions):
                 ax.annotate(f"{v:,.0f}",
                             (bar_x[idx], bottoms[idx] - 500),
                             ha="center", va="center",
-                            fontsize=6, color="#FFFFFF", zorder=5)
+                            fontsize=5, color="#FFFFFF", zorder=5)
 
     # 🔥 여기서 단 한 번 지역 합계 표시
     for idx, total in enumerate(bottoms):
@@ -111,7 +111,7 @@ for r_i, region in enumerate(regions):
             (bar_x[idx], total),
             xytext=(0, 3), textcoords="offset points",
             ha="center", va="bottom",
-            fontsize=6, fontweight="bold",
+            fontsize=5, fontweight="bold",
             color="#000000",
             zorder=6
         )
@@ -152,31 +152,35 @@ ax.legend(bbox_to_anchor=(1.0, 1.0), frameon=False)
 ### 출처 텍스트
 
 fig.text(
-    0.23, 0.03,
+    0.23, 0.1,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=5, color="#555"
 )
 
 
 ### 단위 텍스트
 fig.text(
-    0.83, 0.93,
+    0.75, 0.95,
     "(단위: ha)",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=5, color="#555"
 )
 
 
+fig.subplots_adjust(right=0.80, bottom=0.2)
 
 
 
 ### 저장
 
+
 pic_name = "콩_논밭_면적_경북전남전북"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
+
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
 # # sample
 # mpl.use("Agg")
@@ -189,8 +193,11 @@ sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 # fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
 # plt.close(fig)
 
+# ----- OR -----
 
-# # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{save_path}/{pic_name}.pgf")
-# plt.close(fig)
+# latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
+# PGF 저장
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)

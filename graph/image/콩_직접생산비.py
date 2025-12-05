@@ -16,7 +16,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (400 * pt, 150 * pt),
+    "figure.figsize": (500 * pt, 200 * pt),
     "font.size": 5, "axes.titlesize": 11, "axes.labelsize": 5,
     "xtick.labelsize": 5, "ytick.labelsize": 5,
     "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
@@ -37,7 +37,7 @@ colors = [
 
 ### 데이터 입력
 
-csv_file = f"/home/user/문서/workspace/python/graph/data/논콩_지역별_면적.csv"
+csv_file = f"/home/user/문서/workspace/python/graph/data/콩_직접생산비.csv"
 df = pd.read_csv(csv_file, encoding="utf-8").convert_dtypes()
 
 
@@ -71,8 +71,8 @@ bottom = np.zeros(len(x))
 stack_values = []
 
 ### ▶ 중요 항목 / 레전드 항목 / 수치표기 항목 정의
-value_label_cols = ["전북"]                 # 수치표시할 2개
-legend_cols = ["경북", "전북", "전남", "충북"]   # 레전드에 개별 표시할 4개
+value_label_cols = ["노동비", "위탁영농비"]                 # 수치표시할 2개
+legend_cols = ["노동비", "위탁영농비", "비료비", "농구비", "종묘비", "기타비용"]   # 레전드에 개별 표시할 4개
 other_color = "#727272"                                     # 기타 색상
 
 handles = []
@@ -80,8 +80,7 @@ legend_labels = []
 other_handle = None
 
 for i, col in enumerate(y_cols):
-    vals = pd.to_numeric(df[col], errors="coerce").fillna(0).values
-
+    vals = df[col].values
 
     # 색상: legend_cols는 팔레트, 그 외는 회색
     if col in legend_cols and legend_cols.index(col) < len(colors):
@@ -121,7 +120,7 @@ for col, vals in zip(y_cols, stack_values):
         if col in value_label_cols:
             ax.annotate(
                 f"{v:,.0f}",
-                (idx[i], cumulative[i] - 1_000),
+                (idx[i], cumulative[i] - 18_000),
                 ha="center", va="center",
                 fontsize=5, color="#FFFFFF"
             )
@@ -143,27 +142,20 @@ ax.set_xticklabels(tick_labels)
 
 ### y축 텍스트
 
-y_min, y_max = 0, 20_000
-step = 2_000
+y_min, y_max = 0, 700_000
+step = 100_000
 
 ticks = np.arange(y_min, y_max + step, step)
 ax.set_yticks(ticks)
 
-
 labels = []
 for t in ticks:
-    labels.append(f"{t:,}")   # ← 쉼표만 추가
+    if t == 0:
+        labels.append("0")
+    else:
+        labels.append(f"{t/10000:.0f}만")
 
 ax.set_yticklabels(labels)
-
-# labels = []
-# for t in ticks:
-#     if t == 0:
-#         labels.append("0")
-#     else:
-#         labels.append(f"{t/10000:.0f}만")
-
-# ax.set_yticklabels(labels)
 
 
 ### 그리드
@@ -184,7 +176,7 @@ ax.legend(handles, legend_labels, loc="upper left", bbox_to_anchor=(0.98, 1.0), 
 
 ### 출처 텍스트
 fig.text(
-    0.25, 0.1,
+    0.25, 0.12,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
     fontsize=5, color="#555"
@@ -193,7 +185,7 @@ fig.text(
 ### 단위 텍스트
 fig.text(
     0.65, 0.93,
-    "(단위: ha)",
+    "(단위: %)",
     ha="center", va="top",
     fontsize=5, color="#555"
 )
@@ -217,17 +209,17 @@ fig.subplots_adjust(right=0.70, bottom=0.2)
 # )
 
 
-pic_name = "논콩_지역별_면적"
+pic_name = "콩_직접생산비"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 
 latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
-# sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# # sample
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # # PNG 저장

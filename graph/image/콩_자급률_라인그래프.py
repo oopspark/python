@@ -13,10 +13,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 디자인
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (600 * pt, 200 * pt),
-    "font.size": 9, "axes.titlesize": 11, "axes.labelsize": 9,
-    "xtick.labelsize": 8, "ytick.labelsize": 8,
-    "legend.fontsize": 8, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
+    "figure.figsize": (400 * pt, 200 * pt),
+    "font.size": 5, "axes.titlesize": 11, "axes.labelsize": 5,
+    "xtick.labelsize": 5, "ytick.labelsize": 5,
+    "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
     "xtick.major.width": 0.75, "ytick.major.width": 0.75,
     "xtick.major.size": 1, "ytick.major.size": 1,
 })
@@ -59,7 +59,7 @@ for i, col in enumerate(y_cols):
                 xytext=(0, 2),
                 textcoords="offset points",
                 ha="center", va="bottom",
-                fontsize=7, color="#222"
+                fontsize=5, color="#222"
             )
 
 ### x축 표시
@@ -80,23 +80,26 @@ ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
 ### 레전드
-ax.legend(bbox_to_anchor=(1.0, 1.0), frameon=False)
+ax.legend(bbox_to_anchor=(1.0, 1.0), fontsize=5, frameon=False)
 
 ### 출처 텍스트
 fig.text(
-    0.4, 0,
+    0.4, 0.1,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성, 2024년 데이터의 출처는 농촌진흥청 보도자료임",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=5, color="#555"
 )
 
 ### 단위 텍스트
 fig.text(
-    0.83, 0.93,
+    0.75, 0.93,
     "(단위: %)",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=5, color="#555"
 )
+
+
+fig.subplots_adjust(right=0.80, bottom=0.2)
 
 ### 저장
 
@@ -105,6 +108,8 @@ pic_name = "콩_자급률_라인그래프"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
+
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
 # # sample
 # mpl.use("Agg")
@@ -119,7 +124,9 @@ sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 
 # ----- OR -----
 
-# # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{save_path}/{pic_name}.pgf")
-# plt.close(fig)
+# latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
+# PGF 저장
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)

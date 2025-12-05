@@ -13,7 +13,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 디자인 일반
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (600 * pt, 200 * pt),
+    "figure.figsize": (400 * pt, 200 * pt),
     "font.size": 9,
     "axes.titlesize": 11,
     "axes.labelsize": 9,
@@ -68,8 +68,8 @@ ax.spines["right"].set_visible(False)
 
 ### 출처
 fig.text(
-    0.25, 0,
-    "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
+    0.35, 0,
+    "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성, 2025년도 수치는 정부 발표 목표치임",
     ha="center", va="top",
     fontsize=7, color="#555"
 )
@@ -77,15 +77,17 @@ fig.text(
 ### 단위
 fig.text(
     0.83, 0.93,
-    "(단위: 원/10a)",
+    "(단위: 1,000톤)",
     ha="center", va="top",
     fontsize=7, color="#555"
 )
+
 
 ### 저장
 pic_name = "콩_비축량"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
+
 
 # # sample
 # mpl.use("Agg")

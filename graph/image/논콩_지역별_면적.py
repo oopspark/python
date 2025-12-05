@@ -72,7 +72,7 @@ stack_values = []
 
 ### ▶ 중요 항목 / 레전드 항목 / 수치표기 항목 정의
 value_label_cols = ["전북"]                 # 수치표시할 2개
-legend_cols = ["경북", "전북", "전남", "충북"]   # 레전드에 개별 표시할 4개
+legend_cols = ["경북", "전북", "전남", "충남"]   # 레전드에 개별 표시할 4개
 other_color = "#727272"                                     # 기타 색상
 
 handles = []
@@ -224,10 +224,10 @@ sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 
 latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
-# sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# # sample
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # # PNG 저장
@@ -239,7 +239,7 @@ plt.close(fig)
 
 # latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
-# # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{latex_path}/{pic_name}.pgf")
-# plt.close(fig)
+# PGF 저장
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)

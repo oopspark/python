@@ -20,9 +20,7 @@ def csv_to_parquet(csv_file: str, parquet_folder: str, focus: str) -> str:
     - Parquet 파일명: {focus}_YYYYMMDD_temp.parquet
     - 처리 후 파일 경로 반환
     """
-    os.makedirs(parquet_folder, exist_ok=True)
-    date_str = datetime.now().strftime("%Y%m%d")
-    parquet_file = os.path.join(parquet_folder, f"{focus}_{date_str}_temp.parquet")
+    parquet_file = os.path.join(parquet_folder, f"{focus}.parquet")
 
     encoding = detect_encoding(csv_file)
     df = pd.read_csv(csv_file, encoding=encoding, engine="python").convert_dtypes()
@@ -119,10 +117,10 @@ def sync_parquet_and_postgres(parquet_folder: str, postgres_uri: str):
 #                    MAIN PIPELINE
 # ======================================================
 def main():
-    focus = "251204_crop_self_without_feed_korea"
-    csv_file_name = "/home/user/다운로드/식량자급률(사료용_제외)__서류_건체중_기준_20251204160220.csv"
-    # parquet_folder = "/home/user/gdrive/data/parquet"
-    parquet_folder = "/home/user/GoogleDrive/data/parquet"
+    focus = "251205_soybean_equilibrium_korea_faostat"
+    csv_file_name = "/home/user/다운로드/FAOSTAT_data_en_12-5-2025(1).csv"
+    parquet_folder = "/home/user/gdrive/data/parquet"
+    # parquet_folder = "/home/user/GoogleDrive/data/parquet"
     postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"
 
     # 예: 필요 시 CSV → Parquet

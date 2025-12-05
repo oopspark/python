@@ -1,22 +1,32 @@
-
 import pandas as pd
-import sys
+from data_load_save import *
 
-# file = f"/home/user/GoogleDrive/data/parquet/251204_crop_self_with_feed_korea.parquet"
-file = f"/home/user/gdrive/data/parquet/251204_crop_self_with_feed_korea.parquet"
+df = pd.read_csv("/home/user/문서/workspace/python/graph/data/콩_수급균형.csv")
 
-# ① Parquet 읽기
-df = pd.read_parquet(file)
+df = df.sort_values("Year").reset_index(drop=True)
 
-# ② 형식 변환할 컬럼 지정 (예: value, amount, price 등)
-columns_to_float = ["데이터"]   # ← 변환할 컬럼명을 리스트로 넣어
-for col in columns_to_float:
-    df[col] = pd.to_numeric(df[col], errors="coerce")  # 실수 변환 + 실패값 NaN
+# 새 변수 생성
+df["Prod_minus_Supply"] = df["Production"] - df["Domestic supply quantity"]
+df["Export_minus_Import"] = df["Export quantity"] - df["Import quantity"]
 
+# 원하는 4개 컬럼 선택
+df_new = df[["Year", "Prod_minus_Supply", "Export_minus_Import", "Stock Variation"]].copy()
 
-# ③ 저장 (덮어쓰기)
-df.to_parquet(file, index=False)
+# 차분 + 첫행 제거
+df_diff = df_new.copy()
+df_diff[["Prod_minus_Supply", "Export_minus_Import", "Stock Variation"]] = \
+    df_new[["Prod_minus_Supply", "Export_minus_Import", "Stock Variation"]].diff()
 
-print("🚀 완료:", file)
-print(df.dtypes)
+# 첫 행 제거
+df_diff = df_diff.iloc[1:].reset_index(drop=True)
 
+# 🔥 정수 변환
+df_diff = df_diff.astype({
+    "Year": int,
+    "Prod_minus_Supply": int,
+    "Export_minus_Import": int,
+    "Stock Variation": int
+})
+
+print(df_diff)
+save_df_to_csv(df_diff, "/home/user/문서/workspace/python/graph/data/콩_수급균형_diff.csv")

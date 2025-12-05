@@ -13,7 +13,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 디자인
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (400 * pt, 150 * pt),
+    "figure.figsize": (400 * pt, 200 * pt),
     "font.size": 5, "axes.titlesize": 11, "axes.labelsize": 5,
     "xtick.labelsize": 5, "ytick.labelsize": 5,
     "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
@@ -80,7 +80,7 @@ ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
 ### 레전드
-ax.legend(bbox_to_anchor=(1.0, 1.0), frameon=False)
+ax.legend(bbox_to_anchor=(1.15, 1.0), frameon=False)
 
 ### 출처 텍스트
 fig.text(
@@ -92,24 +92,28 @@ fig.text(
 
 ### 단위 텍스트
 fig.text(
-    0.83, 0.93,
+    0.75, 0.93,
     "(단위: %)",
     ha="center", va="top",
     fontsize=5, color="#555"
 )
 
-### 저장
 
+fig.subplots_adjust(right=0.80, bottom=0.2)
+
+### 저장
 
 pic_name = "식량_자급률_라인그래프"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 
-# sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
+# # sample
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # # PNG 저장
@@ -119,7 +123,9 @@ plt.close(fig)
 
 # ----- OR -----
 
-# # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{save_path}/{pic_name}.pgf")
-# plt.close(fig)
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
+# PGF 저장
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)

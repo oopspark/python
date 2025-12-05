@@ -30,7 +30,7 @@ colors = ["#3A316D","#264653", "#2A9D8F", "#E9C46A",  "#E76F51"]
 
 ### 데이터 입력
 
-csv_file = "/home/user/문서/workspace/python/graph/data/콩_면적_전국.csv"
+csv_file = "/home/user/문서/workspace/python/graph/data/콩_생산량_전국.csv"
 df = pd.read_csv(csv_file, encoding="utf-8").convert_dtypes()
 
 
@@ -82,8 +82,8 @@ ax.set_xticklabels(tick_labels)
 # step = 20_000  # 원하는 간격
 # ax.set_yticks(np.arange(y_min, y_max + step, step))
 
-y_min, y_max = 0, 100_000
-step = 10_000
+y_min, y_max = 0, 180_000
+step = 20_000
 
 ticks = np.arange(y_min, y_max + step, step)
 ax.set_yticks(ticks)
@@ -121,7 +121,7 @@ fig.text(
 ### 단위 텍스트
 fig.text(
     0.65, 0.93,
-    "(단위: ha)",
+    "(단위: 톤)",
     ha="center", va="top",
     fontsize=5, color="#555"
 )
@@ -129,17 +129,17 @@ fig.text(
 
 # print(df)
 
-pic_name = "콩_면적_전국"
+pic_name = "콩_생산량_전국"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 
 latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
-# sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# # sample
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # # PNG 저장
@@ -149,9 +149,9 @@ plt.close(fig)
 
 # ----- OR -----
 
-# latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
-# # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{latex_path}/{pic_name}.pgf")
-# plt.close(fig)
+# PGF 저장
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)
