@@ -61,6 +61,21 @@ def save_df_to_parquet(df: pd.DataFrame, parquet_file: str):
     print(f"💾 Saved DF → {parquet_file} ({len(df)} rows)")
     print(df.head(1))
 
+# ======================================================
+# 🔹 DataFrame → CSV 저장
+# ======================================================
+def save_df_to_csv(df: pd.DataFrame, csv_file: str, encoding: str = "utf-8-sig"):
+    """
+    DataFrame을 CSV로 저장
+    """
+    os.makedirs(os.path.dirname(csv_file), exist_ok=True)
+    df.to_csv(csv_file, index=False, encoding=encoding)
+    print(f"💾 Saved DF → {csv_file} ({len(df)} rows)")
+    print(df.head(1))
+    return csv_file
+
+
+
 
 # ======================================================
 # 🔹 Parquet ↔ PostgreSQL 동기화 (mirror sync)
@@ -106,14 +121,14 @@ def sync_parquet_and_postgres(parquet_folder: str, postgres_uri: str):
 def main():
     focus = "251204_crop_self_without_feed_korea"
     csv_file_name = "/home/user/다운로드/식량자급률(사료용_제외)__서류_건체중_기준_20251204160220.csv"
-    parquet_folder = "/home/user/gdrive/data/parquet"
-    # parquet_folder = "/home/user/GoogleDrive/data/parquet"
+    # parquet_folder = "/home/user/gdrive/data/parquet"
+    parquet_folder = "/home/user/GoogleDrive/data/parquet"
     postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"
 
     # 예: 필요 시 CSV → Parquet
     # csv_to_parquet(csv_file=csv_file_name, parquet_folder=parquet_folder, focus=focus)
 
-    sync_parquet_and_postgres(parquet_folder=parquet_folder, postgres_uri=postgres_uri)
+    # sync_parquet_and_postgres(parquet_folder=parquet_folder, postgres_uri=postgres_uri)
 
 
 if __name__ == "__main__":

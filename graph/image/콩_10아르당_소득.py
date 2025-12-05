@@ -121,7 +121,7 @@ fig.text(
 
 ### 저장
 
-pic_name = "콩_10아르당_비료투입량"
+pic_name = "콩_10아르당_소득"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/chart.png"
@@ -132,14 +132,14 @@ fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
 plt.close(fig)
 
 
-# # PNG 저장
-# mpl.use("Agg")
-# fig.savefig("chart.png", dpi=300, bbox_inches="tight")
-# plt.close(fig)
+# PNG 저장
+mpl.use("Agg")
+fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
+plt.close(fig)
 
-# ----- OR -----
+# ----- and -----
 
 # PGF 저장
-# mpl.use("pgf")
-# fig.savefig("/path/to/chart.pgf")
-# plt.close(fig)
+mpl.use("pgf")
+fig.savefig(f"{save_path}/{pic_name}.pgf")
+plt.close(fig)
