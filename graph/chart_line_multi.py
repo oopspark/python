@@ -13,10 +13,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 디자인
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (400 * pt, 150 * pt),
-    "font.size": 5, "axes.titlesize": 11, "axes.labelsize": 5,
-    "xtick.labelsize": 5, "ytick.labelsize": 5,
-    "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
+    "figure.figsize": (450 * pt, 230 * pt),
+    "font.size": 9, "axes.titlesize": 11, "axes.labelsize": 9,
+    "xtick.labelsize": 9, "ytick.labelsize": 9,
+    "legend.fontsize": 9, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
     "xtick.major.width": 0.75, "ytick.major.width": 0.75,
     "xtick.major.size": 1, "ytick.major.size": 1,
 })
@@ -27,7 +27,7 @@ colors = [
 ]
 
 ### 데이터 입력
-csv_file = f"/home/user/문서/workspace/python/graph/data/식량_자급률.csv"
+csv_file = f"/home/user/문서/workspace/python/graph/data/주요작물소득_비율.csv"
 df = pd.read_csv(csv_file, encoding="utf-8").convert_dtypes()
 
 ### 컬럼 자동 인식
@@ -50,17 +50,17 @@ for i, col in enumerate(y_cols):
             linewidth=1.2,
             label=col)
 
-    # 데이터 라벨
-    for j, v in enumerate(y):
-        if pd.notna(v):
-            ax.annotate(
-                f"{v:.1f}",
-                (idx[j], v),
-                xytext=(0, 2),
-                textcoords="offset points",
-                ha="center", va="bottom",
-                fontsize=5, color="#222"
-            )
+    # # 데이터 라벨
+    # for j, v in enumerate(y):
+    #     if pd.notna(v):
+    #         ax.annotate(
+    #             f"{v:.1f}",
+    #             (idx[j], v),
+    #             xytext=(0, 2),
+    #             textcoords="offset points",
+    #             ha="center", va="bottom",
+    #             fontsize=5, color="#222"
+    #         )
 
 ### x축 표시
 ax.set_xticks(idx)
@@ -68,9 +68,9 @@ ax.set_xticklabels(df["시점"].dt.strftime("%Y"))
 
 ### y축 자동 설정
 y_data = df[y_cols].astype(float).values
-y_min = 0
+y_min = 40
 y_max = np.nanmax(y_data) * 1.15   # 15% 여유
-step = 5
+step = 20
 ax.set_yticks(np.arange(y_min, y_max + step, step))
 
 
@@ -84,27 +84,33 @@ ax.legend(bbox_to_anchor=(1.0, 1.0), frameon=False)
 
 ### 출처 텍스트
 fig.text(
-    0.28, 0.1,
+    0.32, 0.1,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
-    fontsize=5, color="#555"
+    fontsize=9, color="#555"
 )
 
-### 단위 텍스트
-fig.text(
-    0.83, 0.93,
-    "(단위: %)",
-    ha="center", va="top",
-    fontsize=5, color="#555"
-)
+# ### 단위 텍스트
+# fig.text(
+#     0.75, 0.93,
+#     "(단위: %)",
+#     ha="center", va="top",
+#     fontsize=9, color="#555"
+# )
+
+fig.subplots_adjust(right=0.8, bottom=0.2)
+
 
 ### 저장
 
 
-pic_name = "식량_자급률_라인그래프"
+pic_name = "주요작목소득비율"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
+
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
 
 # sample
 mpl.use("Agg")

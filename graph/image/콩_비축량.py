@@ -13,12 +13,12 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 디자인 일반
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (400 * pt, 200 * pt),
+    "figure.figsize": (440 * pt, 230 * pt),
     "font.size": 9,
-    "axes.titlesize": 11,
+    "axes.titlesize": 9,
     "axes.labelsize": 9,
-    "xtick.labelsize": 8,
-    "ytick.labelsize": 8,
+    "xtick.labelsize": 9,
+    "ytick.labelsize": 9,
 })
 
 colors = ["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]
@@ -51,7 +51,17 @@ for i, date in enumerate(df["시점"]):
     if i == 0 or date.year != df["시점"][i - 1].year:
         tick_idx.append(i)
         tick_labels.append(date.strftime("%Y"))
-
+    # 데이터 라벨
+    for j, v in enumerate(y):
+        if pd.notna(v):
+            ax.annotate(
+                f"{v:.1f}",
+                (idx[j], v),
+                xytext=(0, 4),
+                textcoords="offset points",
+                ha="center", va="bottom",
+                fontsize=7, color="#222"
+            )
 ax.set_xticks(tick_idx)
 ax.set_xticklabels(tick_labels)
 
@@ -68,25 +78,27 @@ ax.spines["right"].set_visible(False)
 
 ### 출처
 fig.text(
-    0.35, 0,
-    "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성, 2025년도 수치는 정부 발표 목표치임",
+    0.5, 0.1,
+    "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성, 2025년도 수치는 정부 발표 목표치",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
 ### 단위
 fig.text(
-    0.83, 0.93,
+    0.93, 0.93,
     "(단위: 1,000톤)",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
+fig.subplots_adjust(right=1, bottom=0.2)
 
 ### 저장
 pic_name = "콩_비축량"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
 
 # # sample
@@ -95,7 +107,7 @@ sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 # plt.close(fig)
 
 
-# # PNG 저장
+# # # PNG 저장
 # mpl.use("Agg")
 # fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
 # plt.close(fig)
@@ -104,6 +116,6 @@ sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 
 # PGF 저장
 mpl.use("pgf")
-fig.savefig(f"{save_path}/{pic_name}.pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
 plt.close(fig)
 

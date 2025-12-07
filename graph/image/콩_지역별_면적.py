@@ -16,10 +16,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (500 * pt, 200 * pt),
-    "font.size": 5, "axes.titlesize": 11, "axes.labelsize": 5,
-    "xtick.labelsize": 5, "ytick.labelsize": 5,
-    "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
+    "figure.figsize": (450 * pt, 230 * pt),
+    "font.size": 9, "axes.titlesize": 11, "axes.labelsize": 9,
+    "xtick.labelsize": 9, "ytick.labelsize": 9,
+    "legend.fontsize": 9, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
     "xtick.major.width": 0.75, "ytick.major.width": 0.75,
     "xtick.major.size": 1, "ytick.major.size": 1,
 })
@@ -138,10 +138,15 @@ for i, date in enumerate(df["시점"]):
         tick_labels.append(date.strftime("%Y"))
 
 ax.set_xticks(tick_idx)
-ax.set_xticklabels(tick_labels)
+ax.set_xticklabels(tick_labels, rotation = 45)
 
 
 ### y축 텍스트
+
+
+# y_min, y_max = 0, 180_000
+# step = 20_000  # 원하는 간격
+# ax.set_yticks(np.arange(y_min, y_max + step, step))
 
 y_min, y_max = 0, 100_000
 step = 10_000
@@ -159,12 +164,33 @@ for t in ticks:
 ax.set_yticklabels(labels)
 
 
-### 그리드
+### 그리드 
 
-ax.grid(axis="y", linestyle="--", linewidth=0.6, alpha=0.4, zorder=0)
+
+ax.grid(axis="y", linestyle="--", linewidth=0.6, alpha=0.45, zorder=0)
 ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
+
+
+fig.subplots_adjust(right=0.8, bottom=0.2)
+
+
+### 출처 텍스트
+fig.text(
+    0.33, 0.05,
+    "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
+    ha="center", va="top",
+    fontsize=9, color="#555"
+)
+
+### 단위 텍스트
+fig.text(
+    0.75, 0.95,
+    "(단위: ha)",
+    ha="center", va="top",
+    fontsize=9, color="#555"
+)
 
 ### 레전드 — 4개 항목 + 기타 1개
 
@@ -173,26 +199,6 @@ if other_handle is not None:
     legend_labels.append("기타")
 
 ax.legend(handles, legend_labels, loc="upper left", bbox_to_anchor=(0.98, 1.0), frameon=False)
-
-
-### 출처 텍스트
-fig.text(
-    0.25, 0.12,
-    "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
-    ha="center", va="top",
-    fontsize=5, color="#555"
-)
-
-### 단위 텍스트
-fig.text(
-    0.65, 0.93,
-    "(단위: ha)",
-    ha="center", va="top",
-    fontsize=5, color="#555"
-)
-
-
-fig.subplots_adjust(right=0.70, bottom=0.2)
 
 
 ### 경계 확인용 텍스트
@@ -224,15 +230,15 @@ latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/ass
 
 
 # # PNG 저장
-# mpl.use("Agg")
-# fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
-# plt.close(fig)
+mpl.use("Agg")
+fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
+plt.close(fig)
 
 # ----- OR -----
 
 # latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
 # PGF 저장
-mpl.use("pgf")
-fig.savefig(f"{latex_path}/{pic_name}.pgf")
-plt.close(fig)
+# mpl.use("pgf")
+# fig.savefig(f"{latex_path}/{pic_name}.pgf")
+# plt.close(fig)

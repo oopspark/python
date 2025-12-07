@@ -13,10 +13,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 디자인
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (400 * pt, 200 * pt),
-    "font.size": 5, "axes.titlesize": 11, "axes.labelsize": 5,
-    "xtick.labelsize": 5, "ytick.labelsize": 5,
-    "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
+    "figure.figsize": (420 * pt, 230 * pt),
+    "font.size": 9, "axes.titlesize": 9, "axes.labelsize": 9,
+    "xtick.labelsize": 9, "ytick.labelsize": 9,
+    "legend.fontsize": 9, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
     "xtick.major.width": 0.75, "ytick.major.width": 0.75,
     "xtick.major.size": 1, "ytick.major.size": 1,
 })
@@ -56,15 +56,15 @@ for i, col in enumerate(y_cols):
             ax.annotate(
                 f"{v:.1f}",
                 (idx[j], v),
-                xytext=(0, 2),
+                xytext=(0, 4),
                 textcoords="offset points",
                 ha="center", va="bottom",
-                fontsize=5, color="#222"
+                fontsize=7, color="#222"
             )
 
 ### x축 표시
 ax.set_xticks(idx)
-ax.set_xticklabels(df["시점"].dt.strftime("%Y"))
+ax.set_xticklabels(df["시점"].dt.strftime("%Y"), rotation = 45)
 
 ### y축 자동 설정
 y_data = df[y_cols].astype(float).values
@@ -80,14 +80,14 @@ ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
 ### 레전드
-ax.legend(bbox_to_anchor=(1.15, 1.0), frameon=False)
+ax.legend(bbox_to_anchor=(1.0, 1.0), frameon=False)
 
 ### 출처 텍스트
 fig.text(
-    0.28, 0.1,
+    0.35, 0.05,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
-    fontsize=5, color="#555"
+    fontsize=9, color="#555"
 )
 
 ### 단위 텍스트
@@ -95,7 +95,7 @@ fig.text(
     0.75, 0.93,
     "(단위: %)",
     ha="center", va="top",
-    fontsize=5, color="#555"
+    fontsize=9, color="#555"
 )
 
 

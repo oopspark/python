@@ -16,10 +16,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (500 * pt, 200 * pt),
-    "font.size": 5, "axes.titlesize": 11, "axes.labelsize": 5,
-    "xtick.labelsize": 5, "ytick.labelsize": 5,
-    "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
+    "figure.figsize": (450 * pt, 230 * pt),
+    "font.size": 9, "axes.titlesize": 11, "axes.labelsize": 9,
+    "xtick.labelsize": 9, "ytick.labelsize": 9,
+    "legend.fontsize": 9, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
     "xtick.major.width": 0.75, "ytick.major.width": 0.75,
     "xtick.major.size": 1, "ytick.major.size": 1,
 })
@@ -120,7 +120,7 @@ for col, vals in zip(y_cols, stack_values):
         if col in value_label_cols:
             ax.annotate(
                 f"{v:,.0f}",
-                (idx[i], cumulative[i] - 18_000),
+                (idx[i], cumulative[i] - 20_000),
                 ha="center", va="center",
                 fontsize=5, color="#FFFFFF"
             )
@@ -137,12 +137,12 @@ for i, date in enumerate(df["시점"]):
         tick_labels.append(date.strftime("%Y"))
 
 ax.set_xticks(tick_idx)
-ax.set_xticklabels(tick_labels)
+ax.set_xticklabels(tick_labels, rotation = 45)
 
 
 ### y축 텍스트
 
-y_min, y_max = 0, 700_000
+y_min, y_max = 0, 900_000
 step = 100_000
 
 ticks = np.arange(y_min, y_max + step, step)
@@ -171,27 +171,30 @@ if other_handle is not None:
     handles.append(other_handle)
     legend_labels.append("기타")
 
-ax.legend(handles, legend_labels, loc="upper left", bbox_to_anchor=(0.98, 1.0), frameon=False)
+ax.legend(handles, legend_labels, loc="upper left", bbox_to_anchor=(1, 1.0), frameon=False)
 
 
 ### 출처 텍스트
+
 fig.text(
-    0.25, 0.12,
+    0.32, 0.05,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
-    fontsize=5, color="#555"
+    fontsize=9, color="#555"
 )
+
 
 ### 단위 텍스트
 fig.text(
-    0.65, 0.93,
-    "(단위: %)",
+    0.75, 0.93,
+    "(단위: 원/10a)",
     ha="center", va="top",
-    fontsize=5, color="#555"
+    fontsize=9, color="#555"
 )
 
 
-fig.subplots_adjust(right=0.70, bottom=0.2)
+
+fig.subplots_adjust(right=0.8, bottom=0.2)
 
 
 ### 경계 확인용 텍스트
@@ -231,7 +234,7 @@ latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/ass
 
 # latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 
-# # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{latex_path}/{pic_name}.pgf")
-# plt.close(fig)
+# PGF 저장
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)

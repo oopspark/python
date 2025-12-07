@@ -16,7 +16,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (500 * pt, 200 * pt),
+    "figure.figsize": (400 * pt, 200 * pt),
     "font.size": 5, "axes.titlesize": 5, "axes.labelsize": 5,
     "xtick.labelsize": 5, "ytick.labelsize": 5,
     "legend.fontsize": 5, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
@@ -30,7 +30,7 @@ colors = ["#3A316D","#264653", "#2A9D8F", "#E9C46A",  "#E76F51"]
 
 ### 데이터 입력
 
-csv_file = "/home/user/문서/workspace/python/graph/data/콩_면적_전국.csv"
+csv_file = "/home/user/문서/workspace/python/graph/data/직접생산비_합계.csv"
 df = pd.read_csv(csv_file, encoding="utf-8").convert_dtypes()
 
 
@@ -82,8 +82,8 @@ ax.set_xticklabels(tick_labels)
 # step = 20_000  # 원하는 간격
 # ax.set_yticks(np.arange(y_min, y_max + step, step))
 
-y_min, y_max = 0, 100_000
-step = 10_000
+y_min, y_max = 0, 700_000
+step = 100_000
 
 ticks = np.arange(y_min, y_max + step, step)
 ax.set_yticks(ticks)
@@ -107,7 +107,7 @@ ax.spines["right"].set_visible(False)
 
 
 
-fig.subplots_adjust(right=0.70, bottom=0.2)
+fig.subplots_adjust(right=0.9, bottom=0.2)
 
 
 ### 출처 텍스트
@@ -121,15 +121,16 @@ fig.text(
 ### 단위 텍스트
 fig.text(
     0.65, 0.93,
-    "(단위: ha)",
+    "(단위: %)",
     ha="center", va="top",
     fontsize=5, color="#555"
 )
 
 
+
 # print(df)
 
-pic_name = "콩_면적_전국"
+pic_name = "직접생산비_합계"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/temp/chart.png"

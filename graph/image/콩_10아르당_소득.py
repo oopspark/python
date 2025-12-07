@@ -17,12 +17,12 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (600 * pt, 200 * pt),
+    "figure.figsize": (450 * pt, 230 * pt),
     "font.size": 9, 
     "axes.titlesize": 11, 
     "axes.labelsize": 9,
-    "xtick.labelsize": 8, 
-    "ytick.labelsize": 8,
+    "xtick.labelsize": 9, 
+    "ytick.labelsize": 9,
 })
 
 colors = ["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]
@@ -67,9 +67,19 @@ for i, date in enumerate(df["시점"]):
     if i == 0 or date.year != df["시점"][i-1].year:
         tick_idx.append(i)
         tick_labels.append(date.strftime("%Y"))   # "%Y"만 쓰면 연도만 표시
-
+    # 데이터 라벨
+    for j, v in enumerate(y):
+        if pd.notna(v):
+            ax.annotate(
+                f"{v/10_000:,.1f}만",
+                (idx[j], v),
+                xytext=(0, 4),
+                textcoords="offset points",
+                ha="center", va="bottom",
+                fontsize=7, color="#222"
+            )
 ax.set_xticks(tick_idx)
-ax.set_xticklabels(tick_labels)
+ax.set_xticklabels(tick_labels, rotation = 45)
 
 
 ### y축 텍스트
@@ -100,23 +110,24 @@ ax.spines["right"].set_visible(False)
 
 
 
+fig.subplots_adjust(right=0.9, bottom=0.2)
 
 ### 출처 텍스트
 
 fig.text(
-    0.25, 0,
+    0.32, 0.05,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
 
 ### 단위 텍스트
 fig.text(
-    0.83, 0.93,
+    0.85, 0.93,
     "(단위: 원/10a)",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
 ### 저장
@@ -125,21 +136,23 @@ pic_name = "콩_10아르당_소득"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/chart.png"
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
 
 # sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # PNG 저장
-mpl.use("Agg")
-fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# mpl.use("Agg")
+# fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 # ----- and -----
 
 # PGF 저장
 mpl.use("pgf")
-fig.savefig(f"{save_path}/{pic_name}.pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
 plt.close(fig)

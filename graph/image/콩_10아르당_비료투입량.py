@@ -16,16 +16,16 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (500 * pt, 200 * pt),
+    "figure.figsize": (450 * pt, 230 * pt),
     "font.size": 9, "axes.titlesize": 11, "axes.labelsize": 9,
-    "xtick.labelsize": 8, "ytick.labelsize": 8,
-    "legend.fontsize": 8, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
+    "xtick.labelsize": 9, "ytick.labelsize": 9,
+    "legend.fontsize": 9, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
     "xtick.major.width": 0.75, "ytick.major.width": 0.75,
     "xtick.major.size": 1, "ytick.major.size": 1,
 })
 
 
-colors = ["#F4A261","#264653", "#2A9D8F", "#E9C46A",  "#E76F51"]
+colors = ["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]
 
 
 ### 데이터 입력
@@ -72,7 +72,7 @@ for i, date in enumerate(df["시점"]):
         tick_labels.append(date.strftime("%Y"))   # "%Y"만 쓰면 연도만 표시
 
 ax.set_xticks(tick_idx)
-ax.set_xticklabels(tick_labels)
+ax.set_xticklabels(tick_labels, rotation = 45)
 
 
 ### y축 텍스트
@@ -91,15 +91,16 @@ ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
 
+fig.subplots_adjust(right=0.9, bottom=0.2)
 
 
 ### 출처 텍스트
 
 fig.text(
-    0.27, 0,
+    0.35, 0.05,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
 
@@ -108,7 +109,7 @@ fig.text(
     0.85, 0.95,
     "(단위: kg/10a)",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
 # print(df)
@@ -117,6 +118,9 @@ pic_name = "콩_10아르당_비료투입량"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/chart.png"
+
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
 
 # sample
 # mpl.use("Agg")
@@ -133,5 +137,5 @@ sample_file = f"/home/user/문서/workspace/python/chart.png"
 
 # PGF 저장
 mpl.use("pgf")
-fig.savefig(f"{save_path}/{pic_name}.pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
 plt.close(fig)

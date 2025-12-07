@@ -16,10 +16,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (600 * pt, 200 * pt),
-    "font.size": 9, "axes.titlesize": 11, "axes.labelsize": 9,
-    "xtick.labelsize": 8, "ytick.labelsize": 8,
-    "legend.fontsize": 8, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
+    "figure.figsize": (450 * pt, 230 * pt),
+    "font.size": 9, "axes.titlesize": 9, "axes.labelsize": 9,
+    "xtick.labelsize": 9, "ytick.labelsize": 9,
+    "legend.fontsize": 9, "lines.linewidth": 0.75, "axes.linewidth": 0.75,
     "xtick.major.width": 0.75, "ytick.major.width": 0.75,
     "xtick.major.size": 1, "ytick.major.size": 1,
 })
@@ -80,7 +80,7 @@ for i, col in enumerate(y_cols):
 for i, total in enumerate(bottom):
     ax.annotate(f"{total:,.0f}", (idx[i], total),
                 xytext=(0, 2), textcoords="offset points",
-                ha="center", va="bottom", fontsize=8)
+                ha="center", va="bottom", fontsize=5)
 
 
 # part labels
@@ -95,7 +95,7 @@ for col, vals in zip(y_cols, stack_values):
                 f"{v:,.0f}",
                 (idx[i], cumulative[i] - 30_000),
                 ha="center", va="center",
-                fontsize=6, color="#FFFFFF"
+                fontsize=5, color="#FFFFFF"
             )
 
 
@@ -115,7 +115,7 @@ for i, date in enumerate(df["시점"]):
 
 
 ax.set_xticks(tick_idx)
-ax.set_xticklabels(tick_labels)
+ax.set_xticklabels(tick_labels, rotation = 45)
 
 
 ### y축 텍스트
@@ -148,30 +148,30 @@ ax.spines["right"].set_visible(False)
 
 ### 레전드
 
-ax.legend(loc="upper left", bbox_to_anchor=(0.98, 1.0), frameon=False)
+ax.legend(loc="upper left", bbox_to_anchor=(1, 1.0), frameon=False)
 
 
 ### 출처 텍스트
 
 fig.text(
-    0.25, 0,
+    0.32, 0.05,
     "출처: 국가농식품통계서비스(KASS) 자료 기반 저자 작성",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
 
 ### 단위 텍스트
 fig.text(
-    0.83, 0.93,
+    0.75, 0.93,
     "(단위: 원/10a)",
     ha="center", va="top",
-    fontsize=7, color="#555"
+    fontsize=9, color="#555"
 )
 
 
 
-# fig.subplots_adjust(right=0.70, bottom=0.1)
+fig.subplots_adjust(right=0.8, bottom=0.2)
 
 
 ### 경계 확인용 텍스트
@@ -194,6 +194,8 @@ pic_name = "콩_10아르당_생산비"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
 sample_file = f"/home/user/문서/workspace/python/chart.png"
+latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
+
 
 # # # sample
 # mpl.use("Agg")
@@ -209,6 +211,6 @@ sample_file = f"/home/user/문서/workspace/python/chart.png"
 # ----- OR -----
 
 # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{save_path}/{pic_name}.pgf")
-# plt.close(fig)
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)
