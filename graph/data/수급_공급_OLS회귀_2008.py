@@ -46,6 +46,12 @@ a3 = sm.OLS(df_diff["ΔStock_Variation"], X).fit()
 
 print(a1.params, a2.params, a3.params)
 
+
+print(a1.summary())
+print(a2.summary())
+print(a3.summary())
+
+
 # from linearmodels.system import SUR
 
 # formulas = {

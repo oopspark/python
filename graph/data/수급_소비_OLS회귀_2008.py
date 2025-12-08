@@ -1,8 +1,8 @@
 import pandas as pd
 from data_load_save import *
 
-# df = pd.read_csv("/home/user/문서/workspace/python/graph/data/수급_1970_1989.csv")
-df = pd.read_csv("/home/user/문서/workspace/python/graph/data/수급_1990_2008.csv")
+df = pd.read_csv("/home/user/문서/workspace/python/graph/data/수급_1970_1989.csv")
+# df = pd.read_csv("/home/user/문서/workspace/python/graph/data/수급_1990_2008.csv")
 
 df = df.sort_values("Year").reset_index(drop=True)
 
@@ -44,7 +44,14 @@ a1 = sm.OLS(df_diff["ΔProduction"], X).fit()
 a2 = sm.OLS(df_diff["ΔImport_minus_Export"], X).fit()
 a3 = sm.OLS(df_diff["neg_ΔStock_Variation"], X).fit()
 
-print(a1.params, a2.params, a3.params)
+# print(a1.params, a2.params, a3.params)
+
+
+
+print(a1.summary())
+print(a2.summary())
+print(a3.summary())
+
 
 # from linearmodels.system import SUR
 

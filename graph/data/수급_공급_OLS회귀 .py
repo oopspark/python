@@ -32,6 +32,9 @@ print(df_diff)
 # save_df_to_csv(df_diff, "/home/user/문서/workspace/python/graph/data/콩_수급_2010_modified.csv")
 
 
+
+
+
 import statsmodels.api as sm
 
 X = df_diff["ΔProduction"]
@@ -42,7 +45,34 @@ a1 = sm.OLS(df_diff["ΔDomestic_supply_quantity"], X).fit()
 a2 = sm.OLS(df_diff["ΔExport_minus_Import"], X).fit()
 a3 = sm.OLS(df_diff["ΔStock_Variation"], X).fit()
 
-print(a1.params, a2.params, a3.params)
+# print(a1.params, a2.params, a3.params)
+
+
+print(a1.summary())
+print(a2.summary())
+print(a3.summary())
+
+
+
+
+
+
+
+
+
+
+
+# import statsmodels.api as sm
+
+# X = df_diff["ΔProduction"]
+# X = sm.add_constant(X)  # 상수항 (e는 잔차)
+
+
+# a1 = sm.OLS(df_diff["ΔDomestic_supply_quantity"], X).fit()
+# a2 = sm.OLS(df_diff["ΔExport_minus_Import"], X).fit()
+# a3 = sm.OLS(df_diff["ΔStock_Variation"], X).fit()
+
+# print(a1.params, a2.params, a3.params)
 
 # from linearmodels.system import SUR
 

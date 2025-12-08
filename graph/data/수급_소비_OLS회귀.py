@@ -43,7 +43,48 @@ a1 = sm.OLS(df_diff["ΔProduction"], X).fit()
 a2 = sm.OLS(df_diff["ΔImport_minus_Export"], X).fit()
 a3 = sm.OLS(df_diff["neg_ΔStock_Variation"], X).fit()
 
-print(a1.params, a2.params, a3.params)
+# print(a1.params, a2.params, a3.params)
+
+
+print(a1.summary())
+print(a2.summary())
+print(a3.summary())
+
+
+
+
+
+
+
+# from linearmodels.system import SUR
+
+# formulas = {
+#     "eq1": "ΔImport_minus_Export ~ ΔDomestic_supply_quantity",
+#     "eq2": "ΔProduction ~ ΔDomestic_supply_quantity",
+#     "eq3": "neg_ΔStock_Variation ~ ΔDomestic_supply_quantity",
+# }
+
+# model = SUR.from_formula(formulas, data=df_diff)
+
+# # ① 제약 없는 SUR (robust)
+# res = model.fit(cov_type="robust")
+# print(res.summary)
+
+# # ② 제약 있는 SUR (수급균형 조건)
+# restriction = (
+#     "eq1_ΔDomestic_supply_quantity + "
+#     "eq2_ΔDomestic_supply_quantity + "
+#     "eq3_ΔDomestic_supply_quantity = 1"
+# )
+# res_restricted = model.fit(restrictions=restriction, cov_type="robust")   # ← 수정
+# print(res_restricted.summary)
+
+# # ③ 모델 비교
+# print(res.compare(res_restricted))
+
+
+
+
 
 # from linearmodels.system import SUR
 
