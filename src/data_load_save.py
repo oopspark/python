@@ -113,12 +113,15 @@ def sync_parquet_and_postgres(parquet_folder: str, postgres_uri: str):
     print(f"🔴 Dropped: {to_drop}")
 
 
+
+
+
 # ======================================================
 #                    MAIN PIPELINE
 # ======================================================
 def main():
-    focus = "251207_soybean_balance_korea_1970_faostat"
-    csv_file_name = "/home/user/다운로드/251207_soybean_balance_1970_faostat.csv"
+    focus = "faostat_item"
+    csv_file_name = "/home/user/다운로드/faostat_item.csv"
     # parquet_folder = "/home/user/gdrive/data/parquet"
     parquet_folder = "/home/user/GoogleDrive/data/parquet"
     postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"

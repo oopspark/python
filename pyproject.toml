@@ -9,7 +9,9 @@ readme = "README.md"
 packages = [{ include = "graph", from = "src" }]
 
 [tool.poetry.dependencies]
-python = ">=3.12,<4.0"
+python = ">=3.12,<3.14.1"
+networkx = "^3.6.1"
+python-louvain = "^0.16"
 matplotlib = "^3.10.3"
 pandas = "2.2.2"
 seaborn = "^0.13.2"
