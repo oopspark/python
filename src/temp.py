@@ -1,19 +1,20 @@
 import pandas as pd
-from data_load_save import *
+from pathlib import Path
 
-df1 = pd.read_csv("/home/user/문서/workspace/python/graph/data/콩_10아르당소득_비율.csv")
-df2 = pd.read_csv("/home/user/문서/workspace/python/graph/data/총수입_비율.csv")
+DATA_DIR = Path("/home/user/문서/workspace/python/graph/data/temp/a")   # CSV들이 있는 폴더
+OUTPUT = "powerbi_all_years.csv"
 
-df_merged = pd.merge(df1, df2, on="시점", how="outer")
+# csv 파일 전부 읽기 (연도순 정렬)
+csv_files = sorted(DATA_DIR.glob("*.csv"))
 
+dfs = []
+for f in csv_files:
+    df = pd.read_csv(f)
+    dfs.append(df)
 
-print(df_merged)
+# 세로로 이어 붙이기
+df_all = pd.concat(dfs, ignore_index=True)
 
-df_merged = df_merged.rename(columns={
-    "지수(=100×비율)_x": "소득 지수",
-    "지수(=100×비율)_y": "총수입 지수"
-})
+df_all.to_csv(OUTPUT, index=False)
 
-
-
-save_df_to_csv(df_merged, "/home/user/문서/workspace/python/graph/data/소득_총수입_비율.csv")
+print(f"✅ {len(csv_files)} files merged → {OUTPUT}")
