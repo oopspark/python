@@ -1,6 +1,7 @@
 [tool.poetry]
 name = "graph"
 version = "0.1.0"
+package-mode = false
 description = "my workspace"
 authors = ["Park Jimin <parkjimin788@gmail.com>"]
 readme = "README.md"
@@ -35,6 +36,7 @@ polars = "^1.35.2"
 statsmodels = "^0.14.6"
 linearmodels = "^7.0"
 playwright = "^1.57.0"
+dask = {extras = ["complete"], version = "^2025.12.0"}
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
