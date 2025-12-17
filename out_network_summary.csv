@@ -1,0 +1,2 @@
+Year,Nodes,Edges,Graph Density,Average Path Length (giant),Network Diameter (giant),Average Degree,Average Weighted Degree,Average Clustering Coefficient,Modularity
+2022,147,1000,0.0466,2.3164,5,13.6054,1934744.7411,0.5071,0.0935

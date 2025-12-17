@@ -27,7 +27,7 @@ region_colors = {
 }
 
 ### CSV 읽기
-csv_file = "/home/user/문서/workspace/python/graph/data/콩_논밭_면적_경북전남전북.csv"
+csv_file = "/home/user/문서/workspace/python/graph/data/한국_주요_콩수입국.csv"
 wide = pd.read_csv(csv_file).convert_dtypes()
 
 ### wide → long 변환
@@ -50,7 +50,7 @@ df = pd.DataFrame(records)
 ### 그래프 준비
 years = sorted(df["연도"].unique())
 # regions = sorted(df["지역"].unique())
-regions = ["전남", "경북", "전북"]   # ← 원하는 순서로
+# regions = ["전남", "경북", "전북"]   # ← 원하는 순서로
 
 
 # categories = sorted(df["구분"].unique())  # 논/밭

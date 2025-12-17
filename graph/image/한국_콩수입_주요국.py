@@ -201,17 +201,18 @@ ax.legend(
     handles,
     legend_labels,
     loc="upper center",
-    bbox_to_anchor=(0.5, -0.25),   # 그래프 아래
-    ncol=min(n_legend, 3),         # 한 줄 최대 3개 (넘치면 자동 줄바꿈)
+    bbox_to_anchor=(0.5, -0.1),   # 그래프 아래
+    ncol=min(n_legend, 4),         # 한 줄 최대 3개 (넘치면 자동 줄바꿈)
     frameon=False,
     columnspacing=1.0,
     handletextpad=0.4
 )
 
 
+
 ### 출처 텍스트
 fig.text(
-    0.15, 0.1,
+    0.15, 0.05,
     "출처: FAOSTAT",
     ha="center", va="top",
     fontsize=5, color="#555"
@@ -220,7 +221,7 @@ fig.text(
 ### 단위 텍스트
 fig.text(
     0.65, 0.93,
-    "(단위: 1000톤)",
+    "(단위: 1,000톤)",
     ha="center", va="top",
     fontsize=5, color="#555"
 )
@@ -236,10 +237,10 @@ sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
 
 latex_path = f"/home/user/문서/workspace/latex/project/paper/agri_develope/asset"
 
-# sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# # sample
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # # PNG 저장
@@ -250,7 +251,7 @@ plt.close(fig)
 # ----- OR -----
 
 
-# # PGF 저장
-# mpl.use("pgf")
-# fig.savefig(f"{latex_path}/{pic_name}.pgf")
-# plt.close(fig)
+# PGF 저장
+mpl.use("pgf")
+fig.savefig(f"{latex_path}/{pic_name}.pgf")
+plt.close(fig)

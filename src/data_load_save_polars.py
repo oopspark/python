@@ -143,8 +143,12 @@ def preview_parquet_head(parquet_path: str, n: int = 5):
 # ======================================================
 def main():
 
-    parquet_heavy_folder = "/home/user/gdrive/data/parquet_heavy"
-    parquet_light_folder = "/home/user/gdrive/data/parquet"
+    parquet_heavy_folder = "/home/user/GoogleDrive/data/parquet_heavy"
+    parquet_light_folder = "/home/user/GoogleDrive/data/parquet"
+    # parquet_heavy_folder = "/home/user/gdrive/data/parquet_heavy"
+    # parquet_light_folder = "/home/user/gdrive/data/parquet"
+
+
 
     focus_parquet = "251214_trade_matrix_faostat"
 
@@ -152,7 +156,8 @@ def main():
     # 필터 조건
     # ----------------------------------
     filter_data = {
-        "Reporter Countries": "Republic of Korea",
+        "Year": 2022,
+        # "Reporter Countries": "Republic of Korea",
         "Element": "Import quantity",
         "Item": "Soya beans",
     }
@@ -170,7 +175,7 @@ def main():
         "Value": "value",
     }
 
-    output_name = "251214_trade_faostat_soybeans_import_korea"
+    output_name = "251214_trade_faostat_soybeans_import_2022"
 
     # ----------------------------------
     # 실행

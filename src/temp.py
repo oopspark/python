@@ -1,20 +1,19 @@
 import pandas as pd
-from pathlib import Path
+import csv   # ← 이거 반드시 필요
 
-DATA_DIR = Path("/home/user/문서/workspace/python/graph/data/temp/a")   # CSV들이 있는 폴더
-OUTPUT = "powerbi_all_years.csv"
+df = pd.read_csv(
+    "/home/user/문서/workspace/python/src/out_hhi_compare_major_importers.csv"
+)
 
-# csv 파일 전부 읽기 (연도순 정렬)
-csv_files = sorted(DATA_DIR.glob("*.csv"))
+df["top_partners"] = (
+    df["top_partners"]
+    .astype(str)
+    .str.replace("%", "", regex=False)
+    .str.strip()
+)
 
-dfs = []
-for f in csv_files:
-    df = pd.read_csv(f)
-    dfs.append(df)
-
-# 세로로 이어 붙이기
-df_all = pd.concat(dfs, ignore_index=True)
-
-df_all.to_csv(OUTPUT, index=False)
-
-print(f"✅ {len(csv_files)} files merged → {OUTPUT}")
+df.to_csv(
+    "output_no_percent.csv",
+    index=False,
+    quoting=csv.QUOTE_ALL
+)
