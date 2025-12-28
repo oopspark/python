@@ -1,0 +1,1694 @@
+country,year,month,value
+Egypt,2015,Feb,623.2
+Egypt,2015,Mar,816.6
+Egypt,2015,Apr,909.0
+Egypt,2015,May,879.7
+Egypt,2015,Jun,801.0
+Egypt,2015,Jul,895.9
+Egypt,2015,Aug,898.4
+Egypt,2015,Sep,787.6
+Egypt,2015,Oct,893.5
+Egypt,2015,Nov,546.6
+Egypt,2015,Dec,427.6
+Egypt,2016,Jan,350.8
+Egypt,2016,Feb,337.9
+Egypt,2016,Mar,428.6
+Egypt,2016,Apr,412.8
+Egypt,2016,May,420.2
+Egypt,2016,Jun,316.3
+Egypt,2016,Jul,516.6
+Egypt,2016,Aug,492.8
+Egypt,2016,Sep,462.0
+Egypt,2016,Oct,494.1
+Egypt,2016,Nov,488.4
+Egypt,2016,Dec,537.2
+Egypt,2017,Jan,529.8
+Egypt,2017,Feb,529.1
+Egypt,2017,Mar,642.1
+Egypt,2017,Apr,703.2
+Egypt,2017,May,563.5
+Egypt,2017,Jun,522.6
+Egypt,2017,Jul,771.6
+Egypt,2017,Aug,809.9
+Egypt,2017,Sep,720.9
+Egypt,2017,Oct,816.0
+Egypt,2017,Nov,766.4
+Egypt,2017,Dec,781.3
+Egypt,2018,Jan,701.3
+Egypt,2018,Feb,719.1
+Egypt,2018,Mar,929.3
+Egypt,2018,Apr,973.0
+Egypt,2018,May,807.0
+Egypt,2018,Jun,843.4
+Egypt,2018,Jul,1090.0
+Egypt,2018,Aug,1083.0
+Egypt,2018,Sep,982.0
+Egypt,2018,Oct,1065.0
+Egypt,2018,Nov,981.6
+Egypt,2018,Dec,1021.0
+Egypt,2019,Jan,850.1
+Egypt,2019,Feb,877.7
+Egypt,2019,Mar,1087.0
+Egypt,2019,Apr,1197.0
+Egypt,2019,May,920.3
+Egypt,2019,Jun,1073.0
+Egypt,2019,Jul,1216.0
+Egypt,2019,Aug,1208.0
+Egypt,2019,Sep,1102.0
+Egypt,2019,Oct,1208.0
+Egypt,2019,Nov,1083.0
+Egypt,2019,Dec,1053.0
+Egypt,2020,Jan,933.9
+Egypt,2020,Feb,930.8
+Egypt,2020,Mar,387.8
+Egypt,2020,Apr,0.6
+Egypt,2020,May,1.8
+Egypt,2020,Jun,3.8
+Egypt,2020,Jul,86.6
+Egypt,2020,Aug,219.2
+Egypt,2020,Sep,211.6
+Egypt,2020,Oct,294.1
+Egypt,2020,Nov,264.1
+Egypt,2020,Dec,284.2
+Egypt,2021,Jan,262.3
+Egypt,2021,Feb,299.1
+Egypt,2021,Mar,475.2
+Egypt,2021,Apr,522.8
+Egypt,2021,May,506.4
+Egypt,2021,Jun,560.9
+Egypt,2021,Jul,699.4
+Egypt,2021,Aug,734.7
+Egypt,2021,Sep,793.4
+Egypt,2021,Oct,1110.0
+Egypt,2021,Nov,1079.0
+Egypt,2021,Dec,924.3
+Egypt,2022,Jan,730.0
+Egypt,2022,Feb,709.0
+Egypt,2022,Mar,767.0
+Egypt,2022,Apr,839.0
+Egypt,2022,May,919.0
+Egypt,2022,Jun,922.0
+Egypt,2022,Jul,1163.0
+Egypt,2022,Aug,1194.0
+Egypt,2022,Sep,1048.0
+Egypt,2022,Oct,1245.0
+Egypt,2022,Nov,1047.0
+Egypt,2022,Dec,1081.0
+Egypt,2023,Jan,937.0
+Egypt,2023,Feb,1001.0
+Egypt,2023,Mar,1216.0
+Egypt,2023,Apr,1368.0
+Egypt,2023,May,1344.0
+Egypt,2023,Jun,1196.0
+Egypt,2023,Jul,1418.0
+Egypt,2023,Aug,1451.0
+Egypt,2023,Sep,1325.0
+Egypt,2023,Oct,1368.0
+Egypt,2023,Nov,1152.0
+Egypt,2023,Dec,1129.0
+Egypt,2024,Jan,977.0
+Egypt,2024,Feb,1112.0
+Egypt,2024,Mar,1170.0
+Egypt,2024,Apr,1351.0
+Egypt,2024,May,1246.0
+Egypt,2024,Jun,1229.0
+Egypt,2024,Jul,1483.0
+Egypt,2024,Aug,1460.0
+Egypt,2024,Sep,1342.0
+Egypt,2024,Oct,1527.0
+Egypt,2024,Nov,1428.0
+Egypt,2024,Dec,1456.0
+Egypt,2025,Jan,1271.0
+Egypt,2025,Feb,1300.0
+Egypt,2025,Mar,1374.0
+Egypt,2025,Apr,1749.0
+Egypt,2025,May,1484.0
+Egypt,2025,Jun,1500.0
+Egypt,2025,Jul,1750.0
+Egypt,2025,Aug,1753.0
+Egypt,2025,Sep,1605.0
+El Salvador,2015,Feb,106.6
+El Salvador,2015,Mar,103.6
+El Salvador,2015,Apr,114.8
+El Salvador,2015,May,122.8
+El Salvador,2015,Jun,126.0
+El Salvador,2015,Jul,124.8
+El Salvador,2015,Aug,129.2
+El Salvador,2015,Sep,94.7
+El Salvador,2015,Oct,90.8
+El Salvador,2015,Nov,118.9
+El Salvador,2015,Dec,164.2
+El Salvador,2016,Jan,108.2
+El Salvador,2016,Feb,109.9
+El Salvador,2016,Mar,110.9
+El Salvador,2016,Apr,107.4
+El Salvador,2016,May,116.0
+El Salvador,2016,Jun,125.6
+El Salvador,2016,Jul,131.6
+El Salvador,2016,Aug,133.9
+El Salvador,2016,Sep,92.9
+El Salvador,2016,Oct,102.9
+El Salvador,2016,Nov,127.7
+El Salvador,2016,Dec,166.7
+El Salvador,2017,Jan,123.0
+El Salvador,2017,Feb,103.2
+El Salvador,2017,Mar,113.6
+El Salvador,2017,Apr,127.7
+El Salvador,2017,May,114.1
+El Salvador,2017,Jun,136.1
+El Salvador,2017,Jul,147.3
+El Salvador,2017,Aug,147.9
+El Salvador,2017,Sep,103.2
+El Salvador,2017,Oct,112.9
+El Salvador,2017,Nov,135.7
+El Salvador,2017,Dec,191.4
+El Salvador,2018,Jan,126.3
+El Salvador,2018,Feb,115.9
+El Salvador,2018,Mar,142.9
+El Salvador,2018,Apr,124.4
+El Salvador,2018,May,121.5
+El Salvador,2018,Jun,153.0
+El Salvador,2018,Jul,166.8
+El Salvador,2018,Aug,172.8
+El Salvador,2018,Sep,114.7
+El Salvador,2018,Oct,118.1
+El Salvador,2018,Nov,143.1
+El Salvador,2018,Dec,177.9
+El Salvador,2019,Jan,142.3
+El Salvador,2019,Feb,118.8
+El Salvador,2019,Mar,143.5
+El Salvador,2019,Apr,152.7
+El Salvador,2019,May,115.8
+El Salvador,2019,Jun,150.5
+El Salvador,2019,Jul,188.7
+El Salvador,2019,Aug,162.6
+El Salvador,2019,Sep,119.1
+El Salvador,2019,Oct,132.2
+El Salvador,2019,Nov,149.2
+El Salvador,2019,Dec,190.1
+El Salvador,2020,Jan,154.9
+El Salvador,2020,Feb,135.2
+El Salvador,2020,Mar,50.0
+El Salvador,2020,Apr,0.0
+El Salvador,2020,May,0.0
+El Salvador,2020,Jun,0.0
+El Salvador,2020,Jul,0.0
+El Salvador,2020,Aug,0.0
+El Salvador,2020,Sep,7.9
+El Salvador,2020,Oct,46.8
+El Salvador,2020,Nov,57.3
+El Salvador,2020,Dec,96.6
+El Salvador,2021,Jan,52.9
+El Salvador,2021,Feb,48.7
+El Salvador,2021,Mar,68.3
+El Salvador,2021,Apr,73.0
+El Salvador,2021,May,88.0
+El Salvador,2021,Jun,113.9
+El Salvador,2021,Jul,134.0
+El Salvador,2021,Aug,109.5
+El Salvador,2021,Sep,96.8
+El Salvador,2021,Oct,118.1
+El Salvador,2021,Nov,117.1
+El Salvador,2021,Dec,198.8
+El Salvador,2022,Jan,115.2
+El Salvador,2022,Feb,124.1
+El Salvador,2022,Mar,138.9
+El Salvador,2022,Apr,151.3
+El Salvador,2022,May,139.4
+El Salvador,2022,Jun,157.8
+El Salvador,2022,Jul,192.8
+El Salvador,2022,Aug,164.9
+El Salvador,2022,Sep,135.7
+El Salvador,2022,Oct,170.7
+El Salvador,2022,Nov,173.4
+El Salvador,2022,Dec,227.1
+El Salvador,2023,Jan,176.2
+El Salvador,2023,Feb,153.9
+El Salvador,2023,Mar,181.1
+El Salvador,2023,Apr,189.9
+El Salvador,2023,May,168.7
+El Salvador,2023,Jun,205.1
+El Salvador,2023,Jul,257.2
+El Salvador,2023,Aug,224.8
+El Salvador,2023,Sep,194.3
+El Salvador,2023,Oct,199.5
+El Salvador,2023,Nov,230.3
+El Salvador,2023,Dec,298.2
+El Salvador,2024,Jan,250.9
+El Salvador,2024,Feb,229.9
+El Salvador,2024,Mar,287.4
+El Salvador,2024,Apr,254.7
+El Salvador,2024,May,243.6
+El Salvador,2024,Jun,276.9
+El Salvador,2024,Jul,289.8
+El Salvador,2024,Aug,267.4
+El Salvador,2024,Sep,214.5
+El Salvador,2024,Oct,249.0
+El Salvador,2024,Nov,268.0
+El Salvador,2024,Dec,355.0
+El Salvador,2025,Jan,290.0
+El Salvador,2025,Feb,231.8
+El Salvador,2025,Mar,260.0
+El Salvador,2025,Apr,286.1
+El Salvador,2025,May,245.6
+El Salvador,2025,Jun,281.6
+El Salvador,2025,Jul,314.7
+El Salvador,2025,Aug,286.3
+El Salvador,2025,Sep,233.6
+Estonia,2015,Feb,92.5
+Estonia,2015,Mar,105.9
+Estonia,2015,Apr,132.7
+Estonia,2015,May,183.0
+Estonia,2015,Jun,210.5
+Estonia,2015,Jul,295.4
+Estonia,2015,Aug,240.2
+Estonia,2015,Sep,157.5
+Estonia,2015,Oct,158.5
+Estonia,2015,Nov,123.8
+Estonia,2015,Dec,138.5
+Estonia,2016,Jan,98.2
+Estonia,2016,Feb,95.9
+Estonia,2016,Mar,120.9
+Estonia,2016,Apr,140.0
+Estonia,2016,May,190.9
+Estonia,2016,Jun,223.5
+Estonia,2016,Jul,315.3
+Estonia,2016,Aug,255.7
+Estonia,2016,Sep,168.6
+Estonia,2016,Oct,167.4
+Estonia,2016,Nov,129.2
+Estonia,2016,Dec,153.0
+Estonia,2017,Jan,105.9
+Estonia,2017,Feb,112.9
+Estonia,2017,Mar,126.5
+Estonia,2017,Apr,157.4
+Estonia,2017,May,196.9
+Estonia,2017,Jun,237.6
+Estonia,2017,Jul,312.3
+Estonia,2017,Aug,263.1
+Estonia,2017,Sep,182.5
+Estonia,2017,Oct,165.6
+Estonia,2017,Nov,138.8
+Estonia,2017,Dec,156.6
+Estonia,2018,Jan,118.2
+Estonia,2018,Feb,115.2
+Estonia,2018,Mar,132.7
+Estonia,2018,Apr,150.5
+Estonia,2018,May,202.2
+Estonia,2018,Jun,231.4
+Estonia,2018,Jul,305.0
+Estonia,2018,Aug,263.0
+Estonia,2018,Sep,178.2
+Estonia,2018,Oct,162.7
+Estonia,2018,Nov,128.9
+Estonia,2018,Dec,152.5
+Estonia,2019,Jan,113.6
+Estonia,2019,Feb,110.6
+Estonia,2019,Mar,124.0
+Estonia,2019,Apr,156.2
+Estonia,2019,May,211.3
+Estonia,2019,Jun,254.9
+Estonia,2019,Jul,328.2
+Estonia,2019,Aug,286.2
+Estonia,2019,Sep,190.5
+Estonia,2019,Oct,172.7
+Estonia,2019,Nov,146.0
+Estonia,2019,Dec,159.4
+Estonia,2020,Jan,128.4
+Estonia,2020,Feb,120.6
+Estonia,2020,Mar,45.2
+Estonia,2020,Apr,1.3
+Estonia,2020,May,5.4
+Estonia,2020,Jun,41.8
+Estonia,2020,Jul,136.4
+Estonia,2020,Aug,111.8
+Estonia,2020,Sep,37.7
+Estonia,2020,Oct,19.0
+Estonia,2020,Nov,15.0
+Estonia,2020,Dec,13.4
+Estonia,2021,Jan,10.4
+Estonia,2021,Feb,12.5
+Estonia,2021,Mar,8.7
+Estonia,2021,Apr,8.7
+Estonia,2021,May,14.8
+Estonia,2021,Jun,31.7
+Estonia,2021,Jul,85.2
+Estonia,2021,Aug,97.0
+Estonia,2021,Sep,74.3
+Estonia,2021,Oct,82.5
+Estonia,2021,Nov,65.6
+Estonia,2021,Dec,71.3
+Estonia,2022,Jan,53.4
+Estonia,2022,Feb,60.0
+Estonia,2022,Mar,76.6
+Estonia,2022,Apr,105.7
+Estonia,2022,May,116.9
+Estonia,2022,Jun,149.9
+Estonia,2022,Jul,229.4
+Estonia,2022,Aug,188.6
+Estonia,2022,Sep,129.6
+Estonia,2022,Oct,130.8
+Estonia,2022,Nov,105.3
+Estonia,2022,Dec,120.7
+Estonia,2023,Jan,82.2
+Estonia,2023,Feb,102.9
+Estonia,2023,Mar,101.7
+Estonia,2023,Apr,126.3
+Estonia,2023,May,141.0
+Estonia,2023,Jun,162.8
+Estonia,2023,Jul,242.1
+Estonia,2023,Aug,203.9
+Estonia,2023,Sep,138.2
+Estonia,2023,Oct,124.4
+Estonia,2023,Nov,103.6
+Estonia,2023,Dec,140.6
+Estonia,2024,Jan,83.1
+Estonia,2024,Feb,107.4
+Estonia,2024,Mar,115.7
+Estonia,2024,Apr,115.7
+Estonia,2024,May,163.2
+Estonia,2024,Jun,203.7
+Estonia,2024,Jul,272.5
+Estonia,2024,Aug,231.8
+Estonia,2024,Sep,152.9
+Estonia,2024,Oct,142.8
+Estonia,2024,Nov,118.7
+Estonia,2024,Dec,147.6
+Estonia,2025,Jan,95.4
+Estonia,2025,Feb,110.5
+Estonia,2025,Mar,108.1
+Estonia,2025,Apr,133.8
+Estonia,2025,May,169.3
+Estonia,2025,Jun,214.6
+Estonia,2025,Jul,278.2
+Estonia,2025,Aug,240.7
+Estonia,2025,Sep,157.5
+Eswatini,2015,Feb,89.9
+Eswatini,2015,Mar,100.0
+Eswatini,2015,Apr,115.2
+Eswatini,2015,May,92.6
+Eswatini,2015,Jun,86.0
+Eswatini,2015,Jul,104.3
+Eswatini,2015,Aug,115.0
+Eswatini,2015,Sep,100.0
+Eswatini,2015,Oct,107.0
+Eswatini,2015,Nov,101.5
+Eswatini,2015,Dec,116.9
+Eswatini,2016,Jan,113.6
+Eswatini,2016,Feb,85.3
+Eswatini,2016,Mar,109.3
+Eswatini,2016,Apr,93.0
+Eswatini,2016,May,106.2
+Eswatini,2016,Jun,91.7
+Eswatini,2016,Jul,113.7
+Eswatini,2016,Aug,116.0
+Eswatini,2016,Sep,102.9
+Eswatini,2016,Oct,114.0
+Eswatini,2016,Nov,99.5
+Eswatini,2016,Dec,133.2
+Eswatini,2017,Jan,116.5
+Eswatini,2017,Feb,82.2
+Eswatini,2017,Mar,93.8
+Eswatini,2017,Apr,116.0
+Eswatini,2017,May,105.3
+Eswatini,2017,Jun,109.5
+Eswatini,2017,Jul,122.7
+Eswatini,2017,Aug,116.9
+Eswatini,2017,Sep,117.2
+Eswatini,2017,Oct,119.1
+Eswatini,2017,Nov,105.9
+Eswatini,2017,Dec,137.4
+Eswatini,2018,Jan,114.1
+Eswatini,2018,Feb,89.2
+Eswatini,2018,Mar,98.4
+Eswatini,2018,Apr,115.0
+Eswatini,2018,May,99.4
+Eswatini,2018,Jun,92.0
+Eswatini,2018,Jul,114.2
+Eswatini,2018,Aug,112.4
+Eswatini,2018,Sep,115.0
+Eswatini,2018,Oct,105.4
+Eswatini,2018,Nov,98.1
+Eswatini,2018,Dec,124.0
+Eswatini,2019,Jan,91.9
+Eswatini,2019,Feb,72.9
+Eswatini,2019,Mar,98.3
+Eswatini,2019,Apr,102.1
+Eswatini,2019,May,97.4
+Eswatini,2019,Jun,95.5
+Eswatini,2019,Jul,102.4
+Eswatini,2019,Aug,108.7
+Eswatini,2019,Sep,114.2
+Eswatini,2019,Oct,102.9
+Eswatini,2019,Nov,87.4
+Eswatini,2019,Dec,112.3
+Eswatini,2020,Jan,93.6
+Eswatini,2020,Feb,76.0
+Eswatini,2020,Mar,75.6
+Eswatini,2020,Apr,3.4
+Eswatini,2020,May,5.7
+Eswatini,2020,Jun,7.6
+Eswatini,2020,Jul,7.7
+Eswatini,2020,Aug,8.6
+Eswatini,2020,Sep,9.0
+Eswatini,2020,Oct,15.3
+Eswatini,2020,Nov,20.2
+Eswatini,2020,Dec,22.8
+Eswatini,2021,Jan,16.7
+Eswatini,2021,Feb,9.8
+Eswatini,2021,Mar,14.8
+Eswatini,2021,Apr,18.0
+Eswatini,2021,May,19.3
+Eswatini,2021,Jun,18.1
+Eswatini,2021,Jul,11.5
+Eswatini,2021,Aug,16.4
+Eswatini,2021,Sep,20.9
+Eswatini,2021,Oct,19.3
+Eswatini,2021,Nov,20.6
+Eswatini,2021,Dec,25.3
+Eswatini,2022,Jan,25.1
+Eswatini,2022,Feb,22.6
+Eswatini,2022,Mar,27.1
+Eswatini,2022,Apr,32.7
+Eswatini,2022,May,39.0
+Eswatini,2022,Jun,37.9
+Eswatini,2022,Jul,46.7
+Eswatini,2022,Aug,54.5
+Eswatini,2022,Sep,50.4
+Eswatini,2022,Oct,57.3
+Eswatini,2022,Nov,32.5
+Eswatini,2022,Dec,76.7
+Eswatini,2023,Jan,69.1
+Eswatini,2023,Feb,47.8
+Eswatini,2023,Mar,61.9
+Eswatini,2023,Apr,71.9
+Eswatini,2023,May,68.7
+Eswatini,2023,Jun,61.5
+Eswatini,2023,Jul,82.6
+Eswatini,2023,Aug,76.3
+Eswatini,2023,Sep,76.2
+Eswatini,2023,Oct,80.1
+Eswatini,2023,Nov,67.4
+Eswatini,2023,Dec,79.1
+Eswatini,2024,Jan,84.7
+Eswatini,2024,Feb,65.9
+Eswatini,2024,Mar,76.4
+Eswatini,2024,Apr,64.5
+Eswatini,2024,May,72.5
+Eswatini,2024,Jun,83.9
+Eswatini,2024,Jul,81.1
+Eswatini,2024,Aug,86.1
+Eswatini,2024,Sep,90.1
+Eswatini,2024,Oct,75.2
+Eswatini,2024,Nov,72.7
+Eswatini,2024,Dec,111.2
+Eswatini,2025,Jan,85.7
+Eswatini,2025,Feb,72.9
+Eswatini,2025,Mar,85.5
+Eswatini,2025,Apr,90.7
+Eswatini,2025,May,87.2
+Eswatini,2025,Jun,97.7
+Eswatini,2025,Jul,88.7
+Eswatini,2025,Aug,92.6
+Eswatini,2025,Sep,90.8
+Ethiopia,2020,Jan,67.1
+Ethiopia,2020,Feb,19.4
+Ethiopia,2020,Mar,33.7
+Ethiopia,2020,Apr,1.6
+Ethiopia,2020,May,1.8
+Ethiopia,2020,Jun,3.5
+Ethiopia,2020,Jul,8.1
+Ethiopia,2020,Aug,17.2
+Ethiopia,2020,Sep,21.3
+Ethiopia,2020,Oct,30.2
+Ethiopia,2020,Nov,29.4
+Ethiopia,2020,Dec,37.4
+Ethiopia,2021,Jan,38.5
+Ethiopia,2021,Feb,28.6
+Ethiopia,2021,Mar,32.7
+Ethiopia,2021,Apr,34.8
+Ethiopia,2021,May,38.2
+Ethiopia,2021,Jun,39.3
+Ethiopia,2021,Jul,41.8
+Ethiopia,2021,Aug,39.4
+Ethiopia,2021,Sep,37.7
+Ethiopia,2021,Oct,66.7
+Ethiopia,2021,Nov,56.9
+Ethiopia,2021,Dec,63.6
+Ethiopia,2022,Jan,65.9
+Ethiopia,2022,Feb,55.5
+Ethiopia,2022,Mar,75.3
+Ethiopia,2022,Apr,80.7
+Ethiopia,2022,May,79.9
+Ethiopia,2022,Jun,84.4
+Ethiopia,2022,Jul,87.2
+Ethiopia,2022,Aug,94.0
+Ethiopia,2022,Sep,79.5
+Ethiopia,2022,Oct,38.1
+Ethiopia,2022,Nov,35.6
+Ethiopia,2022,Dec,63.8
+Ethiopia,2023,Jan,97.0
+Ethiopia,2023,Feb,82.8
+Ethiopia,2023,Mar,89.4
+Ethiopia,2023,Apr,81.3
+Ethiopia,2023,May,80.6
+Ethiopia,2023,Jun,80.6
+Ethiopia,2023,Jul,86.0
+Ethiopia,2023,Aug,87.2
+Ethiopia,2023,Sep,87.3
+Ethiopia,2023,Oct,94.4
+Ethiopia,2023,Nov,102.9
+Ethiopia,2023,Dec,108.3
+Ethiopia,2024,Jan,91.4
+Ethiopia,2024,Feb,88.8
+Ethiopia,2024,Mar,82.5
+Ethiopia,2024,Apr,79.0
+Ethiopia,2024,May,102.4
+Ethiopia,2024,Jun,94.6
+Ethiopia,2024,Jul,103.6
+Ethiopia,2024,Aug,97.4
+Ethiopia,2024,Sep,77.4
+Ethiopia,2024,Oct,101.1
+Ethiopia,2024,Nov,105.1
+Ethiopia,2024,Dec,115.4
+Ethiopia,2025,Jan,114.6
+Ethiopia,2025,Feb,82.2
+Ethiopia,2025,Mar,83.7
+Ethiopia,2025,Apr,98.3
+Ethiopia,2025,May,100.8
+Ethiopia,2025,Jun,110.2
+Ethiopia,2025,Jul,136.8
+Ethiopia,2025,Aug,125.3
+Ethiopia,2025,Sep,114.5
+Fiji,2015,Feb,42.2
+Fiji,2015,Mar,51.0
+Fiji,2015,Apr,59.0
+Fiji,2015,May,60.5
+Fiji,2015,Jun,72.5
+Fiji,2015,Jul,79.5
+Fiji,2015,Aug,73.3
+Fiji,2015,Sep,71.8
+Fiji,2015,Oct,69.1
+Fiji,2015,Nov,59.6
+Fiji,2015,Dec,66.0
+Fiji,2016,Jan,57.7
+Fiji,2016,Feb,44.3
+Fiji,2016,Mar,56.0
+Fiji,2016,Apr,58.2
+Fiji,2016,May,60.4
+Fiji,2016,Jun,73.1
+Fiji,2016,Jul,85.7
+Fiji,2016,Aug,76.3
+Fiji,2016,Sep,71.8
+Fiji,2016,Oct,73.6
+Fiji,2016,Nov,62.5
+Fiji,2016,Dec,72.7
+Fiji,2017,Jan,64.9
+Fiji,2017,Feb,43.9
+Fiji,2017,Mar,54.4
+Fiji,2017,Apr,68.5
+Fiji,2017,May,64.4
+Fiji,2017,Jun,76.6
+Fiji,2017,Jul,90.1
+Fiji,2017,Aug,82.3
+Fiji,2017,Sep,77.0
+Fiji,2017,Oct,78.2
+Fiji,2017,Nov,65.2
+Fiji,2017,Dec,77.4
+Fiji,2018,Jan,62.6
+Fiji,2018,Feb,48.8
+Fiji,2018,Mar,60.1
+Fiji,2018,Apr,63.5
+Fiji,2018,May,67.3
+Fiji,2018,Jun,81.7
+Fiji,2018,Jul,95.1
+Fiji,2018,Aug,88.7
+Fiji,2018,Sep,81.4
+Fiji,2018,Oct,79.1
+Fiji,2018,Nov,65.0
+Fiji,2018,Dec,77.1
+Fiji,2019,Jan,63.8
+Fiji,2019,Feb,48.7
+Fiji,2019,Mar,59.3
+Fiji,2019,Apr,76.8
+Fiji,2019,May,73.2
+Fiji,2019,Jun,85.7
+Fiji,2019,Jul,96.4
+Fiji,2019,Aug,88.8
+Fiji,2019,Sep,81.4
+Fiji,2019,Oct,77.5
+Fiji,2019,Nov,69.1
+Fiji,2019,Dec,73.7
+Fiji,2020,Jan,65.4
+Fiji,2020,Feb,46.3
+Fiji,2020,Mar,28.0
+Fiji,2020,Apr,0.7
+Fiji,2020,May,0.7
+Fiji,2020,Jun,0.4
+Fiji,2020,Jul,0.7
+Fiji,2020,Aug,1.0
+Fiji,2020,Sep,1.0
+Fiji,2020,Oct,1.1
+Fiji,2020,Nov,0.9
+Fiji,2020,Dec,0.7
+Fiji,2021,Jan,1.0
+Fiji,2021,Feb,1.3
+Fiji,2021,Mar,2.0
+Fiji,2021,Apr,0.8
+Fiji,2021,May,0.4
+Fiji,2021,Jun,0.3
+Fiji,2021,Jul,0.5
+Fiji,2021,Aug,0.4
+Fiji,2021,Sep,0.5
+Fiji,2021,Oct,0.6
+Fiji,2021,Nov,0.7
+Fiji,2021,Dec,23.2
+Fiji,2022,Jan,16.5
+Fiji,2022,Feb,11.0
+Fiji,2022,Mar,21.4
+Fiji,2022,Apr,46.7
+Fiji,2022,May,47.8
+Fiji,2022,Jun,62.1
+Fiji,2022,Jul,78.6
+Fiji,2022,Aug,70.1
+Fiji,2022,Sep,72.7
+Fiji,2022,Oct,70.2
+Fiji,2022,Nov,63.6
+Fiji,2022,Dec,75.6
+Fiji,2023,Jan,67.5
+Fiji,2023,Feb,47.2
+Fiji,2023,Mar,60.5
+Fiji,2023,Apr,77.0
+Fiji,2023,May,75.1
+Fiji,2023,Jun,90.5
+Fiji,2023,Jul,93.5
+Fiji,2023,Aug,87.4
+Fiji,2023,Sep,90.4
+Fiji,2023,Oct,83.0
+Fiji,2023,Nov,74.7
+Fiji,2023,Dec,82.8
+Fiji,2024,Jan,70.3
+Fiji,2024,Feb,54.7
+Fiji,2024,Mar,69.3
+Fiji,2024,Apr,77.3
+Fiji,2024,May,82.9
+Fiji,2024,Jun,92.6
+Fiji,2024,Jul,98.3
+Fiji,2024,Aug,94.8
+Fiji,2024,Sep,92.6
+Fiji,2024,Oct,89.4
+Fiji,2024,Nov,76.8
+Fiji,2024,Dec,83.8
+Fiji,2025,Jan,70.8
+Fiji,2025,Feb,49.5
+Fiji,2025,Mar,63.8
+Fiji,2025,Apr,80.4
+Fiji,2025,May,86.6
+Fiji,2025,Jun,92.7
+Fiji,2025,Jul,99.3
+Fiji,2025,Aug,99.7
+Fiji,2025,Sep,92.3
+Finland,2015,Feb,167.5
+Finland,2015,Mar,178.9
+Finland,2015,Apr,142.3
+Finland,2015,May,190.9
+Finland,2015,Jun,285.0
+Finland,2015,Jul,377.6
+Finland,2015,Aug,334.9
+Finland,2015,Sep,201.2
+Finland,2015,Oct,164.1
+Finland,2015,Nov,163.3
+Finland,2015,Dec,231.3
+Finland,2016,Jan,202.5
+Finland,2016,Feb,198.9
+Finland,2016,Mar,182.8
+Finland,2016,Apr,146.3
+Finland,2016,May,198.6
+Finland,2016,Jun,298.9
+Finland,2016,Jul,375.5
+Finland,2016,Aug,345.1
+Finland,2016,Sep,215.4
+Finland,2016,Oct,166.3
+Finland,2016,Nov,179.2
+Finland,2016,Dec,279.5
+Finland,2017,Jan,240.4
+Finland,2017,Feb,231.4
+Finland,2017,Mar,221.8
+Finland,2017,Apr,169.2
+Finland,2017,May,217.6
+Finland,2017,Jun,343.9
+Finland,2017,Jul,423.2
+Finland,2017,Aug,391.8
+Finland,2017,Sep,238.2
+Finland,2017,Oct,182.6
+Finland,2017,Nov,202.5
+Finland,2017,Dec,317.7
+Finland,2018,Jan,260.6
+Finland,2018,Feb,247.0
+Finland,2018,Mar,241.2
+Finland,2018,Apr,174.8
+Finland,2018,May,213.1
+Finland,2018,Jun,330.3
+Finland,2018,Jul,396.8
+Finland,2018,Aug,382.4
+Finland,2018,Sep,234.7
+Finland,2018,Oct,198.6
+Finland,2018,Nov,205.4
+Finland,2018,Dec,339.3
+Finland,2019,Jan,264.2
+Finland,2019,Feb,254.8
+Finland,2019,Mar,243.8
+Finland,2019,Apr,170.7
+Finland,2019,May,229.8
+Finland,2019,Jun,333.7
+Finland,2019,Jul,396.3
+Finland,2019,Aug,388.4
+Finland,2019,Sep,252.7
+Finland,2019,Oct,209.7
+Finland,2019,Nov,207.2
+Finland,2019,Dec,338.9
+Finland,2020,Jan,288.0
+Finland,2020,Feb,249.5
+Finland,2020,Mar,102.3
+Finland,2020,Apr,3.6
+Finland,2020,May,4.9
+Finland,2020,Jun,20.9
+Finland,2020,Jul,62.9
+Finland,2020,Aug,66.9
+Finland,2020,Sep,30.6
+Finland,2020,Oct,23.4
+Finland,2020,Nov,22.3
+Finland,2020,Dec,20.5
+Finland,2021,Jan,18.8
+Finland,2021,Feb,17.6
+Finland,2021,Mar,13.9
+Finland,2021,Apr,14.9
+Finland,2021,May,21.5
+Finland,2021,Jun,33.4
+Finland,2021,Jul,83.0
+Finland,2021,Aug,116.5
+Finland,2021,Sep,86.2
+Finland,2021,Oct,83.1
+Finland,2021,Nov,112.5
+Finland,2021,Dec,205.7
+Finland,2022,Jan,107.2
+Finland,2022,Feb,120.2
+Finland,2022,Mar,138.7
+Finland,2022,Apr,96.9
+Finland,2022,May,139.3
+Finland,2022,Jun,199.5
+Finland,2022,Jul,271.0
+Finland,2022,Aug,271.4
+Finland,2022,Sep,196.9
+Finland,2022,Oct,139.5
+Finland,2022,Nov,163.8
+Finland,2022,Dec,283.1
+Finland,2023,Jan,201.9
+Finland,2023,Feb,201.9
+Finland,2023,Mar,195.4
+Finland,2023,Apr,124.9
+Finland,2023,May,173.2
+Finland,2023,Jun,234.2
+Finland,2023,Jul,296.3
+Finland,2023,Aug,295.5
+Finland,2023,Sep,189.7
+Finland,2023,Oct,148.2
+Finland,2023,Nov,186.1
+Finland,2023,Dec,313.3
+Finland,2024,Jan,227.8
+Finland,2024,Feb,246.9
+Finland,2024,Mar,220.9
+Finland,2024,Apr,129.5
+Finland,2024,May,167.4
+Finland,2024,Jun,265.7
+Finland,2024,Jul,336.3
+Finland,2024,Aug,328.0
+Finland,2024,Sep,205.8
+Finland,2024,Oct,174.1
+Finland,2024,Nov,223.5
+Finland,2024,Dec,378.1
+Finland,2025,Jan,274.9
+Finland,2025,Feb,274.0
+Finland,2025,Mar,261.0
+Finland,2025,Apr,149.7
+Finland,2025,May,208.7
+Finland,2025,Jun,302.1
+Finland,2025,Jul,367.6
+Finland,2025,Aug,376.4
+Finland,2025,Sep,239.5
+France,2015,Feb,2011.0
+France,2015,Mar,2491.0
+France,2015,Apr,3241.0
+France,2015,May,4501.0
+France,2015,Jun,5230.0
+France,2015,Jul,7918.0
+France,2015,Aug,7713.0
+France,2015,Sep,4849.0
+France,2015,Oct,3128.0
+France,2015,Nov,1879.0
+France,2015,Dec,1994.0
+France,2016,Jan,1748.0
+France,2016,Feb,1916.0
+France,2016,Mar,2756.0
+France,2016,Apr,2746.0
+France,2016,May,4222.0
+France,2016,Jun,5134.0
+France,2016,Jul,7569.0
+France,2016,Aug,7019.0
+France,2016,Sep,4592.0
+France,2016,Oct,2980.0
+France,2016,Nov,2010.0
+France,2016,Dec,2309.0
+France,2017,Jan,2025.0
+France,2017,Feb,2053.0
+France,2017,Mar,2581.0
+France,2017,Apr,3994.0
+France,2017,May,4094.0
+France,2017,Jun,5466.0
+France,2017,Jul,7834.0
+France,2017,Aug,7590.0
+France,2017,Sep,5122.0
+France,2017,Oct,3296.0
+France,2017,Nov,2213.0
+France,2017,Dec,2653.0
+France,2018,Jan,2199.0
+France,2018,Feb,2335.0
+France,2018,Mar,3262.0
+France,2018,Apr,3797.0
+France,2018,May,4738.0
+France,2018,Jun,5729.0
+France,2018,Jul,8273.0
+France,2018,Aug,8110.0
+France,2018,Sep,5428.0
+France,2018,Oct,3577.0
+France,2018,Nov,2429.0
+France,2018,Dec,2629.0
+France,2019,Jan,2191.0
+France,2019,Feb,2247.0
+France,2019,Mar,2927.0
+France,2019,Apr,4288.0
+France,2019,May,4452.0
+France,2019,Jun,5935.0
+France,2019,Jul,7982.0
+France,2019,Aug,7912.0
+France,2019,Sep,6563.0
+France,2019,Oct,3381.0
+France,2019,Nov,3028.0
+France,2019,Dec,2615.0
+France,2020,Jan,2323.0
+France,2020,Feb,2240.0
+France,2020,Mar,1016.0
+France,2020,Apr,0.0
+France,2020,May,0.0
+France,2020,Jun,645.9
+France,2020,Jul,3508.0
+France,2020,Aug,3371.0
+France,2020,Sep,1346.0
+France,2020,Oct,507.9
+France,2020,Nov,253.1
+France,2021,Jan,332.1
+France,2021,Feb,315.6
+France,2021,Mar,384.4
+France,2021,Apr,355.9
+France,2021,May,485.3
+France,2021,Jul,4161.0
+France,2021,Aug,4461.0
+France,2021,Sep,3217.0
+France,2021,Oct,2191.0
+France,2021,Nov,1519.0
+France,2021,Dec,1628.0
+France,2022,Jan,1255.0
+France,2022,Feb,1473.0
+France,2022,Mar,2024.0
+France,2022,Apr,3478.0
+France,2022,May,3895.0
+France,2022,Jun,5217.0
+France,2022,Jul,7812.0
+France,2022,Aug,7450.0
+France,2022,Sep,5046.0
+France,2022,Oct,3177.0
+France,2022,Nov,2088.0
+France,2022,Dec,2758.0
+France,2023,Jan,2299.0
+France,2023,Feb,2192.0
+France,2023,Mar,2640.0
+France,2023,Apr,4141.0
+France,2023,May,4743.0
+France,2023,Jun,5936.0
+France,2023,Jul,8263.0
+France,2023,Aug,8088.0
+France,2023,Sep,5850.0
+France,2023,Oct,3449.0
+France,2023,Nov,2214.0
+France,2023,Dec,2897.0
+France,2024,Jan,2369.0
+France,2024,Feb,2519.0
+France,2024,Mar,3559.0
+France,2024,Apr,3769.0
+France,2024,May,5198.0
+France,2024,Jun,5843.0
+France,2024,Jul,8074.0
+France,2024,Aug,8124.0
+France,2024,Sep,5594.0
+France,2024,Oct,3912.0
+France,2024,Nov,2459.0
+France,2024,Dec,3143.0
+France,2025,Jan,2573.0
+France,2025,Feb,2515.0
+France,2025,Mar,3169.0
+France,2025,Apr,4649.0
+France,2025,May,5283.0
+France,2025,Jun,6641.0
+France,2025,Jul,8890.0
+France,2025,Aug,8808.0
+French Polynesia,2015,Feb,12.9
+French Polynesia,2015,Mar,14.5
+French Polynesia,2015,Apr,14.0
+French Polynesia,2015,May,14.8
+French Polynesia,2015,Jun,16.2
+French Polynesia,2015,Jul,18.1
+French Polynesia,2015,Aug,16.5
+French Polynesia,2015,Sep,16.9
+French Polynesia,2015,Oct,17.6
+French Polynesia,2015,Nov,15.7
+French Polynesia,2015,Dec,14.4
+French Polynesia,2016,Jan,12.3
+French Polynesia,2016,Feb,14.4
+French Polynesia,2016,Mar,15.2
+French Polynesia,2016,Apr,17.0
+French Polynesia,2016,May,15.7
+French Polynesia,2016,Jun,16.8
+French Polynesia,2016,Jul,19.5
+French Polynesia,2016,Aug,17.7
+French Polynesia,2016,Sep,17.1
+French Polynesia,2016,Oct,17.5
+French Polynesia,2016,Nov,14.3
+French Polynesia,2016,Dec,14.9
+French Polynesia,2017,Jan,11.9
+French Polynesia,2017,Feb,13.6
+French Polynesia,2017,Mar,16.3
+French Polynesia,2017,Apr,15.5
+French Polynesia,2017,May,16.8
+French Polynesia,2017,Jun,17.6
+French Polynesia,2017,Jul,21.4
+French Polynesia,2017,Aug,18.6
+French Polynesia,2017,Sep,18.5
+French Polynesia,2017,Oct,18.3
+French Polynesia,2017,Nov,15.4
+French Polynesia,2017,Dec,15.0
+French Polynesia,2018,Jan,11.5
+French Polynesia,2018,Feb,15.7
+French Polynesia,2018,Mar,17.5
+French Polynesia,2018,Apr,16.0
+French Polynesia,2018,May,16.6
+French Polynesia,2018,Jun,19.4
+French Polynesia,2018,Jul,24.2
+French Polynesia,2018,Aug,20.1
+French Polynesia,2018,Sep,19.8
+French Polynesia,2018,Oct,20.7
+French Polynesia,2018,Nov,17.2
+French Polynesia,2018,Dec,17.7
+French Polynesia,2019,Jan,15.0
+French Polynesia,2019,Feb,16.8
+French Polynesia,2019,Mar,18.7
+French Polynesia,2019,Apr,19.2
+French Polynesia,2019,May,18.7
+French Polynesia,2019,Jun,21.5
+French Polynesia,2019,Jul,25.4
+French Polynesia,2019,Aug,21.9
+French Polynesia,2019,Sep,20.3
+French Polynesia,2019,Oct,21.2
+French Polynesia,2019,Nov,19.2
+French Polynesia,2019,Dec,18.8
+French Polynesia,2020,Jan,13.9
+French Polynesia,2020,Feb,15.5
+French Polynesia,2020,Mar,7.5
+French Polynesia,2020,Apr,0.0
+French Polynesia,2020,May,0.0
+French Polynesia,2020,Jun,0.0
+French Polynesia,2020,Jul,4.6
+French Polynesia,2020,Aug,7.8
+French Polynesia,2020,Sep,7.7
+French Polynesia,2020,Oct,9.0
+French Polynesia,2020,Nov,4.5
+French Polynesia,2020,Dec,6.5
+French Polynesia,2021,Jan,3.9
+French Polynesia,2021,Feb,0.5
+French Polynesia,2021,Mar,0.3
+French Polynesia,2021,Apr,0.3
+French Polynesia,2021,May,3.4
+French Polynesia,2021,Jun,8.6
+French Polynesia,2021,Jul,14.3
+French Polynesia,2021,Aug,9.5
+French Polynesia,2021,Sep,6.7
+French Polynesia,2021,Oct,12.3
+French Polynesia,2021,Nov,10.3
+French Polynesia,2021,Dec,12.3
+French Polynesia,2022,Jan,6.3
+French Polynesia,2022,Feb,9.0
+French Polynesia,2022,Mar,14.9
+French Polynesia,2022,Apr,18.2
+French Polynesia,2022,May,18.9
+French Polynesia,2022,Jun,19.5
+French Polynesia,2022,Jul,24.4
+French Polynesia,2022,Aug,19.8
+French Polynesia,2022,Sep,21.9
+French Polynesia,2022,Oct,23.6
+French Polynesia,2022,Nov,20.2
+French Polynesia,2022,Dec,22.2
+French Polynesia,2023,Jan,15.2
+French Polynesia,2023,Feb,17.5
+French Polynesia,2023,Mar,22.5
+French Polynesia,2023,Apr,23.3
+French Polynesia,2023,May,20.1
+French Polynesia,2023,Jun,24.0
+French Polynesia,2023,Jul,26.5
+French Polynesia,2023,Aug,21.8
+French Polynesia,2023,Sep,24.5
+French Polynesia,2023,Oct,23.2
+French Polynesia,2023,Nov,20.1
+French Polynesia,2023,Dec,23.1
+French Polynesia,2024,Jan,14.6
+French Polynesia,2024,Feb,18.3
+French Polynesia,2024,Mar,23.1
+French Polynesia,2024,Apr,23.4
+French Polynesia,2024,May,20.4
+French Polynesia,2024,Jun,23.4
+French Polynesia,2024,Jul,26.5
+French Polynesia,2024,Aug,23.3
+French Polynesia,2024,Sep,23.6
+French Polynesia,2024,Oct,24.1
+French Polynesia,2024,Nov,20.8
+French Polynesia,2024,Dec,22.2
+French Polynesia,2025,Jan,14.1
+French Polynesia,2025,Feb,17.3
+French Polynesia,2025,Mar,23.0
+French Polynesia,2025,Apr,25.1
+French Polynesia,2025,May,24.3
+French Polynesia,2025,Jun,26.1
+French Polynesia,2025,Jul,31.0
+French Polynesia,2025,Aug,25.1
+Gambia,2015,Feb,13.0
+Gambia,2015,Mar,13.4
+Gambia,2015,Apr,9.2
+Gambia,2015,May,6.5
+Gambia,2015,Jun,6.3
+Gambia,2015,Jul,6.8
+Gambia,2015,Aug,6.2
+Gambia,2015,Sep,7.7
+Gambia,2015,Oct,9.5
+Gambia,2015,Nov,18.9
+Gambia,2015,Dec,22.6
+Gambia,2016,Jan,21.8
+Gambia,2016,Feb,20.0
+Gambia,2016,Mar,17.8
+Gambia,2016,Apr,11.9
+Gambia,2016,May,7.0
+Gambia,2016,Jun,6.5
+Gambia,2016,Jul,7.3
+Gambia,2016,Aug,6.7
+Gambia,2016,Sep,8.4
+Gambia,2016,Oct,10.8
+Gambia,2016,Nov,19.3
+Gambia,2016,Dec,23.5
+Gambia,2017,Jan,13.4
+Gambia,2017,Feb,17.7
+Gambia,2017,Mar,16.3
+Gambia,2017,Apr,11.1
+Gambia,2017,May,7.7
+Gambia,2017,Jun,7.3
+Gambia,2017,Jul,8.7
+Gambia,2017,Aug,8.2
+Gambia,2017,Sep,9.2
+Gambia,2017,Oct,11.4
+Gambia,2017,Nov,22.8
+Gambia,2017,Dec,28.3
+Gambia,2018,Jan,28.5
+Gambia,2018,Feb,24.4
+Gambia,2018,Mar,23.3
+Gambia,2018,Apr,13.0
+Gambia,2018,May,7.5
+Gambia,2018,Jun,8.4
+Gambia,2018,Jul,9.0
+Gambia,2018,Aug,9.2
+Gambia,2018,Sep,8.5
+Gambia,2018,Oct,13.3
+Gambia,2018,Nov,27.2
+Gambia,2018,Dec,31.4
+Gambia,2019,Jan,30.2
+Gambia,2019,Feb,26.8
+Gambia,2019,Mar,25.8
+Gambia,2019,Apr,17.5
+Gambia,2019,May,11.7
+Gambia,2019,Jun,11.4
+Gambia,2019,Jul,13.3
+Gambia,2019,Aug,13.3
+Gambia,2019,Sep,11.4
+Gambia,2019,Oct,16.6
+Gambia,2019,Nov,25.5
+Gambia,2019,Dec,32.2
+Gambia,2020,Jan,31.1
+Gambia,2020,Feb,28.9
+Gambia,2020,Mar,13.3
+Gambia,2020,Apr,0.0
+Gambia,2020,May,0.2
+Gambia,2020,Jun,0.6
+Gambia,2020,Jul,0.4
+Gambia,2020,Aug,1.0
+Gambia,2020,Sep,1.6
+Gambia,2020,Oct,4.5
+Gambia,2020,Nov,7.7
+Gambia,2020,Dec,6.7
+Gambia,2021,Jan,5.7
+Gambia,2021,Feb,6.0
+Gambia,2021,Mar,4.4
+Gambia,2021,Apr,6.0
+Gambia,2021,May,7.4
+Gambia,2021,Jun,9.7
+Gambia,2021,Jul,6.5
+Gambia,2021,Aug,7.1
+Gambia,2021,Sep,9.2
+Gambia,2021,Oct,14.2
+Gambia,2021,Nov,19.5
+Gambia,2021,Dec,16.1
+Gambia,2022,Jan,15.4
+Gambia,2022,Feb,15.8
+Gambia,2022,Mar,12.6
+Gambia,2022,Apr,10.2
+Gambia,2022,May,11.8
+Gambia,2022,Jun,15.2
+Gambia,2022,Jul,9.6
+Gambia,2022,Aug,7.7
+Gambia,2022,Sep,13.0
+Gambia,2022,Oct,25.9
+Gambia,2022,Nov,27.6
+Gambia,2022,Dec,25.3
+Gambia,2023,Jan,25.3
+Gambia,2023,Feb,21.0
+Gambia,2023,Mar,18.6
+Gambia,2023,Apr,12.2
+Gambia,2023,May,11.7
+Gambia,2023,Jun,13.7
+Gambia,2023,Jul,14.1
+Gambia,2023,Aug,9.7
+Gambia,2023,Sep,10.9
+Gambia,2023,Oct,14.3
+Gambia,2023,Nov,24.3
+Gambia,2023,Dec,31.1
+Gambia,2024,Jan,29.7
+Gambia,2024,Feb,26.3
+Gambia,2024,Mar,19.9
+Gambia,2024,Apr,15.5
+Gambia,2024,May,12.9
+Gambia,2024,Jun,16.1
+Gambia,2024,Jul,13.2
+Gambia,2024,Aug,11.0
+Gambia,2024,Sep,10.7
+Gambia,2024,Oct,14.6
+Gambia,2024,Nov,24.8
+Gambia,2024,Dec,32.8
+Gambia,2025,Jan,30.4
+Gambia,2025,Feb,23.7
+Gambia,2025,Mar,19.1
+Gambia,2025,Apr,16.4
+Gambia,2025,May,14.3
+Gambia,2025,Jun,16.9
+Gambia,2025,Jul,13.2
+Gambia,2025,Aug,12.0
+Georgia,2015,Feb,435.0
+Georgia,2015,Mar,557.3
+Georgia,2015,Apr,553.9
+Georgia,2015,May,644.1
+Georgia,2015,Jun,647.7
+Georgia,2015,Jul,918.8
+Georgia,2015,Aug,1266.0
+Georgia,2015,Sep,855.6
+Georgia,2015,Oct,721.2
+Georgia,2015,Nov,598.4
+Georgia,2015,Dec,558.2
+Georgia,2016,Jan,492.9
+Georgia,2016,Feb,477.8
+Georgia,2016,Mar,599.5
+Georgia,2016,Apr,595.8
+Georgia,2016,May,742.3
+Georgia,2016,Jun,663.3
+Georgia,2016,Jul,943.0
+Georgia,2016,Aug,1261.0
+Georgia,2016,Sep,986.0
+Georgia,2016,Oct,769.9
+Georgia,2016,Nov,604.6
+Georgia,2016,Dec,554.5
+Georgia,2017,Jan,588.3
+Georgia,2017,Feb,502.2
+Georgia,2017,Mar,676.2
+Georgia,2017,Apr,714.1
+Georgia,2017,May,806.5
+Georgia,2017,Jun,862.7
+Georgia,2017,Jul,1255.0
+Georgia,2017,Aug,1587.0
+Georgia,2017,Sep,1214.0
+Georgia,2017,Oct,917.0
+Georgia,2017,Nov,728.5
+Georgia,2017,Dec,700.9
+Georgia,2018,Jan,728.8
+Georgia,2018,Feb,629.8
+Georgia,2018,Mar,799.9
+Georgia,2018,Apr,864.4
+Georgia,2018,May,901.5
+Georgia,2018,Jun,1007.0
+Georgia,2018,Jul,1411.0
+Georgia,2018,Aug,1778.0
+Georgia,2018,Sep,1300.0
+Georgia,2018,Oct,1018.0
+Georgia,2018,Nov,792.6
+Georgia,2018,Dec,730.0
+Georgia,2019,Jan,743.2
+Georgia,2019,Feb,636.9
+Georgia,2019,Mar,835.6
+Georgia,2019,Apr,898.3
+Georgia,2019,May,1043.0
+Georgia,2019,Jun,1200.0
+Georgia,2019,Jul,1453.0
+Georgia,2019,Aug,1840.0
+Georgia,2019,Sep,1324.0
+Georgia,2019,Oct,1104.0
+Georgia,2019,Nov,882.0
+Georgia,2019,Dec,312.0
+Georgia,2020,Jan,363.6
+Georgia,2020,Feb,257.5
+Georgia,2020,Mar,144.2
+Georgia,2020,Apr,26.9
+Georgia,2020,May,26.5
+Georgia,2020,Jun,28.9
+Georgia,2020,Jul,37.2
+Georgia,2020,Aug,34.6
+Georgia,2020,Sep,41.8
+Georgia,2020,Oct,43.7
+Georgia,2020,Nov,39.5
+Georgia,2020,Dec,42.6
+Georgia,2021,Jan,29.4
+Georgia,2021,Feb,35.9
+Georgia,2021,Mar,51.3
+Georgia,2021,Apr,75.8
+Georgia,2021,May,96.5
+Georgia,2021,Jun,133.5
+Georgia,2021,Jul,213.5
+Georgia,2021,Aug,247.2
+Georgia,2021,Sep,209.6
+Georgia,2021,Oct,188.8
+Georgia,2021,Nov,151.4
+Georgia,2021,Dec,144.6
+Georgia,2022,Jan,163.6
+Georgia,2022,Feb,137.1
+Georgia,2022,Mar,159.2
+Georgia,2022,Apr,182.4
+Georgia,2022,May,264.3
+Georgia,2022,Jun,302.6
+Georgia,2022,Jul,459.7
+Georgia,2022,Aug,583.0
+Georgia,2022,Sep,452.2
+Georgia,2022,Oct,344.6
+Georgia,2022,Nov,299.6
+Georgia,2022,Dec,304.6
+Germany,2015,Feb,2110.0
+Germany,2015,Mar,2264.0
+Germany,2015,Apr,2650.0
+Germany,2015,May,3179.0
+Germany,2015,Jun,3318.0
+Germany,2015,Jul,4429.0
+Germany,2015,Aug,4011.0
+Germany,2015,Sep,3340.0
+Germany,2015,Oct,3077.0
+Germany,2015,Nov,2354.0
+Germany,2015,Dec,2460.0
+Germany,2016,Jan,1865.0
+Germany,2016,Feb,2221.0
+Germany,2016,Mar,2433.0
+Germany,2016,Apr,2834.0
+Germany,2016,May,3105.0
+Germany,2016,Jun,3289.0
+Germany,2016,Jul,4406.0
+Germany,2016,Aug,3908.0
+Germany,2016,Sep,3493.0
+Germany,2016,Oct,3080.0
+Germany,2016,Nov,2431.0
+Germany,2016,Dec,2528.0
+Germany,2017,Jan,2029.0
+Germany,2017,Feb,2290.0
+Germany,2017,Mar,2529.0
+Germany,2017,Apr,2994.0
+Germany,2017,May,3360.0
+Germany,2017,Jun,3464.0
+Germany,2017,Jul,4579.0
+Germany,2017,Aug,4198.0
+Germany,2017,Sep,3637.0
+Germany,2017,Oct,3152.0
+Germany,2017,Nov,2530.0
+Germany,2017,Dec,2690.0
+Germany,2018,Jan,2155.0
+Germany,2018,Feb,2354.0
+Germany,2018,Mar,2673.0
+Germany,2018,Apr,3085.0
+Germany,2018,May,3358.0
+Germany,2018,Jun,3670.0
+Germany,2018,Jul,4709.0
+Germany,2018,Aug,4453.0
+Germany,2018,Sep,3695.0
+Germany,2018,Oct,3341.0
+Germany,2018,Nov,2608.0
+Germany,2018,Dec,2779.0
+Germany,2019,Jan,2171.0
+Germany,2019,Feb,2404.0
+Germany,2019,Mar,2649.0
+Germany,2019,Apr,3208.0
+Germany,2019,May,3503.0
+Germany,2019,Jun,3687.0
+Germany,2019,Jul,4846.0
+Germany,2019,Aug,4485.0
+Germany,2019,Sep,3635.0
+Germany,2019,Oct,3375.0
+Germany,2019,Nov,2720.0
+Germany,2019,Dec,2881.0
+Germany,2020,Jan,2222.0
+Germany,2020,Feb,2427.0
+Germany,2020,Mar,767.9
+Germany,2020,Apr,85.2
+Germany,2020,May,164.3
+Germany,2020,Jun,616.7
+Germany,2020,Jul,1851.0
+Germany,2020,Aug,1791.0
+Germany,2020,Sep,1351.0
+Germany,2020,Oct,776.5
+Germany,2020,Nov,224.1
+Germany,2020,Dec,172.0
+Germany,2021,Jan,170.5
+Germany,2021,Feb,181.8
+Germany,2021,Mar,230.9
+Germany,2021,Apr,219.8
+Germany,2021,May,292.2
+Germany,2021,Jun,672.3
+Germany,2021,Jul,1861.0
+Germany,2021,Aug,2048.0
+Germany,2021,Sep,1796.0
+Germany,2021,Oct,1890.0
+Germany,2021,Nov,1354.0
+Germany,2021,Dec,971.1
+Germany,2022,Jan,703.3
+Germany,2022,Feb,1010.0
+Germany,2022,Mar,1286.0
+Germany,2022,Apr,2013.0
+Germany,2022,May,2524.0
+Germany,2022,Jun,2781.0
+Germany,2022,Jul,4082.0
+Germany,2022,Aug,3696.0
+Germany,2022,Sep,3052.0
+Germany,2022,Oct,2794.0
+Germany,2022,Nov,2122.0
+Germany,2022,Dec,2401.0
+Germany,2023,Jan,1641.0
+Germany,2023,Feb,1996.0
+Germany,2023,Mar,2134.0
+Germany,2023,Apr,2711.0
+Germany,2023,May,3113.0
+Germany,2023,Jun,3309.0
+Germany,2023,Jul,4485.0
+Germany,2023,Aug,3983.0
+Germany,2023,Sep,3378.0
+Germany,2023,Oct,2945.0
+Germany,2023,Nov,2374.0
+Germany,2023,Dec,2733.0
+Germany,2024,Jan,1856.0
+Germany,2024,Feb,2165.0
+Germany,2024,Mar,2390.0
+Germany,2024,Apr,2790.0
+Germany,2024,May,3252.0
+Germany,2024,Jun,3957.0
+Germany,2024,Jul,4788.0
+Germany,2024,Aug,4369.0
+Germany,2024,Sep,3470.0
+Germany,2024,Oct,3036.0
+Germany,2024,Nov,2514.0
+Germany,2024,Dec,2917.0
+Germany,2025,Jan,1877.0
+Germany,2025,Feb,2189.0
+Germany,2025,Mar,2306.0
+Germany,2025,Apr,2911.0
+Germany,2025,May,3343.0
+Germany,2025,Jun,3462.0
+Germany,2025,Jul,4696.0
+Germany,2025,Aug,4245.0
+Germany,2025,Sep,3479.0
+Greece,2015,Feb,509.2
+Greece,2015,Mar,613.1
+Greece,2015,Apr,934.2
+Greece,2015,May,1870.0
+Greece,2015,Jun,3033.0
+Greece,2015,Jul,4409.0
+Greece,2015,Aug,4993.0
+Greece,2015,Sep,3650.0
+Greece,2015,Oct,1853.0
+Greece,2015,Nov,641.5
+Greece,2015,Dec,487.9
+Greece,2016,Jan,559.1
+Greece,2016,Feb,433.2
+Greece,2016,Mar,628.7
+Greece,2016,Apr,901.6
+Greece,2016,May,1953.0
+Greece,2016,Jun,2971.0
+Greece,2016,Jul,4664.0
+Greece,2016,Aug,5084.0
+Greece,2016,Sep,4150.0
+Greece,2016,Oct,2174.0
+Greece,2016,Nov,716.8
+Greece,2016,Dec,564.0
+Greece,2017,Jan,520.4
+Greece,2017,Feb,444.4
+Greece,2017,Mar,627.6
+Greece,2017,Apr,1010.0
+Greece,2017,May,1982.0
+Greece,2017,Jun,3356.0
+Greece,2017,Jul,5142.0
+Greece,2017,Aug,5813.0
+Greece,2017,Sep,4640.0
+Greece,2017,Oct,2356.0
+Greece,2017,Nov,740.5
+Greece,2017,Dec,562.5
+Greece,2018,Jan,603.5
+Greece,2018,Feb,484.1
+Greece,2018,Mar,708.2
+Greece,2018,Apr,1107.0
+Greece,2018,May,2450.0
+Greece,2018,Jun,4104.0
+Greece,2018,Jul,5539.0
+Greece,2018,Aug,6093.0
+Greece,2018,Sep,4869.0
+Greece,2018,Oct,2722.0
+Greece,2018,Nov,786.2
+Greece,2018,Dec,657.0
+Greece,2019,Jan,660.0
+Greece,2019,Feb,503.5
+Greece,2019,Mar,772.5
+Greece,2019,Apr,982.1
+Greece,2019,May,2387.0
+Greece,2019,Jun,4102.0
+Greece,2019,Jul,5673.0
+Greece,2019,Aug,6762.0
+Greece,2019,Sep,5111.0
+Greece,2019,Oct,2773.0
+Greece,2019,Nov,929.5
+Greece,2019,Dec,692.2
+Greece,2020,Jan,790.0
+Greece,2020,Feb,627.3
+Greece,2020,Mar,410.8
+Greece,2020,Apr,37.6
+Greece,2020,May,55.6
+Greece,2020,Jun,256.2
+Greece,2020,Jul,828.2
+Greece,2020,Aug,1807.0
+Greece,2020,Sep,1335.0
+Greece,2020,Oct,954.8
+Greece,2020,Nov,175.7
+Greece,2020,Dec,96.6
+Greece,2021,Jan,95.7
+Greece,2021,Feb,76.4
+Greece,2021,Mar,98.9
+Greece,2021,Apr,107.3
+Greece,2021,May,285.4
+Greece,2021,Jun,1069.0
+Greece,2021,Jul,2817.0
+Greece,2021,Aug,4074.0
+Greece,2021,Sep,2995.0
+Greece,2021,Oct,2144.0
+Greece,2021,Nov,561.2
+Greece,2021,Dec,380.5
+Greece,2022,Jan,341.4
+Greece,2022,Feb,317.0
+Greece,2022,Mar,414.3
+Greece,2022,Apr,1056.0
+Greece,2022,May,2205.0
+Greece,2022,Jun,3649.0
+Greece,2022,Jul,5277.0
+Greece,2022,Aug,5866.0
+Greece,2022,Sep,4560.0
+Greece,2022,Oct,2756.0
+Greece,2022,Nov,812.4
+Greece,2022,Dec,580.1
+Greece,2023,Jan,635.5
+Greece,2023,Feb,572.6
+Greece,2023,Mar,666.1
+Greece,2023,Apr,1373.0
+Greece,2023,May,2513.0
+Greece,2023,Jun,4302.0
+Greece,2023,Jul,6109.0
+Greece,2023,Aug,6479.0
+Greece,2023,Sep,5141.0
+Greece,2023,Oct,3143.0
+Greece,2023,Nov,1036.0
+Greece,2023,Dec,765.5
+Greece,2024,Jan,737.3
+Greece,2024,Feb,721.3
+Greece,2024,Mar,874.0
+Greece,2024,Apr,1563.0
+Greece,2024,May,3048.0
+Greece,2024,Jun,4682.0
+Greece,2024,Jul,6357.0
+Greece,2024,Aug,6908.0
+Greece,2024,Sep,5483.0
+Greece,2024,Oct,3414.0
+Greece,2024,Nov,1281.0
+Greece,2024,Dec,882.4
+Greece,2025,Jan,821.6
+Greece,2025,Feb,715.9
+Greece,2025,Mar,921.5
+Greece,2025,Apr,1663.0
+Greece,2025,May,2967.0
+Greece,2025,Jun,4603.0
+Greece,2025,Jul,6763.0
+Greece,2025,Aug,7466.0
+Greece,2025,Sep,5680.0
+Grenada,2015,Feb,10.6
+Grenada,2015,Mar,12.5
+Grenada,2015,Apr,11.3
+Grenada,2015,May,9.0
+Grenada,2015,Jun,11.1
+Grenada,2015,Jul,14.2
+Grenada,2015,Aug,15.7
+Grenada,2015,Sep,7.9
+Grenada,2015,Oct,9.6
+Grenada,2015,Nov,10.3
+Grenada,2015,Dec,13.6
+Grenada,2016,Jan,12.0
+Grenada,2016,Feb,12.9
+Grenada,2016,Mar,13.8
+Grenada,2016,Apr,10.3
+Grenada,2016,May,9.1
+Grenada,2016,Jun,9.9
+Grenada,2016,Jul,14.4
+Grenada,2016,Aug,12.1
+Grenada,2016,Sep,7.6
+Grenada,2016,Oct,10.0
+Grenada,2016,Nov,9.7
+Grenada,2016,Dec,13.5
+Grenada,2017,Jan,12.2
+Grenada,2017,Feb,12.6
+Grenada,2017,Mar,12.6
+Grenada,2017,Apr,12.4
+Grenada,2017,May,10.4
+Grenada,2017,Jun,11.5
+Grenada,2017,Jul,15.0
+Grenada,2017,Aug,14.2
+Grenada,2017,Sep,8.5
+Grenada,2017,Oct,11.3
+Grenada,2017,Nov,11.2
+Grenada,2017,Dec,14.5
+Grenada,2018,Jan,13.8
+Grenada,2018,Feb,13.8
+Grenada,2018,Mar,15.4
+Grenada,2018,Apr,12.1
+Grenada,2018,May,11.6
+Grenada,2018,Jun,12.6
+Grenada,2018,Jul,15.8
+Grenada,2018,Aug,16.3
+Grenada,2018,Sep,9.0
+Grenada,2018,Oct,11.0
+Grenada,2018,Nov,12.5
+Grenada,2018,Dec,17.0
+Grenada,2019,Jan,14.3
+Grenada,2019,Feb,15.4
+Grenada,2019,Mar,15.5
+Grenada,2019,Apr,13.0
+Grenada,2019,May,11.9
+Grenada,2019,Jun,12.3
+Grenada,2019,Jul,15.2
+Grenada,2019,Aug,17.8
+Grenada,2019,Sep,8.7
+Grenada,2019,Oct,11.0
+Grenada,2019,Nov,12.2
+Grenada,2019,Dec,15.6
+Grenada,2020,Jan,14.6
+Grenada,2020,Feb,15.7
+Grenada,2020,Mar,7.0
+Grenada,2020,Apr,0.0
+Grenada,2020,May,0.0
+Grenada,2020,Jun,0.0
+Grenada,2020,Jul,0.1
+Grenada,2020,Aug,0.5
+Grenada,2020,Sep,0.4
+Grenada,2020,Oct,1.7
+Grenada,2020,Nov,1.8
+Grenada,2020,Dec,2.0
+Grenada,2021,Jan,0.8
+Grenada,2021,Feb,0.5
+Grenada,2021,Mar,0.9
+Grenada,2021,Apr,1.0
+Grenada,2021,May,2.6
+Grenada,2021,Jun,4.2
+Grenada,2021,Jul,5.1
+Grenada,2021,Aug,4.4
+Grenada,2021,Sep,3.0
+Grenada,2021,Oct,4.0
+Grenada,2021,Nov,6.0
+Grenada,2021,Dec,9.6
+Grenada,2022,Jan,6.8
+Grenada,2022,Feb,8.0
+Grenada,2022,Mar,10.4
+Grenada,2022,Apr,10.7
+Grenada,2022,May,10.1
+Grenada,2022,Jun,11.0
+Grenada,2022,Jul,12.5
+Grenada,2022,Aug,12.3
+Grenada,2022,Sep,9.7
+Grenada,2022,Oct,11.6
+Grenada,2022,Nov,14.2
+Grenada,2022,Dec,15.8
+Grenada,2023,Jan,14.6
+Grenada,2023,Feb,14.9
+Grenada,2023,Mar,16.4
+Grenada,2023,Apr,15.2
+Grenada,2023,May,12.5
+Grenada,2023,Jun,13.2
+Grenada,2023,Jul,15.9
+Grenada,2023,Aug,16.4
+Grenada,2023,Sep,10.5
+Grenada,2023,Oct,12.7
+Grenada,2023,Nov,15.8
+Grenada,2023,Dec,20.0
+Grenada,2024,Jan,17.1
+Grenada,2024,Feb,19.6
+Grenada,2024,Mar,22.2
+Grenada,2024,Apr,16.2
+Grenada,2024,May,13.6
+Grenada,2024,Jun,14.3
+Grenada,2024,Jul,16.9
+Grenada,2024,Aug,18.5
+Grenada,2024,Sep,10.5
+Grenada,2024,Oct,13.5
+Grenada,2024,Nov,14.4
+Grenada,2024,Dec,18.3
+Grenada,2025,Jan,15.4
+Grenada,2025,Feb,15.9
+Grenada,2025,Mar,17.4
+Grenada,2025,Apr,15.5
+Grenada,2025,May,13.3
+Grenada,2025,Jun,14.7
+Grenada,2025,Jul,16.4

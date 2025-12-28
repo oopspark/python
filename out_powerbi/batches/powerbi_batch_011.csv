@@ -1,0 +1,1631 @@
+country,year,month,value
+Tonga,2015,Feb,2.4
+Tonga,2015,Mar,2.9
+Tonga,2015,Apr,3.6
+Tonga,2015,May,3.8
+Tonga,2015,Jun,5.9
+Tonga,2015,Jul,6.0
+Tonga,2015,Aug,4.8
+Tonga,2015,Sep,4.9
+Tonga,2015,Oct,4.0
+Tonga,2015,Nov,3.6
+Tonga,2015,Dec,8.4
+Tonga,2016,Jan,3.6
+Tonga,2016,Feb,3.3
+Tonga,2016,Mar,3.3
+Tonga,2016,Apr,3.5
+Tonga,2016,May,5.2
+Tonga,2016,Jun,6.8
+Tonga,2016,Jul,6.1
+Tonga,2016,Aug,5.9
+Tonga,2016,Sep,5.2
+Tonga,2016,Oct,4.3
+Tonga,2016,Nov,5.9
+Tonga,2016,Dec,8.1
+Tonga,2017,Jan,3.4
+Tonga,2017,Feb,2.9
+Tonga,2017,Mar,2.6
+Tonga,2017,Apr,3.8
+Tonga,2017,May,5.3
+Tonga,2017,Jun,6.5
+Tonga,2017,Jul,5.9
+Tonga,2017,Aug,6.8
+Tonga,2017,Sep,6.4
+Tonga,2017,Oct,4.6
+Tonga,2017,Nov,4.3
+Tonga,2017,Dec,9.6
+Tonga,2021,Jan,0.0
+Tonga,2021,Feb,0.0
+Tonga,2021,Mar,0.0
+Tonga,2021,Apr,0.0
+Tonga,2021,May,0.0
+Tonga,2021,Jun,0.1
+Tonga,2021,Jul,0.0
+Tonga,2021,Aug,0.0
+Tonga,2021,Sep,0.0
+Tonga,2021,Oct,0.0
+Tonga,2021,Nov,0.0
+Tonga,2021,Dec,0.0
+Tonga,2022,Jan,0.0
+Tonga,2022,Feb,0.0
+Tonga,2022,Mar,0.1
+Tonga,2022,Apr,0.0
+Tonga,2022,May,0.1
+Tonga,2022,Jun,0.3
+Tonga,2022,Jul,0.4
+Tonga,2022,Aug,1.8
+Tonga,2022,Sep,2.5
+Tonga,2022,Oct,2.5
+Tonga,2022,Nov,3.3
+Tonga,2022,Dec,7.4
+Tonga,2023,Jan,3.3
+Tonga,2023,Feb,2.7
+Tonga,2023,Mar,3.1
+Tonga,2023,Apr,3.5
+Tonga,2023,May,4.3
+Tonga,2023,Jun,5.9
+Tonga,2023,Jul,6.4
+Tonga,2023,Aug,6.1
+Tonga,2023,Sep,5.1
+Tonga,2023,Oct,3.8
+Tonga,2023,Nov,4.2
+Tonga,2023,Dec,7.3
+Tonga,2024,Jan,3.8
+Tonga,2024,Feb,3.2
+Tonga,2024,Mar,3.5
+Tonga,2024,Apr,3.9
+Tonga,2024,May,5.0
+Tonga,2024,Jun,7.3
+Tonga,2024,Jul,7.5
+Tonga,2024,Aug,6.7
+Tonga,2024,Sep,5.9
+Tonga,2024,Oct,4.5
+Tonga,2024,Nov,4.4
+Tonga,2024,Dec,5.2
+Trinidad & Tobago,2015,Feb,48.0
+Trinidad & Tobago,2015,Mar,36.1
+Trinidad & Tobago,2015,Apr,36.1
+Trinidad & Tobago,2015,May,32.6
+Trinidad & Tobago,2015,Jun,34.7
+Trinidad & Tobago,2015,Jul,42.0
+Trinidad & Tobago,2015,Aug,37.1
+Trinidad & Tobago,2015,Sep,29.2
+Trinidad & Tobago,2015,Oct,30.7
+Trinidad & Tobago,2015,Nov,34.5
+Trinidad & Tobago,2015,Dec,43.3
+Trinidad & Tobago,2016,Jan,40.1
+Trinidad & Tobago,2016,Feb,42.0
+Trinidad & Tobago,2016,Mar,32.9
+Trinidad & Tobago,2016,Apr,32.0
+Trinidad & Tobago,2016,May,30.3
+Trinidad & Tobago,2016,Jun,32.5
+Trinidad & Tobago,2016,Jul,39.6
+Trinidad & Tobago,2016,Aug,34.8
+Trinidad & Tobago,2016,Sep,27.6
+Trinidad & Tobago,2016,Oct,27.5
+Trinidad & Tobago,2016,Nov,29.7
+Trinidad & Tobago,2016,Dec,39.8
+Trinidad & Tobago,2017,Jan,32.0
+Trinidad & Tobago,2017,Feb,46.7
+Trinidad & Tobago,2017,Mar,31.8
+Trinidad & Tobago,2017,Apr,32.0
+Trinidad & Tobago,2017,May,30.5
+Trinidad & Tobago,2017,Jun,31.3
+Trinidad & Tobago,2017,Jul,37.1
+Trinidad & Tobago,2017,Aug,33.3
+Trinidad & Tobago,2017,Sep,25.0
+Trinidad & Tobago,2017,Oct,29.3
+Trinidad & Tobago,2017,Nov,28.3
+Trinidad & Tobago,2017,Dec,37.2
+Trinidad & Tobago,2018,Jan,33.3
+Trinidad & Tobago,2018,Feb,40.9
+Trinidad & Tobago,2018,Mar,33.0
+Trinidad & Tobago,2018,Apr,28.3
+Trinidad & Tobago,2018,May,28.5
+Trinidad & Tobago,2018,Jun,30.8
+Trinidad & Tobago,2018,Jul,36.3
+Trinidad & Tobago,2018,Aug,30.2
+Trinidad & Tobago,2018,Sep,25.2
+Trinidad & Tobago,2018,Oct,25.5
+Trinidad & Tobago,2018,Nov,27.0
+Trinidad & Tobago,2018,Dec,36.6
+Trinidad & Tobago,2019,Jan,28.3
+Trinidad & Tobago,2019,Feb,41.8
+Trinidad & Tobago,2019,Mar,34.7
+Trinidad & Tobago,2019,Apr,31.3
+Trinidad & Tobago,2019,May,30.1
+Trinidad & Tobago,2019,Jun,31.5
+Trinidad & Tobago,2019,Jul,36.9
+Trinidad & Tobago,2019,Aug,33.1
+Trinidad & Tobago,2019,Sep,25.3
+Trinidad & Tobago,2019,Oct,29.3
+Trinidad & Tobago,2019,Nov,28.8
+Trinidad & Tobago,2019,Dec,37.5
+Trinidad & Tobago,2020,Jan,30.7
+Trinidad & Tobago,2020,Feb,47.4
+Trinidad & Tobago,2020,Mar,13.7
+Trinidad & Tobago,2020,Apr,0.1
+Trinidad & Tobago,2020,May,0.1
+Trinidad & Tobago,2020,Jun,0.1
+Trinidad & Tobago,2020,Jul,0.2
+Trinidad & Tobago,2020,Aug,0.7
+Trinidad & Tobago,2020,Sep,0.7
+Trinidad & Tobago,2020,Oct,0.6
+Trinidad & Tobago,2020,Nov,0.5
+Trinidad & Tobago,2020,Dec,0.4
+Trinidad & Tobago,2021,Jan,0.4
+Trinidad & Tobago,2021,Feb,0.4
+Trinidad & Tobago,2021,Mar,0.5
+Trinidad & Tobago,2021,Apr,0.5
+Trinidad & Tobago,2021,May,0.5
+Trinidad & Tobago,2021,Jun,0.5
+Trinidad & Tobago,2021,Jul,1.6
+Trinidad & Tobago,2021,Aug,3.7
+Trinidad & Tobago,2021,Sep,4.6
+Trinidad & Tobago,2021,Oct,6.1
+Trinidad & Tobago,2021,Nov,8.6
+Trinidad & Tobago,2021,Dec,13.2
+Trinidad & Tobago,2022,Jan,8.8
+Trinidad & Tobago,2022,Feb,11.4
+Trinidad & Tobago,2022,Mar,14.6
+Trinidad & Tobago,2022,Apr,17.1
+Trinidad & Tobago,2022,May,18.4
+Trinidad & Tobago,2022,Jun,20.2
+Trinidad & Tobago,2022,Jul,24.7
+Trinidad & Tobago,2022,Aug,21.5
+Trinidad & Tobago,2022,Sep,19.4
+Trinidad & Tobago,2022,Oct,21.2
+Trinidad & Tobago,2022,Nov,22.0
+Trinidad & Tobago,2022,Dec,28.2
+Trinidad & Tobago,2023,Jan,23.5
+Trinidad & Tobago,2023,Feb,33.3
+Trinidad & Tobago,2023,Mar,25.2
+Trinidad & Tobago,2023,Apr,24.1
+Trinidad & Tobago,2023,May,23.8
+Trinidad & Tobago,2023,Jun,23.9
+Trinidad & Tobago,2023,Jul,29.6
+Trinidad & Tobago,2023,Aug,25.8
+Trinidad & Tobago,2023,Sep,21.6
+Trinidad & Tobago,2023,Oct,23.3
+Trinidad & Tobago,2023,Nov,24.0
+Trinidad & Tobago,2023,Dec,31.9
+Trinidad & Tobago,2024,Jan,27.2
+Trinidad & Tobago,2024,Feb,35.5
+Trinidad & Tobago,2024,Mar,27.6
+Trinidad & Tobago,2024,Apr,24.2
+Trinidad & Tobago,2024,May,25.2
+Trinidad & Tobago,2024,Jun,28.9
+Trinidad & Tobago,2024,Jul,32.1
+Trinidad & Tobago,2024,Aug,27.7
+Trinidad & Tobago,2024,Sep,20.2
+Trinidad & Tobago,2024,Oct,24.8
+Trinidad & Tobago,2024,Nov,26.0
+Trinidad & Tobago,2024,Dec,37.2
+Trinidad & Tobago,2025,Jan,27.5
+Trinidad & Tobago,2025,Feb,42.1
+Trinidad & Tobago,2025,Mar,28.4
+Trinidad & Tobago,2025,Apr,32.3
+Trinidad & Tobago,2025,May,28.7
+Trinidad & Tobago,2025,Jun,30.5
+Trinidad & Tobago,2025,Jul,34.7
+Trinidad & Tobago,2025,Aug,33.2
+Trinidad & Tobago,2025,Sep,22.5
+Tunisia,2015,Feb,283.1
+Tunisia,2015,Mar,400.7
+Tunisia,2015,Apr,404.1
+Tunisia,2015,May,507.3
+Tunisia,2015,Jun,534.8
+Tunisia,2015,Jul,608.2
+Tunisia,2015,Aug,771.7
+Tunisia,2015,Sep,412.1
+Tunisia,2015,Oct,391.0
+Tunisia,2015,Nov,302.8
+Tunisia,2015,Dec,403.4
+Tunisia,2016,Jan,276.1
+Tunisia,2016,Feb,258.6
+Tunisia,2016,Mar,297.4
+Tunisia,2016,Apr,314.4
+Tunisia,2016,May,418.1
+Tunisia,2016,Jun,416.2
+Tunisia,2016,Jul,823.2
+Tunisia,2016,Aug,983.2
+Tunisia,2016,Sep,543.4
+Tunisia,2016,Oct,480.2
+Tunisia,2016,Nov,376.4
+Tunisia,2016,Dec,536.9
+Tunisia,2017,Jan,312.3
+Tunisia,2017,Feb,347.1
+Tunisia,2017,Mar,456.7
+Tunisia,2017,Apr,453.2
+Tunisia,2017,May,503.5
+Tunisia,2017,Jun,488.2
+Tunisia,2017,Jul,995.1
+Tunisia,2017,Aug,1127.0
+Tunisia,2017,Sep,679.7
+Tunisia,2017,Oct,576.0
+Tunisia,2017,Nov,456.6
+Tunisia,2017,Dec,655.9
+Tunisia,2018,Jan,379.4
+Tunisia,2018,Feb,402.9
+Tunisia,2018,Mar,549.0
+Tunisia,2018,Apr,567.6
+Tunisia,2018,May,615.1
+Tunisia,2018,Jun,718.9
+Tunisia,2018,Jul,1133.0
+Tunisia,2018,Aug,1121.0
+Tunisia,2018,Sep,787.4
+Tunisia,2018,Oct,689.7
+Tunisia,2018,Nov,538.1
+Tunisia,2018,Dec,797.4
+Tunisia,2019,Jan,474.1
+Tunisia,2019,Feb,487.2
+Tunisia,2019,Mar,599.8
+Tunisia,2019,Apr,678.0
+Tunisia,2019,May,605.5
+Tunisia,2019,Jun,928.9
+Tunisia,2019,Jul,1273.0
+Tunisia,2019,Aug,1248.0
+Tunisia,2019,Sep,910.3
+Tunisia,2019,Oct,765.5
+Tunisia,2019,Nov,586.5
+Tunisia,2019,Dec,871.8
+Tunisia,2020,Jan,521.2
+Tunisia,2020,Feb,534.2
+Tunisia,2020,Mar,239.1
+Tunisia,2020,Apr,2.3
+Tunisia,2020,May,4.1
+Tunisia,2020,Jun,14.5
+Tunisia,2020,Jul,213.6
+Tunisia,2020,Aug,132.8
+Tunisia,2020,Sep,73.4
+Tunisia,2020,Oct,74.8
+Tunisia,2020,Nov,53.0
+Tunisia,2020,Dec,149.3
+Tunisia,2021,Jan,127.0
+Tunisia,2021,Feb,75.9
+Tunisia,2021,Mar,137.0
+Tunisia,2021,Apr,144.1
+Tunisia,2021,May,129.5
+Tunisia,2021,Jun,324.9
+Tunisia,2021,Jul,397.5
+Tunisia,2021,Aug,190.7
+Tunisia,2021,Sep,150.3
+Tunisia,2021,Oct,262.4
+Tunisia,2021,Nov,237.3
+Tunisia,2021,Dec,297.7
+Tunisia,2022,Jan,212.8
+Tunisia,2022,Feb,265.8
+Tunisia,2022,Mar,338.6
+Tunisia,2022,Apr,303.0
+Tunisia,2022,May,428.2
+Tunisia,2022,Jun,553.9
+Tunisia,2022,Jul,856.4
+Tunisia,2022,Aug,878.6
+Tunisia,2022,Sep,713.0
+Tunisia,2022,Oct,670.1
+Tunisia,2022,Nov,508.9
+Tunisia,2022,Dec,708.4
+Tunisia,2023,Jan,524.7
+Tunisia,2023,Feb,515.5
+Tunisia,2023,Mar,547.7
+Tunisia,2023,Apr,575.5
+Tunisia,2023,May,754.5
+Tunisia,2023,Jun,888.0
+Tunisia,2023,Jul,1188.0
+Tunisia,2023,Aug,1219.0
+Tunisia,2023,Sep,954.9
+Tunisia,2023,Oct,824.2
+Tunisia,2023,Nov,606.1
+Tunisia,2023,Dec,772.5
+Tunisia,2024,Jan,597.0
+Tunisia,2024,Feb,611.3
+Tunisia,2024,Mar,532.0
+Tunisia,2024,Apr,597.8
+Tunisia,2024,May,746.4
+Tunisia,2024,Jun,902.3
+Tunisia,2024,Jul,1351.0
+Tunisia,2024,Aug,1287.0
+Tunisia,2024,Sep,1073.0
+Tunisia,2024,Oct,938.2
+Tunisia,2024,Nov,708.6
+Tunisia,2024,Dec,920.7
+Tunisia,2025,Jan,621.3
+Tunisia,2025,Feb,647.6
+Tunisia,2025,Mar,506.3
+Tunisia,2025,Apr,802.3
+Tunisia,2025,May,843.2
+Tunisia,2025,Jun,1033.0
+Tunisia,2025,Jul,1324.0
+Tunisia,2025,Aug,1385.0
+Tunisia,2025,Sep,1197.0
+Türkiye,2015,Feb,1371.0
+Türkiye,2015,Mar,1871.0
+Türkiye,2015,Apr,2323.0
+Türkiye,2015,May,3616.0
+Türkiye,2015,Jun,3898.0
+Türkiye,2015,Jul,5230.0
+Türkiye,2015,Aug,4884.0
+Türkiye,2015,Sep,4004.0
+Türkiye,2015,Oct,3079.0
+Türkiye,2015,Nov,1646.0
+Türkiye,2015,Dec,1455.0
+Türkiye,2016,Jan,1166.0
+Türkiye,2016,Feb,1237.0
+Türkiye,2016,Mar,1631.0
+Türkiye,2016,Apr,1707.0
+Türkiye,2016,May,2390.0
+Türkiye,2016,Jun,2334.0
+Türkiye,2016,Jul,3399.0
+Türkiye,2016,Aug,3099.0
+Türkiye,2016,Sep,2772.0
+Türkiye,2016,Oct,2370.0
+Türkiye,2016,Nov,1336.0
+Türkiye,2016,Dec,1297.0
+Türkiye,2017,Jan,1051.0
+Türkiye,2017,Feb,1156.0
+Türkiye,2017,Mar,1577.0
+Türkiye,2017,Apr,2036.0
+Türkiye,2017,May,2842.0
+Türkiye,2017,Jun,3445.0
+Türkiye,2017,Jul,5029.0
+Türkiye,2017,Aug,4606.0
+Türkiye,2017,Sep,4016.0
+Türkiye,2017,Oct,2952.0
+Türkiye,2017,Nov,1636.0
+Türkiye,2017,Dec,1696.0
+Türkiye,2018,Jan,1457.0
+Türkiye,2018,Feb,1523.0
+Türkiye,2018,Mar,2133.0
+Türkiye,2018,Apr,2640.0
+Türkiye,2018,May,3640.0
+Türkiye,2018,Jun,4463.0
+Türkiye,2018,Jul,5618.0
+Türkiye,2018,Aug,5324.0
+Türkiye,2018,Sep,4741.0
+Türkiye,2018,Oct,3706.0
+Türkiye,2018,Nov,1957.0
+Türkiye,2018,Dec,1945.0
+Türkiye,2019,Jan,1539.0
+Türkiye,2019,Feb,1670.0
+Türkiye,2019,Mar,2232.0
+Türkiye,2019,Apr,3293.0
+Türkiye,2019,May,4022.0
+Türkiye,2019,Jun,5319.0
+Türkiye,2019,Jul,6617.0
+Türkiye,2019,Aug,6308.0
+Türkiye,2019,Sep,5427.0
+Türkiye,2019,Oct,4292.0
+Türkiye,2019,Nov,2191.0
+Türkiye,2019,Dec,2148.0
+Türkiye,2020,Jan,1787.0
+Türkiye,2020,Feb,1733.0
+Türkiye,2020,Mar,718.1
+Türkiye,2020,Apr,24.2
+Türkiye,2020,May,29.8
+Türkiye,2020,Jun,214.8
+Türkiye,2020,Jul,932.9
+Türkiye,2020,Aug,1815.0
+Türkiye,2020,Sep,2203.0
+Türkiye,2020,Oct,1742.0
+Türkiye,2020,Nov,834.0
+Türkiye,2020,Dec,699.3
+Türkiye,2021,Jan,509.8
+Türkiye,2021,Feb,538.0
+Türkiye,2021,Mar,905.3
+Türkiye,2021,Apr,790.7
+Türkiye,2021,May,936.3
+Türkiye,2021,Jun,2048.0
+Türkiye,2021,Jul,4361.0
+Türkiye,2021,Aug,3982.0
+Türkiye,2021,Sep,3513.0
+Türkiye,2021,Oct,3472.0
+Türkiye,2021,Nov,1764.0
+Türkiye,2021,Dec,1893.0
+Türkiye,2022,Jan,1282.0
+Türkiye,2022,Feb,1541.0
+Türkiye,2022,Mar,2080.0
+Türkiye,2022,Apr,2574.0
+Türkiye,2022,May,3873.0
+Türkiye,2022,Jun,5015.0
+Türkiye,2022,Jul,6665.0
+Türkiye,2022,Aug,6305.0
+Türkiye,2022,Sep,5475.0
+Türkiye,2022,Oct,4803.0
+Türkiye,2022,Nov,2551.0
+Türkiye,2022,Dec,2399.0
+Türkiye,2023,Jan,2006.0
+Türkiye,2023,Feb,1870.0
+Türkiye,2023,Mar,2336.0
+Türkiye,2023,Apr,3322.0
+Türkiye,2023,May,4500.0
+Türkiye,2023,Jun,5584.0
+Türkiye,2023,Jul,7148.0
+Türkiye,2023,Aug,6661.0
+Türkiye,2023,Sep,5786.0
+Türkiye,2023,Oct,4987.0
+Türkiye,2023,Nov,2525.0
+Türkiye,2023,Dec,2484.0
+Türkiye,2024,Jan,2047.0
+Türkiye,2024,Feb,2295.0
+Türkiye,2024,Mar,2701.0
+Türkiye,2024,Apr,3611.0
+Türkiye,2024,May,5130.0
+Türkiye,2024,Jun,5860.0
+Türkiye,2024,Jul,7334.0
+Türkiye,2024,Aug,6825.0
+Türkiye,2024,Sep,6054.0
+Türkiye,2024,Oct,5448.0
+Türkiye,2024,Nov,2734.0
+Türkiye,2024,Dec,2589.0
+Türkiye,2025,Jan,2171.0
+Türkiye,2025,Feb,2172.0
+Türkiye,2025,Mar,2346.0
+Türkiye,2025,Apr,3901.0
+Türkiye,2025,May,5037.0
+Türkiye,2025,Jun,5772.0
+Türkiye,2025,Jul,7116.0
+Türkiye,2025,Aug,6965.0
+Türkiye,2025,Sep,6087.0
+Turks & Caicos,2015,Feb,35.9
+Turks & Caicos,2015,Mar,41.7
+Turks & Caicos,2015,Apr,37.6
+Turks & Caicos,2015,May,29.7
+Turks & Caicos,2015,Jun,32.3
+Turks & Caicos,2015,Jul,35.5
+Turks & Caicos,2015,Aug,33.4
+Turks & Caicos,2015,Sep,15.1
+Turks & Caicos,2015,Oct,19.6
+Turks & Caicos,2015,Nov,27.3
+Turks & Caicos,2015,Dec,39.6
+Turks & Caicos,2016,Jan,44.6
+Turks & Caicos,2016,Feb,42.0
+Turks & Caicos,2016,Mar,50.9
+Turks & Caicos,2016,Apr,49.9
+Turks & Caicos,2016,May,33.5
+Turks & Caicos,2016,Jun,38.0
+Turks & Caicos,2016,Jul,43.4
+Turks & Caicos,2016,Aug,35.0
+Turks & Caicos,2016,Sep,19.2
+Turks & Caicos,2016,Oct,24.6
+Turks & Caicos,2016,Nov,30.0
+Turks & Caicos,2016,Dec,42.6
+Turks & Caicos,2017,Jan,44.9
+Turks & Caicos,2017,Feb,43.6
+Turks & Caicos,2017,Mar,48.4
+Turks & Caicos,2017,Apr,50.2
+Turks & Caicos,2017,May,33.9
+Turks & Caicos,2017,Jun,34.6
+Turks & Caicos,2017,Jul,37.5
+Turks & Caicos,2017,Aug,36.2
+Turks & Caicos,2017,Sep,2.3
+Turks & Caicos,2017,Oct,22.6
+Turks & Caicos,2017,Nov,23.2
+Turks & Caicos,2017,Dec,39.0
+Turks & Caicos,2018,Jan,31.7
+Turks & Caicos,2018,Feb,41.6
+Turks & Caicos,2018,Mar,50.1
+Turks & Caicos,2018,Apr,44.3
+Turks & Caicos,2019,Jan,43.0
+Turks & Caicos,2019,Feb,41.7
+Turks & Caicos,2019,Mar,56.2
+Turks & Caicos,2019,Jul,47.4
+Turks & Caicos,2019,Aug,36.3
+Turks & Caicos,2019,Sep,13.4
+Turks & Caicos,2020,Jan,44.2
+Turks & Caicos,2020,Feb,51.6
+Turks & Caicos,2020,Mar,26.2
+Turks & Caicos,2020,Apr,0.0
+Turks & Caicos,2020,May,0.0
+Turks & Caicos,2020,Jun,0.0
+Turks & Caicos,2020,Jul,1.3
+Turks & Caicos,2020,Aug,5.6
+Turks & Caicos,2020,Sep,3.1
+Turks & Caicos,2021,Jan,13.6
+Turks & Caicos,2021,Feb,12.8
+Turks & Caicos,2021,Mar,25.2
+Turks & Caicos,2021,Apr,29.0
+Turks & Caicos,2021,May,37.7
+Turks & Caicos,2021,Jun,46.8
+Turks & Caicos,2021,Jul,56.0
+Turks & Caicos,2021,Aug,41.7
+Turks & Caicos,2021,Sep,19.5
+Turks & Caicos,2021,Oct,30.3
+Turks & Caicos,2021,Nov,42.1
+Turks & Caicos,2021,Dec,49.9
+Turks & Caicos,2022,Jan,40.8
+Turks & Caicos,2022,Feb,47.7
+Turks & Caicos,2022,Mar,60.0
+Turks & Caicos,2022,Apr,59.0
+Turks & Caicos,2022,May,65.6
+Turks & Caicos,2022,Jun,58.6
+Turks & Caicos,2022,Jul,65.5
+Turks & Caicos,2022,Aug,54.8
+Turks & Caicos,2022,Sep,27.4
+Turks & Caicos,2022,Oct,32.5
+Turks & Caicos,2022,Nov,42.5
+Turks & Caicos,2022,Dec,62.0
+Turks & Caicos,2023,Jan,58.4
+Turks & Caicos,2023,Feb,56.6
+Turks & Caicos,2023,Mar,67.1
+Turks & Caicos,2023,Apr,63.5
+Turks & Caicos,2023,May,57.5
+Turks & Caicos,2023,Jun,56.0
+Turks & Caicos,2023,Jul,61.5
+Turks & Caicos,2023,Aug,48.4
+Turks & Caicos,2023,Sep,31.7
+Turks & Caicos,2023,Oct,41.3
+Turks & Caicos,2023,Nov,53.4
+Turks & Caicos,2023,Dec,67.2
+Turks & Caicos,2024,Jan,53.3
+Turks & Caicos,2024,Feb,59.8
+Turks & Caicos,2024,Mar,74.9
+Turks & Caicos,2024,Apr,58.4
+Turks & Caicos,2024,May,56.8
+Turks & Caicos,2024,Jun,61.3
+Turks & Caicos,2024,Jul,62.8
+Turks & Caicos,2024,Aug,46.8
+Turks & Caicos,2024,Sep,19.5
+Turks & Caicos,2024,Oct,39.6
+Turks & Caicos,2024,Nov,54.0
+Turks & Caicos,2024,Dec,67.8
+Turks & Caicos,2025,Jan,55.8
+Turks & Caicos,2025,Feb,60.1
+Turks & Caicos,2025,Mar,77.1
+Turks & Caicos,2025,Apr,59.5
+Turks & Caicos,2025,May,53.7
+Turks & Caicos,2025,Jun,57.6
+Turks & Caicos,2025,Jul,63.1
+Turks & Caicos,2025,Aug,43.7
+Turks & Caicos,2025,Sep,18.7
+Uganda,2015,Feb,103.8
+Uganda,2015,Mar,109.8
+Uganda,2015,Apr,99.7
+Uganda,2015,May,111.4
+Uganda,2015,Jun,105.1
+Uganda,2015,Jul,109.4
+Uganda,2015,Aug,121.6
+Uganda,2015,Sep,106.2
+Uganda,2015,Oct,105.1
+Uganda,2015,Nov,106.7
+Uganda,2015,Dec,113.9
+Uganda,2016,Jan,115.8
+Uganda,2016,Feb,99.3
+Uganda,2016,Mar,121.7
+Uganda,2016,Apr,98.5
+Uganda,2016,May,95.6
+Uganda,2016,Jun,106.6
+Uganda,2016,Jul,116.8
+Uganda,2016,Aug,120.3
+Uganda,2016,Sep,113.0
+Uganda,2016,Oct,104.3
+Uganda,2016,Nov,106.6
+Uganda,2016,Dec,124.1
+Uganda,2017,Jan,114.7
+Uganda,2017,Feb,103.2
+Uganda,2017,Mar,111.0
+Uganda,2017,Apr,114.2
+Uganda,2017,May,123.5
+Uganda,2017,Jun,104.4
+Uganda,2017,Jul,122.2
+Uganda,2017,Aug,132.6
+Uganda,2017,Sep,117.5
+Uganda,2017,Oct,109.5
+Uganda,2017,Nov,114.7
+Uganda,2017,Dec,134.7
+Uganda,2018,Jan,123.5
+Uganda,2018,Feb,116.7
+Uganda,2018,Mar,117.4
+Uganda,2018,Apr,117.6
+Uganda,2018,May,122.4
+Uganda,2018,Jun,120.5
+Uganda,2018,Jul,132.5
+Uganda,2018,Aug,141.9
+Uganda,2018,Sep,126.6
+Uganda,2018,Oct,119.2
+Uganda,2018,Nov,124.8
+Uganda,2018,Dec,142.5
+Uganda,2019,Jan,125.3
+Uganda,2019,Feb,121.9
+Uganda,2019,Mar,122.6
+Uganda,2019,Apr,122.8
+Uganda,2019,May,127.7
+Uganda,2019,Jun,125.8
+Uganda,2019,Jul,132.3
+Uganda,2019,Aug,133.3
+Uganda,2019,Sep,132.1
+Uganda,2019,Oct,124.3
+Uganda,2019,Nov,130.2
+Uganda,2019,Dec,144.4
+Uganda,2020,Jan,56.4
+Uganda,2020,Feb,49.8
+Uganda,2020,Mar,35.0
+Uganda,2020,Apr,24.3
+Uganda,2020,May,28.9
+Uganda,2020,Jun,38.5
+Uganda,2020,Jul,42.2
+Uganda,2020,Aug,40.3
+Uganda,2020,Sep,34.3
+Uganda,2020,Oct,40.9
+Uganda,2020,Nov,41.3
+Uganda,2020,Dec,41.1
+Uganda,2021,Jan,39.9
+Uganda,2021,Feb,40.4
+Uganda,2021,Mar,46.2
+Uganda,2021,Apr,39.7
+Uganda,2021,May,42.4
+Uganda,2021,Jun,39.0
+Uganda,2021,Jul,37.7
+Uganda,2021,Aug,43.2
+Uganda,2021,Sep,40.6
+Uganda,2021,Oct,46.3
+Uganda,2021,Nov,48.1
+Uganda,2021,Dec,49.4
+Uganda,2022,Jan,49.6
+Uganda,2022,Feb,46.9
+Uganda,2022,Mar,58.4
+Uganda,2022,Apr,65.3
+Uganda,2022,May,66.4
+Uganda,2022,Jun,68.5
+Uganda,2022,Jul,72.1
+Uganda,2022,Aug,69.9
+Uganda,2022,Sep,69.5
+United Kingdom,2015,Feb,2281.0
+United Kingdom,2015,Mar,2615.0
+United Kingdom,2015,Apr,3115.0
+United Kingdom,2015,May,3598.0
+United Kingdom,2015,Jun,3276.0
+United Kingdom,2015,Jul,3689.0
+United Kingdom,2015,Aug,3709.0
+United Kingdom,2015,Sep,3114.0
+United Kingdom,2015,Oct,3522.0
+United Kingdom,2015,Nov,2660.0
+United Kingdom,2015,Dec,2573.0
+United Kingdom,2016,Jan,2857.0
+United Kingdom,2016,Feb,2514.0
+United Kingdom,2016,Mar,2827.0
+United Kingdom,2016,Apr,3059.0
+United Kingdom,2016,May,3672.0
+United Kingdom,2016,Jun,3406.0
+United Kingdom,2016,Jul,3877.0
+United Kingdom,2016,Aug,3854.0
+United Kingdom,2016,Sep,3161.0
+United Kingdom,2016,Oct,3535.0
+United Kingdom,2016,Nov,3258.0
+United Kingdom,2016,Dec,3107.0
+United Kingdom,2017,Jan,3123.0
+United Kingdom,2017,Feb,2528.0
+United Kingdom,2017,Mar,3196.0
+United Kingdom,2017,Apr,3731.0
+United Kingdom,2017,May,3619.0
+United Kingdom,2017,Jun,3662.0
+United Kingdom,2017,Jul,4344.0
+United Kingdom,2017,Aug,4253.0
+United Kingdom,2017,Sep,3302.0
+United Kingdom,2017,Oct,3359.0
+United Kingdom,2017,Nov,3183.0
+United Kingdom,2017,Dec,2780.0
+United Kingdom,2018,Jan,2734.0
+United Kingdom,2018,Feb,2573.0
+United Kingdom,2018,Mar,3240.0
+United Kingdom,2018,Apr,3404.0
+United Kingdom,2018,May,3614.0
+United Kingdom,2018,Jun,3503.0
+United Kingdom,2018,Jul,4172.0
+United Kingdom,2018,Aug,4126.0
+United Kingdom,2018,Sep,3237.0
+United Kingdom,2018,Oct,3491.0
+United Kingdom,2018,Nov,3112.0
+United Kingdom,2018,Dec,3075.0
+United Kingdom,2019,Jan,2830.0
+United Kingdom,2019,Feb,2372.0
+United Kingdom,2019,Mar,3129.0
+United Kingdom,2019,Apr,3199.0
+United Kingdom,2019,May,3438.0
+United Kingdom,2019,Jun,3727.0
+United Kingdom,2019,Jul,4155.0
+United Kingdom,2019,Aug,4418.0
+United Kingdom,2019,Sep,3292.0
+United Kingdom,2019,Oct,3731.0
+United Kingdom,2019,Nov,3121.0
+United Kingdom,2019,Dec,3445.0
+United Kingdom,2020,Jan,3036.0
+United Kingdom,2020,Feb,2512.0
+United Kingdom,2020,Mar,1446.0
+United Kingdom,2020,Apr,95.2
+United Kingdom,2020,May,126.6
+United Kingdom,2020,Jun,176.4
+United Kingdom,2020,Jul,632.7
+United Kingdom,2020,Aug,993.0
+United Kingdom,2020,Sep,696.5
+United Kingdom,2020,Oct,569.6
+United Kingdom,2020,Nov,357.7
+United Kingdom,2020,Dec,458.5
+United Kingdom,2021,Jan,82.0
+United Kingdom,2021,Feb,86.0
+United Kingdom,2021,Mar,78.0
+United Kingdom,2021,Apr,81.0
+United Kingdom,2021,May,107.0
+United Kingdom,2021,Jun,158.0
+United Kingdom,2021,Jul,330.7
+United Kingdom,2021,Aug,759.0
+United Kingdom,2021,Sep,949.3
+United Kingdom,2021,Oct,1103.0
+United Kingdom,2021,Nov,1610.0
+United Kingdom,2021,Dec,1039.0
+United Kingdom,2022,Jan,838.6
+United Kingdom,2022,Feb,1045.0
+United Kingdom,2022,Mar,1860.0
+United Kingdom,2022,Apr,2252.0
+United Kingdom,2022,May,2728.0
+United Kingdom,2022,Jun,2977.0
+United Kingdom,2022,Jul,3445.0
+United Kingdom,2022,Aug,3545.0
+United Kingdom,2022,Sep,2956.0
+United Kingdom,2022,Oct,3322.0
+United Kingdom,2022,Nov,3238.0
+United Kingdom,2022,Dec,3038.0
+United Kingdom,2023,Jan,2898.0
+United Kingdom,2023,Feb,2192.0
+United Kingdom,2023,Mar,2596.0
+United Kingdom,2023,Apr,3126.0
+United Kingdom,2023,May,3300.0
+United Kingdom,2023,Jun,3479.0
+United Kingdom,2023,Jul,4012.0
+United Kingdom,2023,Aug,3810.0
+United Kingdom,2023,Sep,3106.0
+United Kingdom,2023,Oct,3715.0
+United Kingdom,2023,Nov,2795.0
+United Kingdom,2023,Dec,2931.0
+United Kingdom,2024,Jan,3358.0
+United Kingdom,2024,Feb,2461.0
+United Kingdom,2024,Mar,2912.0
+United Kingdom,2024,Apr,3359.0
+United Kingdom,2024,May,3906.0
+United Kingdom,2024,Jun,3513.0
+United States,2015,Feb,4894.0
+United States,2015,Mar,6177.0
+United States,2015,Apr,6514.0
+United States,2015,May,6865.0
+United States,2015,Jun,6214.0
+United States,2015,Jul,7862.0
+United States,2015,Aug,8167.0
+United States,2015,Sep,6534.0
+United States,2015,Oct,6610.0
+United States,2015,Nov,6062.0
+United States,2015,Dec,6347.0
+United States,2016,Jan,5615.0
+United States,2016,Feb,4935.0
+United States,2016,Mar,6144.0
+United States,2016,Apr,6042.0
+United States,2016,May,6500.0
+United States,2016,Jun,6154.0
+United States,2016,Jul,7595.0
+United States,2016,Aug,7895.0
+United States,2016,Sep,6614.0
+United States,2016,Oct,6724.0
+United States,2016,Nov,5844.0
+United States,2016,Dec,6345.0
+United States,2017,Jan,5762.0
+United States,2017,Feb,4848.0
+United States,2017,Mar,5789.0
+United States,2017,Apr,6694.0
+United States,2017,May,6262.0
+United States,2017,Jun,6086.0
+United States,2017,Jul,7663.0
+United States,2017,Aug,8101.0
+United States,2017,Sep,6484.0
+United States,2017,Oct,6670.0
+United States,2017,Nov,6128.0
+United States,2017,Dec,6700.0
+United States,2018,Jan,5929.0
+United States,2018,Feb,5255.0
+United States,2018,Mar,6663.0
+United States,2018,Apr,6930.0
+United States,2018,May,6768.0
+United States,2018,Jun,6372.0
+United States,2018,Jul,7780.0
+United States,2018,Aug,8080.0
+United States,2018,Sep,6559.0
+United States,2018,Oct,6759.0
+United States,2018,Nov,6067.0
+United States,2018,Dec,6583.0
+United States,2019,Jan,5836.0
+United States,2019,Feb,5091.0
+United States,2019,Mar,6259.0
+United States,2019,Apr,7045.0
+United States,2019,May,6704.0
+United States,2019,Jun,6327.0
+United States,2019,Jul,7703.0
+United States,2019,Aug,8115.0
+United States,2019,Sep,6703.0
+United States,2019,Oct,6687.0
+United States,2019,Nov,6095.0
+United States,2019,Dec,6876.0
+United States,2020,Jan,5738.0
+United States,2020,Feb,4953.0
+United States,2020,Mar,3110.0
+United States,2020,Apr,248.5
+United States,2020,May,268.9
+United States,2020,Jun,319.0
+United States,2020,Jul,524.4
+United States,2020,Aug,720.7
+United States,2020,Sep,611.6
+United States,2020,Oct,729.8
+United States,2020,Nov,881.8
+United States,2020,Dec,1107.0
+United States,2021,Jan,1045.0
+United States,2021,Feb,701.0
+United States,2021,Mar,1062.0
+United States,2021,Apr,1368.0
+United States,2021,May,1751.0
+United States,2021,Jun,1757.0
+United States,2021,Jul,2022.0
+United States,2021,Aug,2258.0
+United States,2021,Sep,1894.0
+United States,2021,Oct,2118.0
+United States,2021,Nov,2873.0
+United States,2021,Dec,3431.0
+United States,2022,Jan,2474.0
+United States,2022,Feb,2249.0
+United States,2022,Mar,3210.0
+United States,2022,Apr,4280.0
+United States,2022,May,4255.0
+United States,2022,Jun,4008.0
+United States,2022,Jul,5172.0
+United States,2022,Aug,5651.0
+United States,2022,Sep,4833.0
+United States,2022,Oct,5088.0
+United States,2022,Nov,4546.0
+United States,2022,Dec,5004.0
+United States,2023,Jan,4793.0
+United States,2023,Feb,4124.0
+United States,2023,Mar,5228.0
+United States,2023,Apr,5589.0
+United States,2023,May,5374.0
+United States,2023,Jun,4970.0
+United States,2023,Jul,6444.0
+United States,2023,Aug,6967.0
+United States,2023,Sep,5756.0
+United States,2023,Oct,5947.0
+United States,2023,Nov,5260.0
+United States,2023,Dec,5898.0
+United States,2024,Jan,5360.0
+United States,2024,Feb,4727.0
+United States,2024,Mar,5884.0
+United States,2024,Apr,5879.0
+United States,2024,May,6059.0
+United States,2024,Jun,5629.0
+United States,2024,Jul,6888.0
+United States,2024,Aug,7514.0
+United States,2024,Sep,6151.0
+United States,2024,Oct,6200.0
+United States,2024,Nov,5642.0
+United States,2024,Dec,6457.0
+United States,2025,Jan,5610.0
+United States,2025,Feb,4636.0
+United States,2025,Mar,5410.0
+United States,2025,Apr,5958.0
+United States,2025,May,5634.0
+United States,2025,Jun,5279.0
+United States,2025,Jul,6275.0
+Uruguay,2015,Feb,303.8
+Uruguay,2015,Mar,225.1
+Uruguay,2015,Apr,211.9
+Uruguay,2015,May,190.1
+Uruguay,2015,Jun,159.8
+Uruguay,2015,Jul,224.3
+Uruguay,2015,Aug,160.7
+Uruguay,2015,Sep,169.9
+Uruguay,2015,Oct,211.6
+Uruguay,2015,Nov,213.7
+Uruguay,2015,Dec,338.3
+Uruguay,2016,Jan,408.8
+Uruguay,2016,Feb,345.3
+Uruguay,2016,Mar,261.3
+Uruguay,2016,Apr,157.4
+Uruguay,2016,May,163.3
+Uruguay,2016,Jun,165.8
+Uruguay,2016,Jul,255.8
+Uruguay,2016,Aug,191.2
+Uruguay,2016,Sep,201.0
+Uruguay,2016,Oct,230.2
+Uruguay,2016,Nov,255.6
+Uruguay,2016,Dec,401.7
+Uruguay,2017,Jan,500.9
+Uruguay,2017,Feb,455.7
+Uruguay,2017,Mar,277.6
+Uruguay,2017,Apr,300.7
+Uruguay,2017,May,204.7
+Uruguay,2017,Jun,186.9
+Uruguay,2017,Jul,297.4
+Uruguay,2017,Aug,213.1
+Uruguay,2017,Sep,231.0
+Uruguay,2017,Oct,260.5
+Uruguay,2017,Nov,282.1
+Uruguay,2017,Dec,463.3
+Uruguay,2018,Jan,538.2
+Uruguay,2018,Feb,472.6
+Uruguay,2018,Mar,363.0
+Uruguay,2018,Apr,239.5
+Uruguay,2018,May,191.1
+Uruguay,2018,Jun,164.8
+Uruguay,2018,Jul,258.0
+Uruguay,2018,Aug,202.2
+Uruguay,2018,Sep,200.2
+Uruguay,2018,Oct,217.0
+Uruguay,2018,Nov,250.9
+Uruguay,2018,Dec,371.7
+Uruguay,2019,Jan,402.0
+Uruguay,2019,Feb,332.4
+Uruguay,2019,Mar,281.6
+Uruguay,2019,Apr,230.6
+Uruguay,2019,May,173.8
+Uruguay,2019,Jun,174.8
+Uruguay,2019,Jul,253.5
+Uruguay,2019,Aug,188.0
+Uruguay,2019,Sep,196.4
+Uruguay,2019,Oct,220.2
+Uruguay,2019,Nov,243.6
+Uruguay,2019,Dec,359.3
+Uruguay,2020,Jan,415.9
+Uruguay,2020,Feb,382.9
+Uruguay,2020,Mar,117.4
+Uruguay,2020,Apr,0.0
+Uruguay,2020,May,0.0
+Uruguay,2020,Jun,0.0
+Uruguay,2020,Jul,0.0
+Uruguay,2020,Aug,0.0
+Uruguay,2020,Sep,0.0
+Uruguay,2020,Oct,0.0
+Uruguay,2020,Nov,0.0
+Uruguay,2020,Dec,0.0
+Uruguay,2021,Jan,0.0
+Uruguay,2021,Feb,0.0
+Uruguay,2021,Mar,0.0
+Uruguay,2021,Apr,0.0
+Uruguay,2021,May,0.0
+Uruguay,2021,Jun,0.0
+Uruguay,2021,Jul,0.0
+Uruguay,2021,Aug,0.0
+Uruguay,2021,Sep,0.0
+Uruguay,2021,Oct,0.0
+Uruguay,2021,Nov,93.9
+Uruguay,2021,Dec,135.4
+Uruguay,2022,Jan,135.1
+Uruguay,2022,Feb,140.0
+Uruguay,2022,Mar,111.7
+Uruguay,2022,Apr,183.9
+Uruguay,2022,May,154.1
+Uruguay,2022,Jun,171.0
+Uruguay,2022,Jul,232.5
+Uruguay,2022,Aug,184.7
+Uruguay,2022,Sep,231.5
+Uruguay,2022,Oct,262.2
+Uruguay,2022,Nov,264.7
+Uruguay,2022,Dec,361.8
+US Virgin Islands,2015,Feb,72.1
+US Virgin Islands,2015,Mar,84.1
+US Virgin Islands,2015,Apr,73.0
+US Virgin Islands,2015,May,68.7
+US Virgin Islands,2015,Jun,67.7
+US Virgin Islands,2015,Jul,69.9
+US Virgin Islands,2015,Aug,51.6
+US Virgin Islands,2015,Sep,32.7
+US Virgin Islands,2015,Oct,40.8
+US Virgin Islands,2015,Nov,53.9
+US Virgin Islands,2015,Dec,75.9
+US Virgin Islands,2016,Jan,74.1
+US Virgin Islands,2016,Feb,71.6
+US Virgin Islands,2016,Mar,87.7
+US Virgin Islands,2016,Apr,69.5
+US Virgin Islands,2016,May,65.4
+US Virgin Islands,2016,Jun,70.0
+US Virgin Islands,2016,Jul,75.7
+US Virgin Islands,2016,Aug,59.3
+US Virgin Islands,2016,Sep,39.0
+US Virgin Islands,2016,Oct,46.3
+US Virgin Islands,2016,Nov,56.7
+US Virgin Islands,2016,Dec,81.8
+US Virgin Islands,2017,Jan,77.5
+US Virgin Islands,2017,Feb,74.8
+US Virgin Islands,2017,Mar,86.7
+US Virgin Islands,2017,Apr,78.6
+US Virgin Islands,2017,May,64.5
+US Virgin Islands,2017,Jun,71.0
+US Virgin Islands,2017,Jul,74.1
+US Virgin Islands,2017,Aug,56.6
+US Virgin Islands,2017,Sep,3.1
+US Virgin Islands,2017,Oct,10.0
+US Virgin Islands,2017,Nov,15.9
+US Virgin Islands,2017,Dec,24.1
+US Virgin Islands,2018,Jan,31.7
+US Virgin Islands,2018,Feb,30.5
+US Virgin Islands,2018,Mar,39.4
+US Virgin Islands,2018,Apr,39.4
+US Virgin Islands,2018,May,39.4
+US Virgin Islands,2018,Jun,46.9
+US Virgin Islands,2018,Jul,46.1
+US Virgin Islands,2018,Aug,42.7
+US Virgin Islands,2018,Sep,29.9
+US Virgin Islands,2018,Oct,35.3
+US Virgin Islands,2018,Nov,47.8
+US Virgin Islands,2018,Dec,62.1
+US Virgin Islands,2019,Jan,64.2
+US Virgin Islands,2019,Feb,58.6
+US Virgin Islands,2019,Mar,70.6
+US Virgin Islands,2019,Apr,43.3
+US Virgin Islands,2019,May,56.2
+US Virgin Islands,2019,Jun,62.0
+US Virgin Islands,2019,Jul,61.6
+US Virgin Islands,2019,Aug,48.4
+US Virgin Islands,2019,Sep,27.8
+US Virgin Islands,2019,Oct,31.0
+US Virgin Islands,2019,Nov,48.4
+US Virgin Islands,2019,Dec,68.7
+US Virgin Islands,2020,Jan,73.5
+US Virgin Islands,2020,Feb,67.5
+US Virgin Islands,2020,Mar,36.8
+US Virgin Islands,2020,Apr,2.6
+US Virgin Islands,2020,May,7.3
+US Virgin Islands,2020,Jun,22.9
+US Virgin Islands,2020,Jul,44.0
+US Virgin Islands,2020,Aug,29.5
+US Virgin Islands,2020,Sep,13.6
+US Virgin Islands,2020,Oct,28.0
+US Virgin Islands,2020,Nov,38.6
+US Virgin Islands,2020,Dec,54.8
+US Virgin Islands,2021,Jan,44.5
+US Virgin Islands,2021,Feb,57.0
+US Virgin Islands,2021,Mar,77.7
+US Virgin Islands,2021,Apr,72.0
+US Virgin Islands,2021,May,82.4
+US Virgin Islands,2021,Jun,91.9
+US Virgin Islands,2021,Jul,97.1
+US Virgin Islands,2021,Aug,64.4
+US Virgin Islands,2021,Sep,38.6
+US Virgin Islands,2021,Oct,50.4
+US Virgin Islands,2021,Nov,64.6
+US Virgin Islands,2021,Dec,85.7
+US Virgin Islands,2022,Jan,67.8
+US Virgin Islands,2022,Feb,71.2
+US Virgin Islands,2022,Mar,87.1
+US Virgin Islands,2022,Apr,79.9
+US Virgin Islands,2022,May,73.5
+US Virgin Islands,2022,Jun,78.4
+US Virgin Islands,2022,Jul,77.5
+US Virgin Islands,2022,Aug,56.7
+US Virgin Islands,2022,Sep,31.4
+US Virgin Islands,2022,Oct,43.8
+US Virgin Islands,2022,Nov,54.1
+US Virgin Islands,2022,Dec,70.4
+US Virgin Islands,2023,Jan,73.9
+US Virgin Islands,2023,Feb,71.0
+US Virgin Islands,2023,Mar,81.0
+US Virgin Islands,2023,Apr,69.6
+US Virgin Islands,2023,May,66.1
+US Virgin Islands,2023,Jun,70.1
+US Virgin Islands,2023,Jul,75.4
+US Virgin Islands,2023,Aug,50.2
+US Virgin Islands,2023,Sep,31.4
+US Virgin Islands,2023,Oct,43.3
+US Virgin Islands,2023,Nov,61.5
+US Virgin Islands,2023,Dec,88.6
+US Virgin Islands,2024,Jan,89.3
+US Virgin Islands,2024,Feb,89.6
+US Virgin Islands,2024,Mar,105.9
+US Virgin Islands,2024,Apr,84.6
+US Virgin Islands,2024,May,85.9
+US Virgin Islands,2024,Jun,82.9
+US Virgin Islands,2024,Jul,80.5
+US Virgin Islands,2024,Aug,55.8
+US Virgin Islands,2024,Sep,34.7
+US Virgin Islands,2024,Oct,44.0
+US Virgin Islands,2024,Nov,62.8
+US Virgin Islands,2024,Dec,91.3
+US Virgin Islands,2025,Jan,87.7
+US Virgin Islands,2025,Feb,82.2
+US Virgin Islands,2025,Mar,98.6
+US Virgin Islands,2025,Apr,81.4
+US Virgin Islands,2025,May,80.1
+US Virgin Islands,2025,Jun,88.0
+US Virgin Islands,2025,Jul,90.1
+US Virgin Islands,2025,Aug,59.5
+US Virgin Islands,2025,Sep,31.8
+Utd Arab Emirates,2015,Feb,1313.0
+Utd Arab Emirates,2015,Mar,1459.0
+Utd Arab Emirates,2015,Apr,1422.0
+Utd Arab Emirates,2015,May,1342.0
+Utd Arab Emirates,2015,Jun,1167.0
+Utd Arab Emirates,2015,Jul,1237.0
+Utd Arab Emirates,2015,Aug,1585.0
+Utd Arab Emirates,2015,Sep,1424.0
+Utd Arab Emirates,2015,Oct,1399.0
+Utd Arab Emirates,2015,Nov,1330.0
+Utd Arab Emirates,2015,Dec,1626.0
+Utd Arab Emirates,2016,Jan,1777.0
+Utd Arab Emirates,2016,Feb,1464.0
+Utd Arab Emirates,2016,Mar,1634.0
+Utd Arab Emirates,2016,Apr,1526.0
+Utd Arab Emirates,2016,May,1476.0
+Utd Arab Emirates,2016,Jun,1047.0
+Utd Arab Emirates,2016,Jul,1465.0
+Utd Arab Emirates,2016,Aug,1715.0
+Utd Arab Emirates,2016,Sep,1500.0
+Utd Arab Emirates,2016,Oct,1393.0
+Utd Arab Emirates,2016,Nov,1485.0
+Utd Arab Emirates,2016,Dec,1660.0
+Utd Arab Emirates,2017,Jan,1931.0
+Utd Arab Emirates,2017,Feb,1613.0
+Utd Arab Emirates,2017,Mar,1741.0
+Utd Arab Emirates,2017,Apr,1734.0
+Utd Arab Emirates,2017,May,1457.0
+Utd Arab Emirates,2017,Jun,1101.0
+Utd Arab Emirates,2017,Jul,1506.0
+Utd Arab Emirates,2017,Aug,1684.0
+Utd Arab Emirates,2017,Sep,1614.0
+Utd Arab Emirates,2017,Oct,1481.0
+Utd Arab Emirates,2017,Nov,1543.0
+Utd Arab Emirates,2017,Dec,1763.0
+Utd Arab Emirates,2018,Jan,2094.0
+Utd Arab Emirates,2018,Feb,1894.0
+Utd Arab Emirates,2018,Mar,1798.0
+Utd Arab Emirates,2018,Apr,1644.0
+Utd Arab Emirates,2018,May,1379.0
+Utd Arab Emirates,2018,Jun,1174.0
+Utd Arab Emirates,2018,Jul,1971.0
+Utd Arab Emirates,2018,Aug,1579.0
+Utd Arab Emirates,2018,Sep,1396.0
+Utd Arab Emirates,2018,Oct,1438.0
+Utd Arab Emirates,2018,Nov,2051.0
+Utd Arab Emirates,2018,Dec,1795.0
+Utd Arab Emirates,2019,Jan,2045.0
+Utd Arab Emirates,2019,Feb,1775.0
+Utd Arab Emirates,2019,Mar,1909.0
+Utd Arab Emirates,2019,Apr,1889.0
+Utd Arab Emirates,2019,May,1340.0
+Utd Arab Emirates,2019,Jun,1630.0
+Utd Arab Emirates,2019,Jul,1659.0
+Utd Arab Emirates,2019,Aug,2004.0
+Utd Arab Emirates,2019,Sep,1661.0
+Utd Arab Emirates,2019,Oct,1727.0
+Utd Arab Emirates,2019,Nov,1819.0
+Utd Arab Emirates,2019,Dec,2102.0
+Utd Arab Emirates,2020,Jan,2359.0
+Utd Arab Emirates,2020,Feb,1953.0
+Utd Arab Emirates,2020,Mar,714.2
+Utd Arab Emirates,2020,Apr,13.2
+Utd Arab Emirates,2020,May,15.4
+Utd Arab Emirates,2020,Jun,22.1
+Utd Arab Emirates,2020,Jul,62.0
+Utd Arab Emirates,2020,Aug,172.7
+Utd Arab Emirates,2020,Sep,303.8
+Utd Arab Emirates,2020,Oct,432.7
+Utd Arab Emirates,2020,Nov,464.8
+Utd Arab Emirates,2020,Dec,652.4
+Utd Arab Emirates,2021,Jan,682.0
+Utd Arab Emirates,2021,Feb,596.6
+Utd Arab Emirates,2021,Mar,790.1
+Utd Arab Emirates,2021,Apr,718.5
+Utd Arab Emirates,2021,May,568.3
+Utd Arab Emirates,2021,Jun,604.7
+Utd Arab Emirates,2021,Jul,465.6
+Utd Arab Emirates,2021,Aug,520.8
+Utd Arab Emirates,2021,Sep,1092.0
+Utd Arab Emirates,2021,Oct,1641.0
+Utd Arab Emirates,2021,Nov,1831.0
+Utd Arab Emirates,2021,Dec,1969.0
+Utd Arab Emirates,2022,Jan,1479.0
+Utd Arab Emirates,2022,Feb,2014.0
+Utd Arab Emirates,2022,Mar,3127.0
+Utd Arab Emirates,2022,Apr,1980.0
+Utd Arab Emirates,2022,May,1559.0
+Utd Arab Emirates,2022,Jun,1306.0
+Utd Arab Emirates,2022,Jul,1304.0
+Utd Arab Emirates,2022,Aug,1398.0
+Utd Arab Emirates,2022,Sep,1762.0
+Utd Arab Emirates,2022,Oct,2040.0
+Utd Arab Emirates,2022,Nov,2280.0
+Utd Arab Emirates,2022,Dec,2406.0
+Utd Arab Emirates,2023,Jan,2565.0
+Utd Arab Emirates,2023,Feb,2686.0
+Utd Arab Emirates,2023,Mar,2451.0
+Utd Arab Emirates,2023,Apr,2185.0
+Utd Arab Emirates,2023,May,2177.0
+Utd Arab Emirates,2023,Jun,1985.0
+Utd Arab Emirates,2023,Jul,2110.0
+Utd Arab Emirates,2023,Aug,2133.0
+Utd Arab Emirates,2023,Sep,2066.0
+Utd Arab Emirates,2023,Oct,2342.0
+Utd Arab Emirates,2023,Nov,2617.0
+Utd Arab Emirates,2023,Dec,2829.0
+Uzbekistan,2018,Jan,262.8
+Uzbekistan,2018,Feb,261.2
+Uzbekistan,2018,Mar,448.2
+Uzbekistan,2018,Apr,435.0
+Uzbekistan,2018,May,441.5
+Uzbekistan,2018,Jun,472.9
+Uzbekistan,2018,Jul,506.1
+Uzbekistan,2018,Aug,584.4
+Uzbekistan,2018,Sep,503.3
+Uzbekistan,2018,Oct,504.4
+Uzbekistan,2018,Nov,476.1
+Uzbekistan,2018,Dec,450.2
+Uzbekistan,2019,Jan,437.3
+Uzbekistan,2019,Feb,393.5
+Uzbekistan,2019,Mar,549.5
+Uzbekistan,2019,Apr,544.4
+Uzbekistan,2019,May,496.8
+Uzbekistan,2019,Jun,613.5
+Uzbekistan,2019,Jul,597.7
+Uzbekistan,2019,Aug,692.3
+Uzbekistan,2019,Sep,613.8
+Uzbekistan,2019,Oct,658.4
+Uzbekistan,2019,Nov,634.0
+Uzbekistan,2019,Dec,517.6
+Uzbekistan,2020,Jan,538.4
+Uzbekistan,2020,Feb,440.2
+Uzbekistan,2020,Mar,235.4
+Uzbekistan,2020,Apr,0.6
+Uzbekistan,2020,May,0.4
+Uzbekistan,2020,Jun,1.1
+Uzbekistan,2020,Jul,1.0
+Uzbekistan,2020,Aug,2.4
+Uzbekistan,2020,Sep,134.9
+Uzbekistan,2020,Oct,30.7
+Uzbekistan,2020,Nov,55.8
+Uzbekistan,2020,Dec,63.3
+Uzbekistan,2021,Jan,58.8
+Uzbekistan,2021,Feb,72.1
+Uzbekistan,2021,Mar,123.5
+Uzbekistan,2021,Apr,97.8
+Uzbekistan,2021,May,152.7
+Uzbekistan,2021,Jun,186.7
+Uzbekistan,2021,Jul,180.9
+Uzbekistan,2021,Aug,185.1
+Uzbekistan,2021,Sep,188.9
+Uzbekistan,2021,Oct,219.0
+Uzbekistan,2021,Nov,213.0
+Uzbekistan,2021,Dec,202.7
+Uzbekistan,2022,Jan,169.6
+Uzbekistan,2022,Feb,156.9
+Uzbekistan,2022,Mar,283.1
+Uzbekistan,2022,Apr,269.2
+Uzbekistan,2022,May,503.6
+Uzbekistan,2022,Jun,493.9
+Uzbekistan,2022,Jul,540.6
+Uzbekistan,2022,Aug,632.7
+Uzbekistan,2022,Sep,537.9
+Uzbekistan,2022,Oct,608.8
+Uzbekistan,2022,Nov,555.5
+Uzbekistan,2022,Dec,481.1
+Uzbekistan,2023,Jan,423.5
+Uzbekistan,2023,Feb,447.1
+Uzbekistan,2023,Mar,617.1
+Uzbekistan,2023,Apr,531.7
+Uzbekistan,2023,May,569.8
+Uzbekistan,2023,Jun,526.0
+Uzbekistan,2023,Jul,565.2
+Uzbekistan,2023,Aug,639.2
+Uzbekistan,2023,Sep,587.3
+Uzbekistan,2023,Oct,638.4
+Uzbekistan,2023,Nov,590.1
+Uzbekistan,2023,Dec,490.9
+Uzbekistan,2024,Jan,692.4
+Uzbekistan,2024,Feb,618.7
+Uzbekistan,2024,Mar,739.2
+Uzbekistan,2024,Apr,818.7
+Uzbekistan,2024,May,935.2
+Uzbekistan,2024,Jun,921.3
+Uzbekistan,2024,Jul,937.5
+Uzbekistan,2024,Aug,1039.0
+Uzbekistan,2024,Sep,907.7
+Uzbekistan,2024,Oct,990.7
+Uzbekistan,2024,Nov,791.7
+Uzbekistan,2024,Dec,668.9
+Uzbekistan,2025,Jan,678.7
+Uzbekistan,2025,Feb,656.6
+Uzbekistan,2025,Mar,767.1
+Uzbekistan,2025,Apr,1015.0
+Uzbekistan,2025,May,1087.0
+Uzbekistan,2025,Jun,1052.0
+Uzbekistan,2025,Jul,1063.0
+Uzbekistan,2025,Aug,1197.0
+Uzbekistan,2025,Sep,1045.0
+Vanuatu,2015,Feb,5.4
+Vanuatu,2015,Mar,4.8
+Vanuatu,2015,Apr,4.6
+Vanuatu,2015,May,5.8
+Vanuatu,2015,Jun,8.3
+Vanuatu,2015,Jul,10.0
+Vanuatu,2015,Aug,8.4
+Vanuatu,2015,Sep,9.2
+Vanuatu,2015,Oct,8.5
+Vanuatu,2015,Nov,7.3
+Vanuatu,2015,Dec,9.1
+Vanuatu,2016,Jan,8.5
+Vanuatu,2016,Feb,4.3
+Vanuatu,2016,Mar,4.2
+Vanuatu,2016,Apr,6.1
+Vanuatu,2016,May,5.7
+Vanuatu,2016,Jun,9.2
+Vanuatu,2016,Jul,10.9
+Vanuatu,2016,Aug,9.8
+Vanuatu,2016,Sep,9.7
+Vanuatu,2016,Oct,9.6
+Vanuatu,2016,Nov,7.5
+Vanuatu,2016,Dec,9.7
+Vanuatu,2017,Jan,9.0
+Vanuatu,2017,Feb,5.6
+Vanuatu,2017,Mar,6.4
+Vanuatu,2017,Apr,8.9
+Vanuatu,2017,May,7.2
+Vanuatu,2017,Jun,9.5
+Vanuatu,2017,Jul,12.1
+Vanuatu,2017,Aug,8.3
+Vanuatu,2017,Sep,10.9
+Vanuatu,2017,Oct,10.6
+Vanuatu,2017,Nov,8.5
+Vanuatu,2017,Dec,12.3
+Vanuatu,2018,Jan,10.1
+Vanuatu,2018,Feb,6.3
+Vanuatu,2018,Mar,7.1
+Vanuatu,2018,Apr,9.2
+Vanuatu,2018,May,8.9
+Vanuatu,2018,Jun,10.6
+Vanuatu,2018,Jul,13.2
+Vanuatu,2018,Aug,9.0
+Vanuatu,2018,Sep,11.4
+Vanuatu,2018,Oct,10.4
+Vanuatu,2018,Nov,9.0
+Vanuatu,2018,Dec,10.5
+Vanuatu,2019,Jan,9.5
+Vanuatu,2019,Feb,5.8
+Vanuatu,2019,Mar,6.9
+Vanuatu,2019,Apr,9.4
+Vanuatu,2019,May,8.4
+Vanuatu,2019,Jun,10.6
+Vanuatu,2019,Jul,12.6
+Vanuatu,2019,Aug,12.3
+Vanuatu,2019,Sep,11.7
+Vanuatu,2019,Oct,10.9
+Vanuatu,2019,Nov,9.9
+Vanuatu,2019,Dec,12.5
+Vanuatu,2020,Jan,11.9
+Vanuatu,2020,Feb,6.6
+Vanuatu,2020,Mar,3.4
+Vanuatu,2020,Apr,0.0
+Vanuatu,2020,May,0.0
+Vanuatu,2020,Jun,0.0
+Vanuatu,2020,Jul,0.0
+Vanuatu,2020,Aug,0.0
+Vanuatu,2020,Sep,0.0
+Vanuatu,2020,Oct,0.0
+Vanuatu,2020,Nov,0.0
+Vanuatu,2020,Dec,0.0
+Vanuatu,2021,Jan,0.0
+Vanuatu,2021,Feb,0.0
+Vanuatu,2021,Mar,0.0
+Vanuatu,2021,Apr,0.0
+Vanuatu,2021,May,0.0
+Vanuatu,2021,Jun,0.0
+Vanuatu,2021,Jul,0.0
+Vanuatu,2021,Aug,0.0
+Vanuatu,2021,Sep,0.0
+Vanuatu,2021,Oct,0.0
+Vanuatu,2021,Nov,0.0
+Vanuatu,2021,Dec,0.0
+Vanuatu,2022,Jul,3.5
+Vanuatu,2022,Aug,4.6
+Vanuatu,2022,Sep,5.6
+Vanuatu,2022,Oct,4.1
+Vanuatu,2022,Nov,5.0
+Vanuatu,2022,Dec,7.5
+Vanuatu,2023,Jan,6.6
+Vanuatu,2023,Feb,3.2
+Vanuatu,2023,Mar,0.6
+Vanuatu,2023,Apr,6.9
+Vanuatu,2023,May,6.0
+Vanuatu,2023,Jun,8.7
+Vanuatu,2023,Jul,9.7
+Vanuatu,2023,Aug,8.3
+Vanuatu,2023,Sep,7.7
+Vanuatu,2023,Oct,7.2
+Vanuatu,2023,Nov,5.4
+Vanuatu,2023,Dec,6.8
+Vanuatu,2024,Jan,6.3
+Vanuatu,2024,Feb,2.8
+Vanuatu,2024,Mar,4.3
+Vanuatu,2024,Apr,5.1
+Vanuatu,2024,May,2.7
+Vanuatu,2024,Jun,2.0
+Vanuatu,2024,Jul,4.3
+Vanuatu,2024,Aug,5.3
+Vanuatu,2024,Sep,7.0
+Vanuatu,2024,Oct,6.7
+Vanuatu,2024,Nov,6.4
+Vanuatu,2024,Dec,6.3
+Vanuatu,2025,Jan,6.7
+Vanuatu,2025,Feb,4.4
+Vanuatu,2025,Mar,5.3
+Vanuatu,2025,Apr,8.0
+Vanuatu,2025,May,7.1
+Vanuatu,2025,Jun,8.4
+Vanuatu,2025,Jul,10.4
+Vanuatu,2025,Aug,9.2
+Vanuatu,2025,Sep,9.9
+Venezuela,2018,Jan,42.6
+Venezuela,2018,Feb,34.6
+Venezuela,2018,Mar,32.8
+Venezuela,2018,Apr,30.6
+Venezuela,2018,May,26.6
+Venezuela,2018,Jun,27.5
+Venezuela,2018,Jul,35.5
+Venezuela,2018,Aug,39.2
+Venezuela,2018,Sep,34.6
+Venezuela,2018,Oct,29.5
+Venezuela,2018,Nov,29.5
+Venezuela,2018,Dec,39.5
+Venezuela,2019,Jan,26.6
+Venezuela,2019,Feb,22.3
+Venezuela,2019,Mar,19.0
+Venezuela,2019,Apr,22.4
+Venezuela,2019,May,21.7
+Venezuela,2019,Jun,19.1
+Venezuela,2019,Jul,24.3
+Venezuela,2019,Aug,24.3
+Venezuela,2019,Sep,19.6
+Venezuela,2019,Oct,17.3
+Venezuela,2019,Nov,19.5
+Venezuela,2019,Dec,23.7
+Venezuela,2021,Jan,7.0
+Venezuela,2021,Feb,5.9
+Venezuela,2021,Mar,5.8
+Venezuela,2021,Apr,4.6
+Venezuela,2021,May,4.8
+Venezuela,2021,Jun,4.5
+Venezuela,2021,Jul,4.4
+Venezuela,2021,Aug,5.0
+Venezuela,2021,Sep,6.9
+Venezuela,2021,Oct,8.9
+Venezuela,2021,Nov,7.0
+Venezuela,2021,Dec,9.2
+Venezuela,2022,Jan,58.8
+Venezuela,2022,Feb,48.6
+Venezuela,2022,Mar,52.0
+Venezuela,2022,Apr,48.6
+Venezuela,2022,May,45.2
+Venezuela,2022,Jun,50.1
+Venezuela,2022,Jul,48.2
+Venezuela,2022,Aug,58.9
+Venezuela,2022,Sep,52.1
+Venezuela,2022,Oct,69.7
+Venezuela,2022,Nov,66.2
+Venezuela,2022,Dec,79.2
+Vietnam,2015,Feb,695.0
+Vietnam,2015,Mar,639.8
+Vietnam,2015,Apr,705.9
+Vietnam,2015,May,581.9
+Vietnam,2015,Jun,539.9
+Vietnam,2015,Jul,599.6
+Vietnam,2015,Aug,669.7
+Vietnam,2015,Sep,631.5
+Vietnam,2015,Oct,659.4
+Vietnam,2015,Nov,742.2
+Vietnam,2015,Dec,761.4
+Vietnam,2016,Jan,815.2
+Vietnam,2016,Feb,843.7
+Vietnam,2016,Mar,830.6
+Vietnam,2016,Apr,799.6
+Vietnam,2016,May,767.4
+Vietnam,2016,Jun,710.6
+Vietnam,2016,Jul,856.4
+Vietnam,2016,Aug,909.9
+Vietnam,2016,Sep,823.1
+Vietnam,2016,Oct,822.1
+Vietnam,2016,Nov,936.8
+Vietnam,2016,Dec,897.3
+Vietnam,2017,Jan,1007.0
+Vietnam,2017,Feb,1199.0
+Vietnam,2017,Mar,1006.0
+Vietnam,2017,Apr,1072.0
+Vietnam,2017,May,972.8
+Vietnam,2017,Jun,949.4
+Vietnam,2017,Jul,1037.0
+Vietnam,2017,Aug,1229.0
+Vietnam,2017,Sep,976.0
+Vietnam,2017,Oct,1025.0
+Vietnam,2017,Nov,1173.0
+Vietnam,2017,Dec,1276.0
+Vietnam,2018,Jan,1430.0
+Vietnam,2018,Feb,1432.0
+Vietnam,2018,Mar,1343.0
+Vietnam,2018,Apr,1342.0
+Vietnam,2018,May,1161.0
+Vietnam,2018,Jun,1183.0
+Vietnam,2018,Jul,1189.0
+Vietnam,2018,Aug,1324.0
+Vietnam,2018,Sep,1213.0
+Vietnam,2018,Oct,1205.0
+Vietnam,2018,Nov,1302.0
+Vietnam,2018,Dec,1374.0
+Vietnam,2019,Jan,1502.0
+Vietnam,2019,Feb,1588.0
+Vietnam,2019,Mar,1410.0
+Vietnam,2019,Apr,1469.0
+Vietnam,2019,May,1327.0
+Vietnam,2019,Jun,1185.0
+Vietnam,2019,Jul,1316.0
+Vietnam,2019,Aug,1512.0
+Vietnam,2019,Sep,1561.0
+Vietnam,2019,Oct,1618.0
+Vietnam,2019,Nov,1810.0
+Vietnam,2019,Dec,1710.0
+Vietnam,2020,Jan,1994.0
+Vietnam,2020,Feb,1243.0
+Vietnam,2020,Mar,449.9
+Vietnam,2020,Apr,26.2
+Vietnam,2020,May,22.7
+Vietnam,2020,Jun,8.8
+Vietnam,2020,Jul,13.9
+Vietnam,2020,Aug,16.3
+Vietnam,2020,Sep,13.8
+Vietnam,2020,Oct,14.8
+Vietnam,2020,Nov,17.7
+Vietnam,2020,Dec,16.3
+Vietnam,2021,Jan,17.7
+Vietnam,2021,Feb,11.0
+Vietnam,2021,Mar,19.4
+Vietnam,2021,Apr,19.5
+Vietnam,2021,May,13.5
+Vietnam,2021,Jun,7.2
+Vietnam,2021,Jul,7.5
+Vietnam,2021,Aug,9.3
+Vietnam,2021,Sep,9.5
+Vietnam,2021,Oct,10.6
+Vietnam,2021,Nov,15.0
+Vietnam,2021,Dec,17.2
+Vietnam,2022,Jan,19.7
+Vietnam,2022,Feb,29.5
+Vietnam,2022,Mar,41.7
+Vietnam,2022,Apr,91.9
+Vietnam,2022,May,172.9
+Vietnam,2022,Jun,246.1
+Vietnam,2022,Jul,352.6
+Vietnam,2022,Aug,486.4
+Vietnam,2022,Sep,431.9
+Vietnam,2022,Oct,484.4
+Vietnam,2022,Nov,596.9
+Vietnam,2022,Dec,707.1
+Vietnam,2023,Jan,871.2
+Vietnam,2023,Feb,933.0
+Vietnam,2023,Mar,895.4
+Vietnam,2023,Apr,984.1
+Vietnam,2023,May,916.3
+Vietnam,2023,Jun,975.0
+Vietnam,2023,Jul,1039.0
+Vietnam,2023,Aug,1217.0
+Vietnam,2023,Sep,1054.0
+Vietnam,2023,Oct,1113.0
+Vietnam,2023,Nov,1233.0
+Vietnam,2023,Dec,1371.0
+Vietnam,2024,Jan,1512.0
+Vietnam,2024,Feb,1531.0
+Vietnam,2024,Mar,1599.0
+Vietnam,2024,Apr,1557.0
+Vietnam,2024,May,1384.0
+Vietnam,2024,Jun,1249.0
+Vietnam,2024,Jul,1151.0
+Vietnam,2024,Aug,1447.0
+Vietnam,2024,Sep,1275.0
+Vietnam,2024,Oct,1420.0
+Vietnam,2024,Nov,1712.0
+Vietnam,2024,Dec,1747.0
+Vietnam,2025,Jan,2070.0
+Vietnam,2025,Feb,1894.0
+Vietnam,2025,Mar,2054.0
+Vietnam,2025,Apr,1655.0
+Vietnam,2025,May,1528.0
+Vietnam,2025,Jun,1463.0
+Vietnam,2025,Jul,1563.0
+Vietnam,2025,Aug,1685.0
+Vietnam,2025,Sep,1523.0

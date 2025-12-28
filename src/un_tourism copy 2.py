@@ -1,42 +1,40 @@
 import csv
 from playwright.sync_api import sync_playwright
 
-# ==============================
-# 0) Power BI URL
-# ==============================
 URL = "https://app.powerbi.com/view?r=eyJrIjoiYWUxMzc5NWItZjA3Ny00YmM1LTkzODktMDdiMzUzNjczZmYzIiwidCI6IjRiMWJkNWRiLTY3ODItNDY2YS1hMWM1LTRlOTc1NjQ4ZjhlNSIsImMiOjl9"
 
-# ==============================
-# 1) 튜닝 값 (필요한 것만)
-# ==============================
 TIMEOUT = 60_000
 WHEEL_TICK = 60
 TICK_DELAY_MS = 250
 MAX_SCROLLS = 3000
-
-# ✅ "스크롤 3번 시도해도 새 항목이 안 나오면 종료"
 STOP_NO_NEW = 3
-
 IGNORE = {"Select all", "(Blank)"}
 
-# ✅ Year는 직접 순회
 YEAR_START = 2015
 YEAR_END = 2025
 
 
-# ==============================
-# 3) 시각화 업데이트 대기
-# ==============================
+def clean_number(text: str):
+    if not text:
+        return None
+    cleaned = (
+        text.replace(",", "")
+            .replace("\u00a0", "")
+            .replace("\u202f", "")
+            .strip()
+    )
+    try:
+        return float(cleaned)
+    except ValueError:
+        return None
+
+
 def _wait_visual_update(page, ms: int = 500):
     page.wait_for_timeout(ms)
 
 
-# ==============================
-# 4) 버튼(탭) 클릭: "Int. Tourist Arrivals", "Monthly"
-# ==============================
 def wait_then_click_button_text(page, text: str, delay_sec: float = 2) -> bool:
     page.wait_for_timeout(int(delay_sec * 1000))
-
     btn = page.locator("div.content.text.ui-role-button-text", has_text=text).first
     btn.wait_for(state="attached", timeout=TIMEOUT)
     btn.scroll_into_view_if_needed(timeout=TIMEOUT)
@@ -44,17 +42,11 @@ def wait_then_click_button_text(page, text: str, delay_sec: float = 2) -> bool:
     return True
 
 
-# ==============================
-# 5) ESC로 팝업 닫기
-# ==============================
 def close_popup(page):
     page.keyboard.press("Escape")
     page.wait_for_timeout(100)
 
 
-# ==============================
-# 6) 드롭다운 열기 -> popup_id 얻기
-# ==============================
 def open_dropdown(page, aria_label):
     close_popup(page)
 
@@ -72,9 +64,6 @@ def open_dropdown(page, aria_label):
     return popup_id
 
 
-# ==============================
-# 7) JS로 맨 위로 올리기 / 한틱 내리기
-# ==============================
 def scroll_to_top(page, popup_id):
     page.evaluate(
         """
@@ -111,9 +100,6 @@ def scroll_down_one_tick(page, popup_id):
     page.wait_for_timeout(TICK_DELAY_MS)
 
 
-# ==============================
-# 8) 현재 "보이는" 항목 텍스트 읽기
-# ==============================
 def scan_visible_texts(page, popup_id):
     popup = page.locator(f"#{popup_id}")
     popup.locator("span.slicerText").first.wait_for(state="attached", timeout=TIMEOUT)
@@ -129,9 +115,6 @@ def scan_visible_texts(page, popup_id):
     return texts
 
 
-# ==============================
-# 9) 클릭: span 말고 role=option 조상 클릭
-# ==============================
 def click_item_text(page, popup_id, target_text):
     popup = page.locator(f"#{popup_id}")
     items = popup.locator("span.slicerText")
@@ -153,9 +136,6 @@ def click_item_text(page, popup_id, target_text):
     return False
 
 
-# ==============================
-# 10) (A) Country 드롭다운 전체 목록 수집
-# ==============================
 def collect_all_items(page, aria_label):
     popup_id = open_dropdown(page, aria_label)
     scroll_to_top(page, popup_id)
@@ -182,21 +162,15 @@ def collect_all_items(page, aria_label):
 
         scroll_down_one_tick(page, popup_id)
 
-    # ✅ 조회 완료 후 드롭다운 닫기
     close_popup(page)
     return all_items
 
 
-# ==============================
-# 11) (B) Country 선택: 검색 있으면 검색, 없으면 스크롤
-#     - 선택 성공/실패와 무관하게 마지막에 닫아줌
-# ==============================
 def select_country(page, country_text):
     popup_id = open_dropdown(page, "Country")
     scroll_to_top(page, popup_id)
     popup = page.locator(f"#{popup_id}")
 
-    # (1) 검색창 있으면 먼저 검색
     search = popup.locator('input[role="searchbox"]')
     if search.count() > 0 and search.first.is_visible():
         search.first.fill("")
@@ -204,13 +178,12 @@ def select_country(page, country_text):
         page.wait_for_timeout(TICK_DELAY_MS)
 
         if click_item_text(page, popup_id, country_text):
-            close_popup(page)  # ✅ 선택 후 닫기
+            close_popup(page)
             return True
 
-    # (2) 검색으로 못 찾으면 스크롤 탐색
     for _ in range(MAX_SCROLLS):
         if click_item_text(page, popup_id, country_text):
-            close_popup(page)  # ✅ 선택 후 닫기
+            close_popup(page)
             return True
         scroll_down_one_tick(page, popup_id)
 
@@ -218,18 +191,13 @@ def select_country(page, country_text):
     return False
 
 
-# ==============================
-# 12) (C) Year 선택: (검색 없음 가정) 2015~2025 직접 순회용
-#     - Year는 검색이 안되니 "맨위→(필요 시)스크롤→클릭"만
-# ==============================
 def select_year(page, year_text):
     popup_id = open_dropdown(page, "Year")
     scroll_to_top(page, popup_id)
 
-    # Year는 개수가 작아서, 보통 맨 위 근처에서 금방 잡힘
     for _ in range(MAX_SCROLLS):
         if click_item_text(page, popup_id, year_text):
-            close_popup(page)  # ✅ 선택 후 닫기
+            close_popup(page)
             return True
         scroll_down_one_tick(page, popup_id)
 
@@ -237,9 +205,50 @@ def select_year(page, year_text):
     return False
 
 
-# ==============================
-# 13) main
-# ==============================
+def right_click_show_as_table(page) -> bool:
+    chart = page.locator('svg.cartesianChart').first
+    chart.wait_for(state="attached", timeout=TIMEOUT)
+    chart.scroll_into_view_if_needed(timeout=TIMEOUT)
+
+    chart.click(button="right", timeout=TIMEOUT)
+
+    item = page.get_by_role("menuitem", name="테이블로 표시")
+    item.wait_for(state="visible", timeout=TIMEOUT)
+    item.click(timeout=TIMEOUT)
+
+    _wait_visual_update(page, 800)
+    return True
+
+
+def collect_table_rows(page, country: str, year: int):
+    page.wait_for_selector('div[role="row"][row-index]', timeout=TIMEOUT)
+
+    rows_data = []
+    rows = page.query_selector_all('div[role="row"][row-index]')
+
+    for row in rows:
+        col1 = row.query_selector('[aria-colindex="1"]')
+        col2 = row.query_selector('[aria-colindex="2"]')
+        if not col1 or not col2:
+            continue
+
+        month = col1.inner_text().strip()
+        value = clean_number(col2.inner_text())
+
+        if month and value is not None:
+            rows_data.append((country, year, month, value))
+
+    return rows_data
+
+
+def go_back_to_report(page) -> bool:
+    btn = page.locator('button[data-testid="back-to-report-button"]').first
+    btn.wait_for(state="visible", timeout=TIMEOUT)
+    btn.click(timeout=TIMEOUT)
+    _wait_visual_update(page, 800)
+    return True
+
+
 def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
@@ -247,41 +256,55 @@ def main():
         page.goto(URL, timeout=200_000)
         page.wait_for_timeout(1500)
 
-        # ✅ (선택) 초기 UI 세팅
         print("clicked Int. Tourist Arrivals:", wait_then_click_button_text(page, "Int. Tourist Arrivals", delay_sec=6.0))
         print("clicked Monthly:", wait_then_click_button_text(page, "Monthly", delay_sec=0.5))
         _wait_visual_update(page, 1200)
 
-        # ---- 1) Country 전체 수집 ----
         countries = collect_all_items(page, "Country")
         print("Countries:", len(countries))
 
-        results = []
+        all_rows = []
 
-        # ---- 2) Country 루프 ----
         for country in countries:
+            start_idx = len(all_rows)  # ✅ 이 국가 시작 인덱스
+
             ok = select_country(page, country)
             if not ok:
                 print("Country select fail:", country)
                 continue
 
-            # ---- 3) Year는 조회 없이 2015~2025 순회 ----
-            clicked_years = []
             for y in range(YEAR_START, YEAR_END + 1):
                 y_str = str(y)
+
                 oky = select_year(page, y_str)
-                if oky:
-                    clicked_years.append(y_str)
+                if not oky:
+                    print("Year select fail:", country, y_str)
+                    continue
 
-            print(country, "clicked_years:", clicked_years)
-            results.append([country, "|".join(clicked_years)])
+                right_click_show_as_table(page)
 
-        # ---- 4) 저장 ----
-        with open("powerbi_clicked_country_years.csv", "w", newline="", encoding="utf-8") as f:
+                rows = collect_table_rows(page, country=country, year=y)
+                all_rows.extend(rows)
+                print(country, y, "rows:", len(rows))
+
+                go_back_to_report(page)
+
+            # ✅ 한 국가 사이클 끝났을 때, 그 나라 데이터 확인 출력
+            country_rows = all_rows[start_idx:]
+            print("\n==============================")
+            print(f"✅ COUNTRY DONE: {country}")
+            print(f"   rows collected: {len(country_rows)}")
+            print(f"   first 5 rows: {country_rows[:5]}")
+            print(f"   last  5 rows: {country_rows[-5:]}")
+            print("==============================\n")
+
+        out_path = "powerbi_country_year_month_value.csv"
+        with open(out_path, "w", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
-            w.writerow(["Country", "ClickedYears_pipe_sep"])
-            w.writerows(results)
+            w.writerow(["country", "year", "month", "value"])
+            w.writerows(all_rows)
 
+        print(f"✅ 저장 완료: {len(all_rows)} rows → {out_path}")
         browser.close()
 
 
