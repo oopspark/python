@@ -27,15 +27,15 @@ colors = [
 ]
 
 ### 데이터 입력
-csv_file = f"/home/user/문서/workspace/python/graph/data/주요작물소득_비율.csv"
-df = pd.read_csv(csv_file, encoding="utf-8").convert_dtypes()
+csv_file = f"/home/user/문서/workspace/python/1_src/graph/data/grain_network_distances.csv"
+df = pd.read_csv(csv_file, encoding="utf-8", thousands=",").convert_dtypes()
 
 ### 컬럼 자동 인식
-y_cols = [c for c in df.columns if c != "시점"]
+y_cols = [c for c in df.columns if c != "year"]
 
 ### x축
-df["시점"] = pd.to_datetime(df["시점"], format="%Y")
-x = df["시점"].values
+df["year"] = pd.to_datetime(df["year"], format="%Y")
+x = df["year"].values
 idx = np.arange(len(x))
 
 
@@ -64,7 +64,7 @@ for i, col in enumerate(y_cols):
 
 ### x축 표시
 ax.set_xticks(idx)
-ax.set_xticklabels(df["시점"].dt.strftime("%Y"))
+ax.set_xticklabels(df["year"].dt.strftime("%Y"))
 
 ### y축 자동 설정
 y_data = df[y_cols].astype(float).values
@@ -104,10 +104,10 @@ fig.subplots_adjust(right=0.8, bottom=0.2)
 ### 저장
 
 
-pic_name = "주요작목소득비율"
+pic_name = "곡물네트워크"
 save_path = f"/home/user/문서/workspace/python/graph/image"
 
-sample_file = f"/home/user/문서/workspace/python/temp/chart.png"
+sample_file = f"/home/user/문서/workspace/python/1_src/graph/260121/chart.png"
 
 latex_path = f"/home/user/문서/workspace/latex/project/presentation/policy/asset"
 

@@ -10,46 +10,6 @@ pl.Config.set_tbl_rows(20)
 pl.Config.set_fmt_str_lengths(10_000)
 pl.Config.set_tbl_width_chars(10_000)
 
-# 필요 시 명시 (보통 자동)
-# pl.Config.set_tbl_threads(os.cpu_count())
-
-
-# ======================================================
-# 🔹 CSV → Heavy Parquet (Lazy, 멀티코어 OK)
-# ======================================================
-def csv_to_parquet_polars(
-    csv_file: str,
-    parquet_folder: str,
-    focus: str,
-) -> str:
-    """
-    초대형 CSV → Heavy Parquet
-    - Lazy scan
-    - 멀티코어
-    """
-    os.makedirs(parquet_folder, exist_ok=True)
-    parquet_file = os.path.join(parquet_folder, f"{focus}.parquet")
-
-    print("🚀 CSV → Heavy Parquet 시작")
-
-    lf = pl.scan_csv(
-        csv_file,
-        encoding="utf8-lossy",
-        infer_schema_length=10_000,
-        null_values=["", "NA", "NULL"],
-        ignore_errors=True,
-        truncate_ragged_lines=True,
-    )
-
-    lf.sink_parquet(
-        parquet_file,
-        compression="zstd",   # lz4로 바꾸면 더 빠름
-        statistics=True,
-    )
-
-    print(f"💾 Heavy Parquet 저장 완료 → {parquet_file}")
-    return parquet_file
-
 
 # ======================================================
 # 🔹 Heavy Parquet → Filtered Light Parquet (🔥 핵심)
@@ -66,6 +26,8 @@ def filter_and_save_parquet_polars(
     Heavy Parquet →
     - scan_parquet (Lazy)
     - filter (predicate pushdown)
+      * value가 scalar면 == 필터
+      * value가 list/tuple/set이면 is_in 필터(OR)
     - select (projection pushdown)
     - sink_parquet (streaming, 멀티코어)
     """
@@ -106,7 +68,10 @@ def filter_and_save_parquet_polars(
     # ----------------------------------
     if filter_data:
         for col, value in filter_data.items():
-            lf = lf.filter(pl.col(col) == value)
+            if isinstance(value, (list, tuple, set)):
+                lf = lf.filter(pl.col(col).is_in(list(value)))
+            else:
+                lf = lf.filter(pl.col(col) == value)
 
     # ----------------------------------
     # 🔥 컬럼 리네이밍
@@ -145,21 +110,23 @@ def main():
 
     parquet_heavy_folder = "/home/user/GoogleDrive/data/parquet_heavy"
     parquet_light_folder = "/home/user/GoogleDrive/data/parquet"
-    # parquet_heavy_folder = "/home/user/gdrive/data/parquet_heavy"
-    # parquet_light_folder = "/home/user/gdrive/data/parquet"
 
-
-
-    focus_parquet = "251214_trade_matrix_faostat"
+    focus_parquet = "260121_trade_matrix_faostat"
 
     # ----------------------------------
-    # 필터 조건
+    # ✅ 필터 조건: Item 여러개 선택
     # ----------------------------------
     filter_data = {
-        "Year": 2022,
-        # "Reporter Countries": "Republic of Korea",
         "Element": "Import quantity",
-        "Item": "Soya beans",
+        "Item": [
+            "Wheat",
+            "Soya beans",
+            "Maize (corn)",
+            "Rice",
+        ],
+        # 필요하면 이런 것도 가능:
+        # "Year": [2018, 2019, 2020, 2021, 2022],
+        # "Reporter Countries": ["Republic of Korea", "Japan"],
     }
 
     # ----------------------------------
@@ -175,7 +142,7 @@ def main():
         "Value": "value",
     }
 
-    output_name = "251214_trade_faostat_soybeans_import_2022"
+    output_name = "260121_trade_faostat_grains_import_vector"
 
     # ----------------------------------
     # 실행
@@ -189,9 +156,6 @@ def main():
         select_columns=select_columns,
     )
 
-    # ----------------------------------
-    # Preview (선택)
-    # ----------------------------------
     preview_parquet_head(output_path, n=5)
 
 

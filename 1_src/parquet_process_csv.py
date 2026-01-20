@@ -3,9 +3,10 @@ import pandas as pd
 
 # ====== 파일 경로 설정 ======
 parquet_path = "/home/user/GoogleDrive/data/parquet"
-csv_path = "/home/user/문서/workspace/python/graph/data"
+# csv_path = "/home/user/문서/workspace/python/graph/data"
+csv_path = "/home/user/다운로드/260121_trade_faostat_grains_import_vector.csv"
 
-focus = "251204_crop_self_merged_korea"
+focus = "260121_trade_faostat_grains_import_vector"
 
 parquet_file = f"{parquet_path}/{focus}.parquet"
 
@@ -19,4 +20,4 @@ print(df.head())
 
 
 
-# save_df_to_csv(df, csv_path)
+save_df_to_csv(df, csv_path)
