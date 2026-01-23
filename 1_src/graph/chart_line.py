@@ -13,12 +13,12 @@ mpl.rcParams["axes.unicode_minus"] = False
 ### 디자인 일반
 pt = 1 / 72
 mpl.rcParams.update({
-    "figure.figsize": (500 * pt, 150 * pt),
-    "font.size": 9,
+    "figure.figsize": (600 * pt, 150 * pt),
+    "font.size": 7,
     "axes.titlesize": 11,
-    "axes.labelsize": 9,
-    "xtick.labelsize": 8,
-    "ytick.labelsize": 8,
+    "axes.labelsize": 7,
+    "xtick.labelsize": 7,
+    "ytick.labelsize": 7,
 })
 
 colors = ["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]
@@ -58,8 +58,8 @@ ax.set_xticklabels(tick_labels, rotation=45)
 ### y축 텍스트
 # 데이터가 10~60 수준이라 자동으로 설정되게 수정
 y_min = 0
-y_max = np.nanmax(y) * 1.15
-step = 1_000_000
+y_max = np.nanmax(y) * 1.05
+step = 2_000_000
 ax.set_yticks(np.arange(y_min, y_max + step, step))
 
 ax.grid(axis="y", linestyle="--", linewidth=0.6, alpha=0.4)
@@ -82,15 +82,22 @@ ax.spines["right"].set_visible(False)
 #     fontsize=7, color="#555"
 # )
 
+
+fig.subplots_adjust(
+    # right=0.70, 
+    bottom=0.15
+    )
+
+
 ### 저장
 pic_name = "곡물네트워크"
 save_path = f"/home/user/문서/workspace/latex/project/abstract/AAEA"
 sample_file = f"/home/user/문서/workspace/python/1_src/graph/260121/chart.png"
 
 # # sample
-mpl.use("Agg")
-fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
-plt.close(fig)
+# mpl.use("Agg")
+# fig.savefig(f"{sample_file}", dpi=300, bbox_inches="tight")
+# plt.close(fig)
 
 
 # # PNG 저장
