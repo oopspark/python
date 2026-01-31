@@ -479,8 +479,8 @@ def run_full_analysis(parquet_file: str, top_n: int = 10, out_dir: str | None = 
 
 
 if __name__ == "__main__":
-    parquet_path = "/home/user/GoogleDrive/data/parquet/260121_trade_faostat_grains_import_vector.parquet"
-    download_dir = "/home/user/다운로드"
+    parquet_path = r"G:\내 드라이브\data\parquet\260121_trade_faostat_grains_import_vector.parquet"
+    download_dir = r"C:\Users\parkj\Documents\workspace\python\temp"
 
     run_full_analysis(
         parquet_file=parquet_path,

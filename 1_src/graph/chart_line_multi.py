@@ -9,16 +9,18 @@ from matplotlib.lines import Line2D
 # ======================================================
 # 1. 폰트 설정
 # ======================================================
-font_path = "/usr/share/fonts/truetype/nanum/NanumMyeongjo.ttf"
-font_manager.fontManager.addfont(font_path)
-mpl.rc("font", family="NanumMyeongjo")
-mpl.rcParams["axes.unicode_minus"] = False
+# font_path = "/usr/share/fonts/truetype/nanum/NanumMyeongjo.ttf"
+# font_manager.fontManager.addfont(font_path)
+# mpl.rc("font", family="NanumMyeongjo")
+# mpl.rcParams["axes.unicode_minus"] = False
 
 # ======================================================
 # 2. 디자인 설정
 # ======================================================
 pt = 1 / 72
 mpl.rcParams.update({
+    "pgf.texsystem": "xelatex",   # XeLaTeX 사용
+    "pgf.rcfonts": False,         # 🎯 matplotlib 폰트 설정을 PGF에 안 집어넣기
     "figure.figsize": (600 * pt, 150 * pt),
     "font.size": 7,
 })
@@ -30,7 +32,7 @@ color_scale = "#F2B705"  # scale
 # ======================================================
 # 3. 데이터 입력
 # ======================================================
-csv_file = "/home/user/문서/workspace/python/1_src/graph/data/grain_network_distances.csv"
+csv_file = r"C:\Users\parkj\Documents\workspace\python\1_src\graph\data\grain_network_distances.csv"
 
 df = pd.read_csv(csv_file, encoding="utf-8", thousands=",").convert_dtypes()
 
@@ -145,8 +147,9 @@ fig.subplots_adjust(
 # ======================================================
 
 pic_name = "곡물네트워크_multi_single_axis"
-save_path = "/home/user/문서/workspace/latex/project/abstract/AAEA"
-sample_file = "/home/user/문서/workspace/python/1_src/graph/260121/chart.png"
+save_path = r"C:\Users\parkj\Documents\workspace\python\1_src\graph\260121"
+pgf_path = r"C:\Users\parkj\Documents\workspace\latex\project\abstract\AAEA"
+sample_file = r"C:\Users\parkj\Documents\workspace\python\1_src\graph\260121"
 
 # PNG 저장 (샘플)
 # mpl.use("Agg")
@@ -154,11 +157,11 @@ sample_file = "/home/user/문서/workspace/python/1_src/graph/260121/chart.png"
 # plt.close(fig)
 
 # # PNG 저장 (실제 사용)
-# mpl.use("Agg")
-# fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
-# plt.close(fig)
+mpl.use("Agg")
+fig.savefig(f"{save_path}/{pic_name}.png", dpi=300, bbox_inches="tight")
+plt.close(fig)
 
 # PGF 저장 (LaTeX용)
-mpl.use("pgf")
-fig.savefig(f"{save_path}/{pic_name}.pgf")
-plt.close(fig)
+# mpl.use("pgf")
+# fig.savefig(f"{save_path}/{pic_name}.pgf")
+# plt.close(fig)

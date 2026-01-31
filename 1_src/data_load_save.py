@@ -185,10 +185,10 @@ def sync_parquet_and_postgres(parquet_folder: str, postgres_uri: str):
 def main():
     focus = "260121_trade_matrix_faostat_vector"
     csv_file_name = "/home/user/다운로드/260121_trade_matrix_faostat.csv"
-    parquet_folder = "/home/user/GoogleDrive/data/parquet"
+    parquet_folder = r"G:\내 드라이브\data\parquet"
     parquet_heavy_folder = "/home/user/GoogleDrive/data/parquet_heavy"
 
-    postgres_uri = "postgresql+psycopg2://supersetuser:StrongPassword123!@localhost:5432/parquetsyncdb"
+    postgres_uri = "postgresql+psycopg2://postgres:1120@localhost:5432/postgres"
 
     # ----------------------------------
     # ✅ 대용량 CSV → Parquet (Polars 버전 권장)
