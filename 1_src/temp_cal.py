@@ -1,74 +1,72 @@
 import asyncio
-from datetime import datetime
 from playwright.async_api import async_playwright
 
-
-URL = "https://example.com/calendar"  # 👉 실제 캘린더 URL로 바꿔줘
-REFRESH_INTERVAL_SEC = 5 * 60        # 5분마다 새로고침 (원하면 수정 가능)
-
-
-def today_str_for_data_attr() -> str:
-    """YYYY-MM-DD 형식으로 오늘 날짜 문자열 만들기."""
-    today = datetime.today()
-    return today.strftime("%Y-%m-%d")  # 예: 2026-01-31
-
-
-async def center_today_week(page):
-    """캘린더에서 오늘 날짜가 포함된 주(또는 셀)를 화면 중앙에 위치시키기."""
-    today = today_str_for_data_attr()
-    # 여기서 data-date 속성이 있는 날짜 셀을 가정
-    day_cell = page.locator(f'[data-date="{today}"]')
-
-    # 元素可见之前先等一下
-    await day_cell.wait_for(state="visible", timeout=10_000)
-
-    # 🔥 주(week-row) 단위로 중앙에 맞추고 싶다면 .closest('.week-row')
-    await day_cell.evaluate(
-        """
-        (el) => {
-            // 필요하다면 주(week) 요소까지 올라가기
-            const weekRow = el.closest('.week-row');
-            const target = weekRow ?? el;  // week-row가 있으면 그걸, 없으면 el 자체
-
-            const rect = target.getBoundingClientRect();
-            const absoluteY = rect.top + window.scrollY;
-
-            const targetCenterY = absoluteY + rect.height / 2;
-            const viewportCenterY = window.innerHeight / 2;
-            const scrollTop = targetCenterY - viewportCenterY;
-
-            window.scrollTo({
-                top: scrollTop,
-                behavior: 'instant', // 或者 'smooth' 如果你想要动画效果
-            });
-        }
-        """
-    )
-
-    print(f"Centered week containing {today}")
-
+URL = "https://lnl.snu.ac.kr/category/board-155-rv-u08gfg8f-20231013165119/"
 
 async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(
-            headless=False  # 화면 보면서 확인하고 싶으면 False 유지
+            headless=False,  # 화면 보면서 디버깅하고 싶으면 False 유지
+            slow_mo=200,     # 동작 하나하나 천천히 보고 싶으면 약간 딜레이
         )
         page = await browser.new_page(viewport={"width": 1280, "height": 720})
 
-        while True:
-            # 1) 페이지 새로 열거나 새로고침
-            await page.goto(URL, wait_until="networkidle")
-            # 또는 이미 열려 있다면:
-            # await page.reload(wait_until="networkidle")
+        # 1) 페이지 접속
+        await page.goto(URL, wait_until="networkidle")
 
-            # 2) 오늘 날짜가 포함된 주를 화면 중앙에
-            await center_today_week(page)
+        # 2) "신청하기" 버튼 클릭
+        # <a href="#none" class="btn_status" onclick="go_board_view('3735');">신청하기</a>
+        await page.locator("a.btn_status", has_text="신청하기").click()
 
-            # 3) 다음 새로고침까지 대기
-            print(f"Sleeping {REFRESH_INTERVAL_SEC} seconds...")
-            await asyncio.sleep(REFRESH_INTERVAL_SEC)
+        # 3) 약관 체크박스 보일 때까지 기다렸다가 체크
+        # <input type="checkbox" id="reserve_terms_agree" name="reserve_terms_agree">
+        await page.wait_for_selector("#reserve_terms_agree")
+        await page.check("#reserve_terms_agree")
 
-        # 실제로 while True라서 도달 안 하지만, 참고용:
+        # 4) "다음" 버튼 클릭
+        # <a href="#none" onclick="go_board_view('3735');" class="btn_mid btn_gray02">다음</a>
+        await page.locator("a.btn_mid.btn_gray02", has_text="다음").click()
+
+        # 5) 캘린더 로드 기다리기
+        # <div id="calendar" class="calendar_area ...">
+        await page.wait_for_selector("#calendar td.fc-daygrid-day")
+
+        # 6) 오늘 날짜가 포함된 주(tr)를 화면 중앙으로 스크롤
+        await page.evaluate(
+            """
+            () => {
+                // FullCalendar에서 오늘 날짜 셀은 td.fc-day-today 로 표시됨
+                const todayCell = document.querySelector('#calendar td.fc-day-today');
+                if (!todayCell) {
+                    console.warn('fc-day-today cell not found');
+                    return;
+                }
+
+                // 오늘이 있는 주(week row) = 가장 가까운 <tr>
+                const weekRow = todayCell.closest('tr');
+                const target = weekRow || todayCell;
+
+                const rect = target.getBoundingClientRect();
+                const absoluteY = rect.top + window.scrollY;
+
+                const targetCenterY = absoluteY + rect.height / 2;
+                const viewportCenterY = window.innerHeight / 2;
+                const scrollTop = targetCenterY - viewportCenterY;
+
+                window.scrollTo({
+                    top: scrollTop,
+                    behavior: 'instant',  // 'smooth'로 바꾸면 부드럽게 스크롤됨
+                });
+            }
+            """
+        )
+
+        print("완료: 오늘 날짜가 포함된 주를 화면 가운데에 위치시켰습니다.")
+
+        # 결과를 눈으로 보고 싶으면 잠깐 대기
+        await page.wait_for_timeout(10_000)
+
+        # 원하면 브라우저 닫기
         # await browser.close()
 
 
